@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
         newsletterBtn.addEventListener('click', function () {
             const email = newsletterEmail ? newsletterEmail.value.trim() : '';
             if (!email || !email.includes('@')) {
-                alert('請先輸入有效的電子郵件地址 📧');
+                alert(t('alert.email'));
                 return;
             }
             newsletterSuccess.classList.add('show');

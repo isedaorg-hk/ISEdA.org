@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ISEdA 國際特殊教育協會 - 首頁</title>
+    <title data-i18n-title="title.index">ISEdA 國際特殊教育協會 - 首頁</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,20 +14,24 @@
             <a class="logo-placeholder" href="index.html">
                 <div class="logo-box">ISEdA</div>
                 <div class="logo-text">
-                    <h1>國際特殊教育協會</h1>
-                    <p>International Special Education Association</p>
+                    <h1 data-i18n="brand.zh">國際特殊教育協會</h1>
+                    <p data-i18n="brand.sub">International Special Education Association</p>
                 </div>
             </a>
             <nav id="site-nav">
                 <ul>
-                    <li><a href="index.html" class="active">首頁</a></li>
-                    <li><a href="about.html">關於我們</a></li>
-                    <li><a href="events.html">活動專區</a></li>
-                    <li><a href="knowledge.html">專業知識庫</a></li>
-                    <li><a href="members.html">會員專區</a></li>
-                    <li><a href="partners.html">合作洽談</a></li>
-                    <li class="lang-switch">繁 / 简 / EN</li>
-                    <li><a href="members.html" class="btn-join">登入/加入會員 🔘</a></li>
+                    <li><a href="index.html" class="active" data-i18n="nav.home">首頁</a></li>
+                    <li><a href="about.html" data-i18n="nav.about">關於我們</a></li>
+                    <li><a href="events.html" data-i18n="nav.events">活動專區</a></li>
+                    <li><a href="knowledge.html" data-i18n="nav.knowledge">專業知識庫</a></li>
+                    <li><a href="members.html" data-i18n="nav.members">會員專區</a></li>
+                    <li><a href="partners.html" data-i18n="nav.partners">合作洽談</a></li>
+                    <li class="lang-switch">
+                        <button class="lang-btn active" data-lang="zh-Hant">繁</button><span class="lang-sep">/</span>
+                        <button class="lang-btn" data-lang="zh-Hans">简</button><span class="lang-sep">/</span>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </li>
+                    <li><a href="members.html" class="btn-join" data-i18n="nav.login">登入/加入會員 🔘</a></li>
                 </ul>
             </nav>
             <button class="hamburger" id="hamburger" aria-label="開啟選單">
@@ -39,11 +43,11 @@
     <!-- 2. 主視覺區 -->
     <section class="hero">
         <div class="container">
-            <h2>🌟 連結希望・共融未來</h2>
-            <p>為特殊教育需要 (SEN) 青年、家庭與從業者打造的國際共融平台。</p>
+            <h2 data-i18n="index.hero.title">🌟 連結希望・共融未來</h2>
+            <p data-i18n="index.hero.sub">為特殊教育需要 (SEN) 青年、家庭與從業者打造的國際共融平台。</p>
             <div class="hero-btns">
-                <a href="members.html" class="btn-hero-primary">立即免費加入會員 💡</a>
-                <a href="about.html" class="btn-hero-secondary">探索我們的服務 ↗</a>
+                <a href="members.html" class="btn-hero-primary" data-i18n="index.hero.btn1">立即免費加入會員 💡</a>
+                <a href="about.html" class="btn-hero-secondary" data-i18n="index.hero.btn2">探索我們的服務 ↗</a>
             </div>
         </div>
     </section>
@@ -54,19 +58,19 @@
             <div class="stats-grid">
                 <div class="stat-item">
                     <div class="stat-num">500+</div>
-                    <div class="stat-label">SEN 青年受惠</div>
+                    <div class="stat-label" data-i18n="index.stats.1">SEN 青年受惠</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-num">300+</div>
-                    <div class="stat-label">特教從業者會員</div>
+                    <div class="stat-label" data-i18n="index.stats.2">特教從業者會員</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-num">50+</div>
-                    <div class="stat-label">合作機構</div>
+                    <div class="stat-label" data-i18n="index.stats.3">合作機構</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-num">120+</div>
-                    <div class="stat-label">活動與培訓場次</div>
+                    <div class="stat-label" data-i18n="index.stats.4">活動與培訓場次</div>
                 </div>
             </div>
         </div>
@@ -78,15 +82,15 @@
             <div class="split">
                 <div class="split-img reveal" style="background-image: url('https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=800&q=80')"></div>
                 <div class="split-text reveal">
-                    <h3>關於國際特殊教育協會</h3>
-                    <p>ISEdA 是一個以香港為基地的國際性非牟利組織，致力於連結特殊教育需要 (SEN) 青年、家庭、特教從業者與社會各界的橋樑。</p>
+                    <h3 data-i18n="index.about.title">關於國際特殊教育協會</h3>
+                    <p data-i18n="index.about.p1">ISEdA 是一個以香港為基地的國際性非牟利組織，致力於連結特殊教育需要 (SEN) 青年、家庭、特教從業者與社會各界的橋樑。</p>
                     <ul class="check-list">
-                        <li>提供 SEN 青年升學、職訓與就業一條龍支援</li>
-                        <li>推動特教從業者專業培訓與國際認證</li>
-                        <li>陪伴家長與照顧者，推廣共融教育理念</li>
-                        <li>攜手企業落實 ESG，打造共融友善職場</li>
+                        <li data-i18n="index.about.check1">提供 SEN 青年升學、職訓與就業一條龍支援</li>
+                        <li data-i18n="index.about.check2">推動特教從業者專業培訓與國際認證</li>
+                        <li data-i18n="index.about.check3">陪伴家長與照顧者，推廣共融教育理念</li>
+                        <li data-i18n="index.about.check4">攜手企業落實 ESG，打造共融友善職場</li>
                     </ul>
-                    <a href="about.html" class="btn-outline">了解更多 →</a>
+                    <a href="about.html" class="btn-outline" data-i18n="index.about.btn">了解更多 →</a>
                 </div>
             </div>
         </div>
@@ -95,32 +99,32 @@
     <!-- 5. 四大傳送門 (分流區) -->
     <section class="section section-alt">
         <div class="container">
-            <h2 class="section-title">我們的服務對象</h2>
-            <p class="section-sub">無論您是青年、從業者、家長，或是想一同推動共融的機構，我們都有專屬的服務與資源。</p>
+            <h2 class="section-title" data-i18n="index.portals.title">我們的服務對象</h2>
+            <p class="section-sub" data-i18n="index.portals.sub">無論您是青年、從業者、家長，或是想一同推動共融的機構，我們都有專屬的服務與資源。</p>
             <div class="portal-grid">
                 <!-- 青年 -->
                 <div class="portal-card portal-youth reveal">
-                    <h3>🙋‍♂️ SEN 青年</h3>
-                    <p>提供升學規劃、職業培訓、實習機會、就業配對、職場適應支援及領袖培育。</p>
-                    <a href="members.html">尋求支援 →</a>
+                    <h3 data-i18n="index.portals.youth.title">🙋‍♂️ SEN 青年</h3>
+                    <p data-i18n="index.portals.youth.desc">提供升學規劃、職業培訓、實習機會、就業配對、職場適應支援及領袖培育。</p>
+                    <a href="members.html" data-i18n="index.portals.youth.link">尋求支援 →</a>
                 </div>
                 <!-- 從業者 -->
                 <div class="portal-card portal-teacher reveal">
-                    <h3>🧑‍🏫 特教從業者</h3>
-                    <p>提供專業培訓、國際證書課程資訊、學術資源共享與專業交流平台。</p>
-                    <a href="knowledge.html">專業培訓 →</a>
+                    <h3 data-i18n="index.portals.teacher.title">🧑‍🏫 特教從業者</h3>
+                    <p data-i18n="index.portals.teacher.desc">提供專業培訓、國際證書課程資訊、學術資源共享與專業交流平台。</p>
+                    <a href="knowledge.html" data-i18n="index.portals.teacher.link">專業培訓 →</a>
                 </div>
                 <!-- 家長 -->
                 <div class="portal-card portal-parents reveal">
-                    <h3>👨‍👩‍👦 家長與照顧者</h3>
-                    <p>提供家長支援小組、專業諮詢服務以及共融教育理念推廣，與您並肩同行。</p>
-                    <a href="members.html">獲取協助 →</a>
+                    <h3 data-i18n="index.portals.parents.title">👨‍👩‍👦 家長與照顧者</h3>
+                    <p data-i18n="index.portals.parents.desc">提供家長支援小組、專業諮詢服務以及共融教育理念推廣，與您並肩同行。</p>
+                    <a href="members.html" data-i18n="index.portals.parents.link">獲取協助 →</a>
                 </div>
                 <!-- 合作夥伴 -->
                 <div class="portal-card portal-partners reveal">
-                    <h3>🏢 合作機構</h3>
-                    <p>攜手推行 ESG 指標、提高企業社會形象與影響力，共創共融友善職場。</p>
-                    <a href="partners.html">合作洽談 →</a>
+                    <h3 data-i18n="index.portals.partners.title">🏢 合作機構</h3>
+                    <p data-i18n="index.portals.partners.desc">攜手推行 ESG 指標、提高企業社會形象與影響力，共創共融友善職場。</p>
+                    <a href="partners.html" data-i18n="index.portals.partners.link">合作洽談 →</a>
                 </div>
             </div>
         </div>
@@ -129,51 +133,51 @@
     <!-- 6. 最新活動預覽 -->
     <section class="section">
         <div class="container">
-            <h2 class="section-title">🗓️ 即將舉辦的精彩活動</h2>
-            <p class="section-sub">從青年聯誼到專業進修，總有一場活動適合您。立即報名，與我們一起成長！</p>
+            <h2 class="section-title" data-i18n="index.events.title">🗓️ 即將舉辦的精彩活動</h2>
+            <p class="section-sub" data-i18n="index.events.sub">從青年聯誼到專業進修，總有一場活動適合您。立即報名，與我們一起成長！</p>
             <div class="event-grid">
                 <!-- 活動 1 -->
                 <div class="event-card reveal">
                     <div class="event-img" style="background-image: url('https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=600&q=80')">
-                        [活動海報預留區]
+                        <span data-i18n="poster">[活動海報預留區]</span>
                     </div>
                     <div class="event-content">
-                        <div class="event-title">青年聯誼：共融手工藝工作坊</div>
-                        <div class="event-meta">📅 日期：2026年8月15日 (六)</div>
-                        <div class="event-meta">📍 地點：九龍區青年中心</div>
-                        <div class="event-limit">🔥 剩餘名額：5 位</div>
-                        <a href="events.html" class="btn-event">立即登記 (RSVP) ✍️</a>
+                        <div class="event-title" data-i18n="events.1.title">青年聯誼：共融手工藝工作坊</div>
+                        <div class="event-meta" data-i18n="events.1.date">📅 日期：2026年8月15日 (六)</div>
+                        <div class="event-meta" data-i18n="events.1.loc">📍 地點：九龍區青年中心</div>
+                        <div class="event-limit" data-i18n="events.1.limit">🔥 剩餘名額：5 位</div>
+                        <a href="events.html" class="btn-event" data-i18n="events.btn">立即登記 (RSVP) ✍️</a>
                     </div>
                 </div>
                 <!-- 活動 2 -->
                 <div class="event-card reveal">
                     <div class="event-img" style="background-image: url('https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=600&q=80')">
-                        [活動海報預留區]
+                        <span data-i18n="poster">[活動海報預留區]</span>
                     </div>
                     <div class="event-content">
-                        <div class="event-title">特教從業者：國際證書線上分享會</div>
-                        <div class="event-meta">📅 日期：2026年9月10日 (四)</div>
-                        <div class="event-meta">📍 地點：Zoom 線上視訊</div>
-                        <div class="event-limit full">⌛ 已額滿 (開啟候補)</div>
-                        <a href="events.html" class="btn-event disabled">加入候補名單 ⏱️</a>
+                        <div class="event-title" data-i18n="events.2.title">特教從業者：國際證書線上分享會</div>
+                        <div class="event-meta" data-i18n="events.2.date">📅 日期：2026年9月10日 (四)</div>
+                        <div class="event-meta" data-i18n="events.2.loc">📍 地點：Zoom 線上視訊</div>
+                        <div class="event-limit full" data-i18n="events.2.limit">⌛ 已額滿 (開啟候補)</div>
+                        <a href="events.html" class="btn-event disabled" data-i18n="events.btn2">加入候補名單 ⏱️</a>
                     </div>
                 </div>
-                <!-- 活動 3（新增） -->
+                <!-- 活動 3 -->
                 <div class="event-card reveal">
                     <div class="event-img" style="background-image: url('https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&w=600&q=80')">
-                        [活動海報預留區]
+                        <span data-i18n="poster">[活動海報預留區]</span>
                     </div>
                     <div class="event-content">
-                        <div class="event-title">家長支援小組：開學適應座談會</div>
-                        <div class="event-meta">📅 日期：2026年8月29日 (六)</div>
-                        <div class="event-meta">📍 地點：荃灣區社區中心</div>
-                        <div class="event-limit">🟢 尚有名額：12 位</div>
-                        <a href="events.html" class="btn-event">立即登記 (RSVP) ✍️</a>
+                        <div class="event-title" data-i18n="events.3.title">家長支援小組：開學適應座談會</div>
+                        <div class="event-meta" data-i18n="events.3.date">📅 日期：2026年8月29日 (六)</div>
+                        <div class="event-meta" data-i18n="events.3.loc">📍 地點：荃灣區社區中心</div>
+                        <div class="event-limit" data-i18n="events.3.limit">🟢 尚有名額：12 位</div>
+                        <a href="events.html" class="btn-event" data-i18n="events.btn">立即登記 (RSVP) ✍️</a>
                     </div>
                 </div>
             </div>
             <div style="text-align:center; margin-top: 40px;">
-                <a href="events.html" class="btn-outline">查看所有活動 →</a>
+                <a href="events.html" class="btn-outline" data-i18n="events.more">查看所有活動 →</a>
             </div>
         </div>
     </section>
@@ -181,39 +185,39 @@
     <!-- 7. 知識庫精選 -->
     <section class="section section-alt">
         <div class="container">
-            <h2 class="section-title">📖 專業特教知識與資源</h2>
-            <p class="section-sub">由特教專家與實務工作者撰寫的知識庫，涵蓋家長指南、專業培訓與青年成長等主題。</p>
+            <h2 class="section-title" data-i18n="index.blog.title">📖 專業特教知識與資源</h2>
+            <p class="section-sub" data-i18n="index.blog.sub">由特教專家與實務工作者撰寫的知識庫，涵蓋家長指南、專業培訓與青年成長等主題。</p>
             <div class="blog-grid">
                 <!-- 文章 1 -->
                 <a class="blog-card reveal" href="knowledge.html">
                     <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1484712401471-05c7215a39eb?auto=format&fit=crop&w=500&q=80')"></div>
                     <div class="blog-content">
-                        <div class="blog-tag">家長指南</div>
-                        <div class="blog-title">如何協助 SEN 孩子適應新學期的情緒變化？</div>
-                        <div class="blog-time">📝 閱讀時間：5分鐘</div>
+                        <div class="blog-tag" data-i18n="blog.1.tag">家長指南</div>
+                        <div class="blog-title" data-i18n="blog.1.title">如何協助 SEN 孩子適應新學期的情緒變化？</div>
+                        <div class="blog-time" data-i18n="blog.1.time">📝 閱讀時間：5分鐘</div>
                     </div>
                 </a>
                 <!-- 文章 2 -->
                 <a class="blog-card reveal" href="knowledge.html">
                     <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=500&q=80')"></div>
                     <div class="blog-content">
-                        <div class="blog-tag">專業培訓</div>
-                        <div class="blog-title">2026 最新特教證書申請流程與重點解析</div>
-                        <div class="blog-time">📝 閱讀時間：8分鐘</div>
+                        <div class="blog-tag" data-i18n="blog.2.tag">專業培訓</div>
+                        <div class="blog-title" data-i18n="blog.2.title">2026 最新特教證書申請流程與重點解析</div>
+                        <div class="blog-time" data-i18n="blog.2.time">📝 閱讀時間：8分鐘</div>
                     </div>
                 </a>
                 <!-- 文章 3 -->
                 <a class="blog-card reveal" href="knowledge.html">
                     <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=500&q=80')"></div>
                     <div class="blog-content">
-                        <div class="blog-tag">青年成長</div>
-                        <div class="blog-title">職場適應的 3 個關鍵溝通技巧與實戰分享</div>
-                        <div class="blog-time">📝 閱讀時間：6分鐘</div>
+                        <div class="blog-tag" data-i18n="blog.3.tag">青年成長</div>
+                        <div class="blog-title" data-i18n="blog.3.title">職場適應的 3 個關鍵溝通技巧與實戰分享</div>
+                        <div class="blog-time" data-i18n="blog.3.time">📝 閱讀時間：6分鐘</div>
                     </div>
                 </a>
             </div>
             <div style="text-align:center; margin-top: 40px;">
-                <a href="knowledge.html" class="btn-outline">進入專業知識庫 →</a>
+                <a href="knowledge.html" class="btn-outline" data-i18n="index.blog.more">進入專業知識庫 →</a>
             </div>
         </div>
     </section>
@@ -221,36 +225,36 @@
     <!-- 8. 見證推薦 -->
     <section class="section">
         <div class="container">
-            <h2 class="section-title">💬 會員與夥伴的真實心聲</h2>
-            <p class="section-sub">每一位會員的故事，都是我們持續前進的動力。</p>
+            <h2 class="section-title" data-i18n="index.testi.title">💬 會員與夥伴的真實心聲</h2>
+            <p class="section-sub" data-i18n="index.testi.sub">每一位會員的故事，都是我們持續前進的動力。</p>
             <div class="testimonial-grid">
                 <div class="testimonial-card reveal">
-                    <p>「透過 ISEdA 的就業配對計劃，我找到了一份真正適合自己的工作，同事們也很願意包容我的步伐。」</p>
+                    <p data-i18n="index.testi.1.quote">「透過 ISEdA 的就業配對計劃，我找到了一份真正適合自己的工作，同事們也很願意包容我的步伐。」</p>
                     <div class="testimonial-person">
                         <div class="avatar">阿</div>
                         <div>
-                            <div class="t-name">阿傑</div>
-                            <div class="t-role">SEN 青年會員・已成功就業</div>
+                            <div class="t-name" data-i18n="index.testi.1.name">阿傑</div>
+                            <div class="t-role" data-i18n="index.testi.1.role">SEN 青年會員・已成功就業</div>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card reveal">
-                    <p>「這裡的家長支援小組讓我覺得不再孤單。孩子上學的情緒問題，終於有人可以一起商量。」</p>
+                    <p data-i18n="index.testi.2.quote">「這裡的家長支援小組讓我覺得不再孤單。孩子上學的情緒問題，終於有人可以一起商量。」</p>
                     <div class="testimonial-person">
                         <div class="avatar">陳</div>
                         <div>
-                            <div class="t-name">陳太太</div>
-                            <div class="t-role">家長會員・自閉症孩子媽媽</div>
+                            <div class="t-name" data-i18n="index.testi.2.name">陳太太</div>
+                            <div class="t-role" data-i18n="index.testi.2.role">家長會員・自閉症孩子媽媽</div>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card reveal">
-                    <p>「國際證書課程的內容非常扎實，實務案例分享直接帶回教室就能用，對我的教學幫助很大。」</p>
+                    <p data-i18n="index.testi.3.quote">「國際證書課程的內容非常扎實，實務案例分享直接帶回教室就能用，對我的教學幫助很大。」</p>
                     <div class="testimonial-person">
                         <div class="avatar">林</div>
                         <div>
-                            <div class="t-name">林老師</div>
-                            <div class="t-role">特教從業者・特殊學校教師</div>
+                            <div class="t-name" data-i18n="index.testi.3.name">林老師</div>
+                            <div class="t-role" data-i18n="index.testi.3.role">特教從業者・特殊學校教師</div>
                         </div>
                     </div>
                 </div>
@@ -261,9 +265,9 @@
     <!-- 9. CTA 橫幅 -->
     <section class="cta-band">
         <div class="container">
-            <h3>✨ 準備好加入我們了嗎？</h3>
-            <p>免費成為會員，立即獲得活動優先報名、知識庫資源與最新消息。</p>
-            <a href="members.html" class="btn-hero-secondary">立即免費加入 💡</a>
+            <h3 data-i18n="index.cta.title">✨ 準備好加入我們了嗎？</h3>
+            <p data-i18n="index.cta.desc">免費成為會員，立即獲得活動優先報名、知識庫資源與最新消息。</p>
+            <a href="members.html" class="btn-hero-secondary" data-i18n="index.cta.btn">立即免費加入 💡</a>
         </div>
     </section>
 
@@ -272,28 +276,28 @@
         <div class="container">
             <div class="footer-top">
                 <div class="footer-newsletter">
-                    <h4>✉️ 訂閱最新消息</h4>
-                    <p>填寫電郵，即可免費訂閱我們的特教文章、活動通知與會員資訊。</p>
+                    <h4 data-i18n="footer.newsletter.title">✉️ 訂閱最新消息</h4>
+                    <p data-i18n="footer.newsletter.desc">填寫電郵，即可免費訂閱我們的特教文章、活動通知與會員資訊。</p>
                     <div class="newsletter-form">
-                        <input type="email" id="newsletter-email" placeholder="輸入您的電子郵件...">
-                        <button type="button" id="newsletter-btn">立即訂閱 📥</button>
+                        <input type="email" id="newsletter-email" data-i18n-placeholder="footer.newsletter.placeholder" placeholder="輸入您的電子郵件...">
+                        <button type="button" id="newsletter-btn" data-i18n="footer.newsletter.btn">立即訂閱 📥</button>
                     </div>
-                    <div class="form-success" id="newsletter-success">✅ 訂閱成功！我們會定期寄送最新消息給您。</div>
+                    <div class="form-success" id="newsletter-success" data-i18n="footer.newsletter.success">✅ 訂閱成功！我們會定期寄送最新消息給您。</div>
                 </div>
                 <div class="footer-info">
-                    <h5>聯絡我們</h5>
+                    <h5 data-i18n="footer.contact">聯絡我們</h5>
                     <p>📧 Email: info@iseda.org</p>
-                    <p>📞 電話: +852 xxxx xxxx</p>
-                    <p>📍 地址: 香港九龍某共融社區中心</p>
+                    <p data-i18n="footer.contact.phone">📞 電話: +852 xxxx xxxx</p>
+                    <p data-i18n="footer.contact.address">📍 地址: 香港九龍某共融社區中心</p>
                 </div>
                 <div class="footer-links">
-                    <h5>快速連結</h5>
+                    <h5 data-i18n="footer.links">快速連結</h5>
                     <ul>
-                        <li><a href="about.html">• 關於我們</a></li>
-                        <li><a href="events.html">• 最新活動</a></li>
-                        <li><a href="knowledge.html">• 專業知識庫</a></li>
-                        <li><a href="members.html">• 會員專區</a></li>
-                        <li><a href="partners.html">• 合作洽談</a></li>
+                        <li><a href="about.html">• <span data-i18n="nav.about">關於我們</span></a></li>
+                        <li><a href="events.html">• <span data-i18n="nav.events">最新活動</span></a></li>
+                        <li><a href="knowledge.html">• <span data-i18n="nav.knowledge">專業知識庫</span></a></li>
+                        <li><a href="members.html">• <span data-i18n="nav.members">會員專區</span></a></li>
+                        <li><a href="partners.html">• <span data-i18n="nav.partners">合作洽談</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -305,6 +309,7 @@
 
     <button class="back-to-top" id="backToTop" aria-label="回到頂端">↑</button>
 
+    <script src="lang.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

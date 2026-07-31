@@ -3,274 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>會員專區 - ISEdA 國際特殊教育協會</title>
+    <title data-i18n-title="title.members">會員專區 - ISEdA 國際特殊教育協會</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- 1. 頂部導航欄 -->
     <header>
         <div class="container header-container">
             <a class="logo-placeholder" href="index.html">
                 <div class="logo-box">ISEdA</div>
                 <div class="logo-text">
-                    <h1>國際特殊教育協會</h1>
-                    <p>International Special Education Association</p>
+                    <h1 data-i18n="brand.zh">國際特殊教育協會</h1>
+                    <p data-i18n="brand.sub">International Special Education Association</p>
                 </div>
             </a>
             <nav id="site-nav">
                 <ul>
-                    <li><a href="index.html">首頁</a></li>
-                    <li><a href="about.html">關於我們</a></li>
-                    <li><a href="events.html">活動專區</a></li>
-                    <li><a href="knowledge.html">專業知識庫</a></li>
-                    <li><a href="members.html" class="active">會員專區</a></li>
-                    <li><a href="partners.html">合作洽談</a></li>
-                    <li class="lang-switch">繁 / 简 / EN</li>
-                    <li><a href="members.html" class="btn-join">登入/加入會員 🔘</a></li>
-                </ul>
+                    <li><a href="index.html" data-i18n="nav.home">首頁</a></li>
+                    <li><a href="about.html" data-i18n="nav.about">關於我們</a></li>
+                    <li><a href="events.html" data-i18n="nav.events">活動專區</a></li>
+                    <li><a href="knowledge.html" data-i18n="nav.knowledge">專業知識庫</a></li>
+                    <li><a href="members.html" class="active" data-i18n="nav.members">會員專區</a></li>
+                    <li><a href="partners.html" data-i18n="nav.partners">合作洽談</a></li>
+                    <li class="lang-switch">
+                        <button class="lang-btn active" data-lang="zh-Hant">繁</button><span class="lang-sep">/</span>
+                        <button class="lang-btn" data-lang="zh-Hans">简</button><span class="lang-sep">/</span>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </li>
+                    <li><a href="members.html" class="btn-join" data-i18n="nav.login">登入/加入會員 🔘</a></li>
+</ul>
             </nav>
             <button class="hamburger" id="hamburger" aria-label="開啟選單">
                 <span></span><span></span><span></span>
             </button>
         </div>
     </header>
-
-    <!-- 2. 頁面橫幅 -->
     <section class="page-hero">
         <div class="container">
-            <h2>🔘 會員專區</h2>
-            <p>選擇最適合您的會員方案，加入這個互相支持的大家庭。</p>
-            <div class="breadcrumb"><a href="index.html">首頁</a> / 會員專區</div>
+            <h2 data-i18n="members.hero.title">🔘 會員專區</h2>
+            <p data-i18n="members.hero.sub">選擇最適合您的會員方案，加入這個互相支持的大家庭。</p>
+            <div class="breadcrumb"><a href="index.html" data-i18n="crumb.home">首頁</a> / <span data-i18n="crumb.members">crumb.members</span></div>
         </div>
     </section>
 
-    <!-- 3. 會員方案 -->
     <section class="section">
         <div class="container">
-            <h2 class="section-title">💎 會員方案</h2>
-            <p class="section-sub">無論您是個人還是機構，總有一個方案適合您。</p>
+            <h2 class="section-title" data-i18n="members.plans.title">💎 會員方案</h2>
+            <p class="section-sub" data-i18n="members.plans.sub">無論您是個人還是機構，總有一個方案適合您。</p>
             <div class="price-grid">
-                <!-- 免費會員 -->
                 <div class="price-card reveal">
-                    <div class="price-head">
-                        <h3>🙋 免費會員</h3>
-                        <div class="price">HK$0 <small>/ 永久</small></div>
-                    </div>
-                    <div class="price-body">
-                        <ul>
-                            <li>訂閱電子報與最新活動通知</li>
-                            <li>瀏覽知識庫公開文章</li>
-                            <li>報名公開活動與講座</li>
-                            <li>加入網上共融社群</li>
-                        </ul>
-                    </div>
-                    <div class="price-foot">
-                        <a href="#register" class="btn-price">立即免費註冊</a>
-                    </div>
+                    <div class="price-head"><h3 data-i18n="members.plan.free.name">🙋 免費會員</h3><div class="price">HK$0 <small data-i18n="members.plan.free.per">/ 永久</small></div></div>
+                    <div class="price-body"><ul>
+                        <li data-i18n="members.plan.free.i1">訂閱電子報與最新活動通知</li>
+                        <li data-i18n="members.plan.free.i2">瀏覽知識庫公開文章</li>
+                        <li data-i18n="members.plan.free.i3">報名公開活動與講座</li>
+                        <li data-i18n="members.plan.free.i4">加入網上共融社群</li>
+                    </ul></div>
+                    <div class="price-foot"><a href="#register" class="btn-price" data-i18n="members.plan.free.btn">立即免費註冊</a></div>
                 </div>
-                <!-- 專業會員 -->
                 <div class="price-card highlight reveal">
-                    <div class="price-badge">最受歡迎 🔥</div>
-                    <div class="price-head">
-                        <h3>🧑‍🏫 專業會員</h3>
-                        <div class="price">HK$300 <small>/ 年</small></div>
-                    </div>
-                    <div class="price-body">
-                        <ul>
-                            <li>包含免費會員全部權益</li>
-                            <li>活動優先 3 天報名</li>
-                            <li>知識庫會員限定深度文章</li>
-                            <li>專業培訓課程 8 折優惠</li>
-                            <li>國際證書課程資訊與諮詢</li>
-                            <li>參與專業交流小組</li>
-                        </ul>
-                    </div>
-                    <div class="price-foot">
-                        <a href="#register" class="btn-price">加入專業會員</a>
-                    </div>
+                    <div class="price-badge" data-i18n="members.plan.pro.badge">最受歡迎 🔥</div>
+                    <div class="price-head"><h3 data-i18n="members.plan.pro.name">🧑‍🏫 專業會員</h3><div class="price">HK$300 <small data-i18n="members.plan.pro.per">/ 年</small></div></div>
+                    <div class="price-body"><ul>
+                        <li data-i18n="members.plan.pro.i1">包含免費會員全部權益</li>
+                        <li data-i18n="members.plan.pro.i2">活動優先 3 天報名</li>
+                        <li data-i18n="members.plan.pro.i3">知識庫會員限定深度文章</li>
+                        <li data-i18n="members.plan.pro.i4">專業培訓課程 8 折優惠</li>
+                        <li data-i18n="members.plan.pro.i5">國際證書課程資訊與諮詢</li>
+                        <li data-i18n="members.plan.pro.i6">參與專業交流小組</li>
+                    </ul></div>
+                    <div class="price-foot"><a href="#register" class="btn-price" data-i18n="members.plan.pro.btn">加入專業會員</a></div>
                 </div>
-                <!-- 機構會員 -->
                 <div class="price-card reveal">
-                    <div class="price-head">
-                        <h3>🏢 機構會員</h3>
-                        <div class="price">HK$2,000 <small>/ 年</small></div>
-                    </div>
-                    <div class="price-body">
-                        <ul>
-                            <li>包含專業會員全部權益</li>
-                            <li>最多 10 位員工帳號</li>
-                            <li>機構專屬培訓方案設計</li>
-                            <li>合辦活動與講座機會</li>
-                            <li>ESG 共融職場認證評估</li>
-                            <li>媒體曝光與表揚機會</li>
-                        </ul>
-                    </div>
-                    <div class="price-foot">
-                        <a href="partners.html" class="btn-price">洽詢機構方案</a>
-                    </div>
+                    <div class="price-head"><h3 data-i18n="members.plan.org.name">🏢 機構會員</h3><div class="price">HK$2,000 <small data-i18n="members.plan.org.per">/ 年</small></div></div>
+                    <div class="price-body"><ul>
+                        <li data-i18n="members.plan.org.i1">包含專業會員全部權益</li>
+                        <li data-i18n="members.plan.org.i2">最多 10 位員工帳號</li>
+                        <li data-i18n="members.plan.org.i3">機構專屬培訓方案設計</li>
+                        <li data-i18n="members.plan.org.i4">合辦活動與講座機會</li>
+                        <li data-i18n="members.plan.org.i5">ESG 共融職場認證評估</li>
+                        <li data-i18n="members.plan.org.i6">媒體曝光與表揚機會</li>
+                    </ul></div>
+                    <div class="price-foot"><a href="partners.html" class="btn-price" data-i18n="members.plan.org.btn">洽詢機構方案</a></div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- 4. 會員權益詳解 -->
     <section class="section section-alt">
         <div class="container">
-            <h2 class="section-title">🎁 成為會員，您可以獲得</h2>
+            <h2 class="section-title" data-i18n="members.benefits.title">🎁 成為會員，您可以獲得</h2>
             <div class="benefit-grid">
-                <div class="benefit-item reveal">
-                    <div class="b-icon">🗓️</div>
-                    <div>
-                        <h4>活動優先報名</h4>
-                        <p>熱門工作坊與講座，會員可提早報名，不怕搶不到名額。</p>
-                    </div>
-                </div>
-                <div class="benefit-item reveal">
-                    <div class="b-icon">📚</div>
-                    <div>
-                        <h4>深度知識庫</h4>
-                        <p>解鎖會員限定文章：個案研究、評估工具與實戰手冊。</p>
-                    </div>
-                </div>
-                <div class="benefit-item reveal">
-                    <div class="b-icon">🎓</div>
-                    <div>
-                        <h4>培訓折扣</h4>
-                        <p>專業培訓與國際證書課程，會員享 8 折優惠。</p>
-                    </div>
-                </div>
-                <div class="benefit-item reveal">
-                    <div class="b-icon">👥</div>
-                    <div>
-                        <h4>專業社群</h4>
-                        <p>加入同行交流群組，跨領域請益、資源共享、互相打氣。</p>
-                    </div>
-                </div>
-                <div class="benefit-item reveal">
-                    <div class="b-icon">💼</div>
-                    <div>
-                        <h4>就業配對</h4>
-                        <p>SEN 青年會員可參與職訓、實習與就業配對計劃。</p>
-                    </div>
-                </div>
-                <div class="benefit-item reveal">
-                    <div class="b-icon">🛟</div>
-                    <div>
-                        <h4>專業諮詢</h4>
-                        <p>家長會員每年可享 2 次免費專業諮詢（心理／教育）。</p>
-                    </div>
-                </div>
+                <div class="benefit-item reveal"><div class="b-icon">🗓️</div><div><h4 data-i18n="members.benefits.1.title">活動優先報名</h4><p data-i18n="members.benefits.1.desc">熱門工作坊與講座，會員可提早報名，不怕搶不到名額。</p></div></div>
+                <div class="benefit-item reveal"><div class="b-icon">📚</div><div><h4 data-i18n="members.benefits.2.title">深度知識庫</h4><p data-i18n="members.benefits.2.desc">解鎖會員限定文章：個案研究、評估工具與實戰手冊。</p></div></div>
+                <div class="benefit-item reveal"><div class="b-icon">🎓</div><div><h4 data-i18n="members.benefits.3.title">培訓折扣</h4><p data-i18n="members.benefits.3.desc">專業培訓與國際證書課程，會員享 8 折優惠。</p></div></div>
+                <div class="benefit-item reveal"><div class="b-icon">👥</div><div><h4 data-i18n="members.benefits.4.title">專業社群</h4><p data-i18n="members.benefits.4.desc">加入同行交流群組，跨領域請益、資源共享、互相打氣。</p></div></div>
+                <div class="benefit-item reveal"><div class="b-icon">💼</div><div><h4 data-i18n="members.benefits.5.title">就業配對</h4><p data-i18n="members.benefits.5.desc">SEN 青年會員可參與職訓、實習與就業配對計劃。</p></div></div>
+                <div class="benefit-item reveal"><div class="b-icon">🛟</div><div><h4 data-i18n="members.benefits.6.title">專業諮詢</h4><p data-i18n="members.benefits.6.desc">家長會員每年可享 2 次免費專業諮詢（心理／教育）。</p></div></div>
             </div>
         </div>
     </section>
-
-    <!-- 5. 註冊表單 -->
     <section class="section" id="register">
         <div class="container">
-            <h2 class="section-title">📝 立即加入我們</h2>
-            <p class="section-sub">填寫以下資料，我們會在 3 個工作天內以電郵聯絡您完成註冊。</p>
+            <h2 class="section-title" data-i18n="members.form.title">📝 立即加入我們</h2>
+            <p class="section-sub" data-i18n="members.form.sub">填寫以下資料，我們會在 3 個工作天內以電郵聯絡您完成註冊。</p>
             <div class="form-card reveal">
                 <form id="member-form">
                     <div class="form-grid-2">
-                        <div class="form-row">
-                            <label for="m-name">姓名 *</label>
-                            <input type="text" id="m-name" placeholder="您的姓名" required>
-                        </div>
-                        <div class="form-row">
-                            <label for="m-email">電郵 *</label>
-                            <input type="email" id="m-email" placeholder="您的電子郵件" required>
-                        </div>
+                        <div class="form-row"><label data-i18n="members.form.name.label">姓名 *</label><input type="text" data-i18n-placeholder="members.form.name.ph" placeholder="您的姓名" required></div>
+                        <div class="form-row"><label data-i18n="members.form.email.label">電郵 *</label><input type="email" data-i18n-placeholder="members.form.email.ph" placeholder="您的電子郵件" required></div>
                     </div>
                     <div class="form-grid-2">
-                        <div class="form-row">
-                            <label for="m-type">會員類別 *</label>
-                            <select id="m-type" required>
-                                <option value="">請選擇...</option>
-                                <option value="free">免費會員</option>
-                                <option value="pro">專業會員 (HK$300/年)</option>
-                                <option value="org">機構會員 (HK$2,000/年)</option>
-                            </select>
-                        </div>
-                        <div class="form-row">
-                            <label for="m-role">您的身份</label>
-                            <select id="m-role">
-                                <option value="">請選擇...</option>
-                                <option value="youth">SEN 青年</option>
-                                <option value="parent">家長／照顧者</option>
-                                <option value="teacher">特教從業者</option>
-                                <option value="partner">機構代表</option>
-                            </select>
-                        </div>
+                        <div class="form-row"><label data-i18n="members.form.type.label">會員類別 *</label><select required><option value="" data-i18n="select.default">請選擇...</option><option value="free" data-i18n="select.free">免費會員</option><option value="pro" data-i18n="select.pro">專業會員 (HK$300/年)</option><option value="org" data-i18n="select.org">機構會員 (HK$2,000/年)</option></select></div>
+                        <div class="form-row"><label data-i18n="members.form.role.label">您的身份</label><select><option value="" data-i18n="select.default">請選擇...</option><option value="youth" data-i18n="select.youth">SEN 青年</option><option value="parent" data-i18n="select.parent">家長／照顧者</option><option value="teacher" data-i18n="select.teacher">特教從業者</option><option value="partner" data-i18n="select.partner">機構代表</option></select></div>
                     </div>
-                    <div class="form-row">
-                        <label for="m-message">想對我們說的話（選填）</label>
-                        <textarea id="m-message" placeholder="例如：想了解什麼服務、有什麼期待..."></textarea>
-                    </div>
-                    <button type="submit" class="btn-submit">送出申請 🚀</button>
-                    <div class="form-note">送出即表示同意我們的會員條款與私隱政策。</div>
-                    <div class="form-success" id="member-success">✅ 申請已送出！我們會盡快以電郵聯絡您。</div>
+                    <div class="form-row"><label data-i18n="members.form.msg.label">想對我們說的話（選填）</label><textarea data-i18n-placeholder="members.form.msg.ph" placeholder="例如：想了解什麼服務、有什麼期待..."></textarea></div>
+                    <button type="submit" class="btn-submit" data-i18n="members.form.submit">送出申請 🚀</button>
+                    <div class="form-note" data-i18n="members.form.note">送出即表示同意我們的會員條款與私隱政策。</div>
+                    <div class="form-success" id="member-success" data-i18n="members.form.success">✅ 申請已送出！我們會盡快以電郵聯絡您。</div>
                 </form>
             </div>
         </div>
     </section>
-
-    <!-- 6. 常見問題 -->
     <section class="section section-alt">
         <div class="container">
-            <h2 class="section-title">❓ 常見問題</h2>
+            <h2 class="section-title" data-i18n="members.faq.title">❓ 常見問題</h2>
             <div class="faq-list">
-                <details class="faq-item reveal">
-                    <summary>會員資格有年齡限制嗎？</summary>
-                    <div class="faq-answer">沒有。我們歡迎任何支持共融理念的人加入。SEN 青年會員建議由 16 歲或以上本人申請；未滿 16 歲可由家長或監護人代為申請。</div>
-                </details>
-                <details class="faq-item reveal">
-                    <summary>專業會員的年費如何繳交？</summary>
-                    <div class="faq-answer">我們接受轉數快 (FPS)、銀行轉帳、信用卡及 PayPal 付款。完成註冊申請後，我們會寄送付款連結給您。</div>
-                </details>
-                <details class="faq-item reveal">
-                    <summary>免費會員和專業會員有什麼分別？</summary>
-                    <div class="faq-answer">免費會員可訂閱資訊、報名公開活動及瀏覽公開文章；專業會員額外享有活動優先報名、會員限定深度文章、培訓 8 折及專業交流小組等權益。</div>
-                </details>
-                <details class="faq-item reveal">
-                    <summary>我可以升級或降級會員方案嗎？</summary>
-                    <div class="faq-answer">可以。您隨時可以透過會員後台升級方案（按比例補差價），或於續期時降級。如有需要，歡迎電郵聯絡我們。</div>
-                </details>
-                <details class="faq-item reveal">
-                    <summary>機構會員可以有多少個帳號？</summary>
-                    <div class="faq-answer">機構會員最多可有 10 個員工帳號；如需更多帳號，可另購附加帳號（每個 HK$150/年）。</div>
-                </details>
+                <details class="faq-item reveal"><summary data-i18n="members.faq.1.q">會員資格有年齡限制嗎？</summary><div class="faq-answer" data-i18n="members.faq.1.a">沒有。我們歡迎任何支持共融理念的人加入。SEN 青年會員建議由 16 歲或以上本人申請；未滿 16 歲可由家長或監護人代為申請。</div></details>
+                <details class="faq-item reveal"><summary data-i18n="members.faq.2.q">專業會員的年費如何繳交？</summary><div class="faq-answer" data-i18n="members.faq.2.a">我們接受轉數快 (FPS)、銀行轉帳、信用卡及 PayPal 付款。完成註冊申請後，我們會寄送付款連結給您。</div></details>
+                <details class="faq-item reveal"><summary data-i18n="members.faq.3.q">免費會員和專業會員有什麼分別？</summary><div class="faq-answer" data-i18n="members.faq.3.a">免費會員可訂閱資訊、報名公開活動及瀏覽公開文章；專業會員額外享有活動優先報名、會員限定深度文章、培訓 8 折及專業交流小組等權益。</div></details>
+                <details class="faq-item reveal"><summary data-i18n="members.faq.4.q">我可以升級或降級會員方案嗎？</summary><div class="faq-answer" data-i18n="members.faq.4.a">可以。您隨時可以透過會員後台升級方案（按比例補差價），或於續期時降級。如有需要，歡迎電郵聯絡我們。</div></details>
+                <details class="faq-item reveal"><summary data-i18n="members.faq.5.q">機構會員可以有多少個帳號？</summary><div class="faq-answer" data-i18n="members.faq.5.a">機構會員最多可有 10 個員工帳號；如需更多帳號，可另購附加帳號（每個 HK$150/年）。</div></details>
             </div>
         </div>
     </section>
-
-    <!-- 7. 頁尾 -->
     <footer>
         <div class="container">
             <div class="footer-top">
                 <div class="footer-newsletter">
-                    <h4>✉️ 訂閱最新消息</h4>
-                    <p>填寫電郵，即可免費訂閱我們的特教文章、活動通知與會員資訊。</p>
+                    <h4 data-i18n="footer.newsletter.title">✉️ 訂閱最新消息</h4>
+                    <p data-i18n="footer.newsletter.desc">填寫電郵，即可免費訂閱我們的特教文章、活動通知與會員資訊。</p>
                     <div class="newsletter-form">
-                        <input type="email" id="newsletter-email" placeholder="輸入您的電子郵件...">
-                        <button type="button" id="newsletter-btn">立即訂閱 📥</button>
+                        <input type="email" id="newsletter-email" data-i18n-placeholder="footer.newsletter.placeholder" placeholder="輸入您的電子郵件...">
+                        <button type="button" id="newsletter-btn" data-i18n="footer.newsletter.btn">立即訂閱 📥</button>
                     </div>
-                    <div class="form-success" id="newsletter-success">✅ 訂閱成功！我們會定期寄送最新消息給您。</div>
+                    <div class="form-success" id="newsletter-success" data-i18n="footer.newsletter.success">✅ 訂閱成功！我們會定期寄送最新消息給您。</div>
                 </div>
                 <div class="footer-info">
-                    <h5>聯絡我們</h5>
+                    <h5 data-i18n="footer.contact">聯絡我們</h5>
                     <p>📧 Email: info@iseda.org</p>
-                    <p>📞 電話: +852 xxxx xxxx</p>
-                    <p>📍 地址: 香港九龍某共融社區中心</p>
+                    <p data-i18n="footer.contact.phone">📞 電話: +852 xxxx xxxx</p>
+                    <p data-i18n="footer.contact.address">📍 地址: 香港九龍某共融社區中心</p>
                 </div>
                 <div class="footer-links">
-                    <h5>快速連結</h5>
+                    <h5 data-i18n="footer.links">快速連結</h5>
                     <ul>
-                        <li><a href="about.html">• 關於我們</a></li>
-                        <li><a href="events.html">• 最新活動</a></li>
-                        <li><a href="knowledge.html">• 專業知識庫</a></li>
-                        <li><a href="members.html">• 會員專區</a></li>
-                        <li><a href="partners.html">• 合作洽談</a></li>
+                        <li><a href="about.html">• <span data-i18n="nav.about">關於我們</span></a></li>
+                        <li><a href="events.html">• <span data-i18n="nav.events">最新活動</span></a></li>
+                        <li><a href="knowledge.html">• <span data-i18n="nav.knowledge">專業知識庫</span></a></li>
+                        <li><a href="members.html">• <span data-i18n="nav.members">會員專區</span></a></li>
+                        <li><a href="partners.html">• <span data-i18n="nav.partners">合作洽談</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -282,6 +172,7 @@
 
     <button class="back-to-top" id="backToTop" aria-label="回到頂端">↑</button>
 
+    <script src="lang.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

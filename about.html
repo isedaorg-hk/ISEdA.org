@@ -3,217 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>關於我們 - ISEdA 國際特殊教育協會</title>
+    <title data-i18n-title="title.about">關於我們 - ISEdA 國際特殊教育協會</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- 1. 頂部導航欄 -->
     <header>
         <div class="container header-container">
             <a class="logo-placeholder" href="index.html">
                 <div class="logo-box">ISEdA</div>
                 <div class="logo-text">
-                    <h1>國際特殊教育協會</h1>
-                    <p>International Special Education Association</p>
+                    <h1 data-i18n="brand.zh">國際特殊教育協會</h1>
+                    <p data-i18n="brand.sub">International Special Education Association</p>
                 </div>
             </a>
             <nav id="site-nav">
                 <ul>
-                    <li><a href="index.html">首頁</a></li>
-                    <li><a href="about.html" class="active">關於我們</a></li>
-                    <li><a href="events.html">活動專區</a></li>
-                    <li><a href="knowledge.html">專業知識庫</a></li>
-                    <li><a href="members.html">會員專區</a></li>
-                    <li><a href="partners.html">合作洽談</a></li>
-                    <li class="lang-switch">繁 / 简 / EN</li>
-                    <li><a href="members.html" class="btn-join">登入/加入會員 🔘</a></li>
-                </ul>
+                    <li><a href="index.html" data-i18n="nav.home">首頁</a></li>
+                    <li><a href="about.html" class="active" data-i18n="nav.about">關於我們</a></li>
+                    <li><a href="events.html" data-i18n="nav.events">活動專區</a></li>
+                    <li><a href="knowledge.html" data-i18n="nav.knowledge">專業知識庫</a></li>
+                    <li><a href="members.html" data-i18n="nav.members">會員專區</a></li>
+                    <li><a href="partners.html" data-i18n="nav.partners">合作洽談</a></li>
+                    <li class="lang-switch">
+                        <button class="lang-btn active" data-lang="zh-Hant">繁</button><span class="lang-sep">/</span>
+                        <button class="lang-btn" data-lang="zh-Hans">简</button><span class="lang-sep">/</span>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </li>
+                    <li><a href="members.html" class="btn-join" data-i18n="nav.login">登入/加入會員 🔘</a></li>
+</ul>
             </nav>
             <button class="hamburger" id="hamburger" aria-label="開啟選單">
                 <span></span><span></span><span></span>
             </button>
         </div>
     </header>
-
-    <!-- 2. 頁面橫幅 -->
     <section class="page-hero">
         <div class="container">
-            <h2>🏫 關於我們</h2>
-            <p>了解 ISEdA 的使命、願景與發展歷程。</p>
-            <div class="breadcrumb"><a href="index.html">首頁</a> / 關於我們</div>
+            <h2 data-i18n="about.hero.title">🏫 關於我們</h2>
+            <p data-i18n="about.hero.sub">了解 ISEdA 的使命、願景與發展歷程。</p>
+            <div class="breadcrumb"><a href="index.html" data-i18n="crumb.home">首頁</a> / <span data-i18n="crumb.about">crumb.about</span></div>
         </div>
     </section>
 
-    <!-- 3. 協會簡介 -->
     <section class="section">
         <div class="container">
             <div class="split">
                 <div class="split-img reveal" style="background-image: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80')"></div>
                 <div class="split-text reveal">
-                    <h3>我們是誰？</h3>
-                    <p>國際特殊教育協會 (International Special Education Association, ISEdA) 成立於 2018 年，是一個以香港為基地、面向全球的非牟利組織。</p>
-                    <p>我們相信：<strong>每一個人都值得被看見、被理解、被支持。</strong>無論是 SEN 青年、家長，還是站在第一線的特教從業者，我們都在這裡為您撐起一把傘。</p>
+                    <h3 data-i18n="about.who.title">我們是誰？</h3>
+                    <p data-i18n="about.who.p1">國際特殊教育協會 (International Special Education Association, ISEdA) 成立於 2018 年，是一個以香港為基地、面向全球的非牟利組織。</p>
+                    <p data-i18n="about.who.p2" data-i18n-html>我們相信：<strong>每一個人都值得被看見、被理解、被支持。</strong>無論是 SEN 青年、家長，還是站在第一線的特教從業者，我們都在這裡為您撐起一把傘。</p>
                     <ul class="check-list">
-                        <li>以「人」為本，尊重每個人的差異與節奏</li>
-                        <li>連結國際資源，接軌全球特教趨勢</li>
-                        <li>重視實證研究，所有服務皆有專業根據</li>
+                        <li data-i18n="about.who.check1">以「人」為本，尊重每個人的差異與節奏</li>
+                        <li data-i18n="about.who.check2">連結國際資源，接軌全球特教趨勢</li>
+                        <li data-i18n="about.who.check3">重視實證研究，所有服務皆有專業根據</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- 4. 使命與願景 -->
     <section class="section section-alt">
         <div class="container">
-            <h2 class="section-title">🎯 使命・願景・核心價值</h2>
+            <h2 class="section-title" data-i18n="about.mv.title">🎯 使命・願景・核心價值</h2>
             <div class="mv-grid">
-                <div class="mv-card reveal">
-                    <div class="mv-icon">🚀</div>
-                    <h3>我們的使命</h3>
-                    <p>透過教育、培訓與就業支援，賦能 SEN 青年與家庭，讓他們能獨立自主地活出精彩人生。</p>
-                </div>
-                <div class="mv-card orange reveal">
-                    <div class="mv-icon">🌏</div>
-                    <h3>我們的願景</h3>
-                    <p>建立一個真正共融的社會——在這裡，差異不是障礙，而是每個人獨特的力量。</p>
-                </div>
-                <div class="mv-card green reveal">
-                    <div class="mv-icon">🤝</div>
-                    <h3>核心價值一：尊重</h3>
-                    <p>尊重每個人的學習節奏、溝通方式與生命經驗，不貼標籤、不設上限。</p>
-                </div>
-                <div class="mv-card pink reveal">
-                    <div class="mv-icon">🔬</div>
-                    <h3>核心價值二：專業</h3>
-                    <p>所有服務與建議皆以實證研究為基礎，並持續與國際專家交流進修。</p>
-                </div>
-                <div class="mv-card yellow reveal">
-                    <div class="mv-icon">❤️</div>
-                    <h3>核心價值三：陪伴</h3>
-                    <p>不只是一次性的協助，而是長期、穩定、有溫度的同行。</p>
-                </div>
-                <div class="mv-card reveal">
-                    <div class="mv-icon">🌱</div>
-                    <h3>核心價值四：共融</h3>
-                    <p>從校園到職場，我們推動社會各界的理解與接納，讓共融真正發生。</p>
-                </div>
+                <div class="mv-card reveal"><div class="mv-icon">🚀</div><h3 data-i18n="about.mv.mission.title">我們的使命</h3><p data-i18n="about.mv.mission.desc">透過教育、培訓與就業支援，賦能 SEN 青年與家庭，讓他們能獨立自主地活出精彩人生。</p></div>
+                <div class="mv-card orange reveal"><div class="mv-icon">🌏</div><h3 data-i18n="about.mv.vision.title">我們的願景</h3><p data-i18n="about.mv.vision.desc">建立一個真正共融的社會——在這裡，差異不是障礙，而是每個人獨特的力量。</p></div>
+                <div class="mv-card green reveal"><div class="mv-icon">🤝</div><h3 data-i18n="about.mv.v1.title">核心價值一：尊重</h3><p data-i18n="about.mv.v1.desc">尊重每個人的學習節奏、溝通方式與生命經驗，不貼標籤、不設上限。</p></div>
+                <div class="mv-card pink reveal"><div class="mv-icon">🔬</div><h3 data-i18n="about.mv.v2.title">核心價值二：專業</h3><p data-i18n="about.mv.v2.desc">所有服務與建議皆以實證研究為基礎，並持續與國際專家交流進修。</p></div>
+                <div class="mv-card yellow reveal"><div class="mv-icon">❤️</div><h3 data-i18n="about.mv.v3.title">核心價值三：陪伴</h3><p data-i18n="about.mv.v3.desc">不只是一次性的協助，而是長期、穩定、有溫度的同行。</p></div>
+                <div class="mv-card reveal"><div class="mv-icon">🌱</div><h3 data-i18n="about.mv.v4.title">核心價值四：共融</h3><p data-i18n="about.mv.v4.desc">從校園到職場，我們推動社會各界的理解與接納，讓共融真正發生。</p></div>
             </div>
         </div>
     </section>
-
-    <!-- 5. 發展歷程 -->
     <section class="section">
         <div class="container">
-            <h2 class="section-title">📈 我們的發展歷程</h2>
-            <p class="section-sub">一步一腳印，走過的每一步都為了讓共融更近一點。</p>
+            <h2 class="section-title" data-i18n="about.timeline.title">📈 我們的發展歷程</h2>
+            <p class="section-sub" data-i18n="about.timeline.sub">一步一腳印，走過的每一步都為了讓共融更近一點。</p>
             <div class="timeline">
-                <div class="timeline-item reveal">
-                    <div class="t-year">2018</div>
-                    <h4>協會成立</h4>
-                    <p>由一群特教教師、治療師與家長共同創立，舉辦首屆「共融教育講座」。</p>
-                </div>
-                <div class="timeline-item reveal">
-                    <div class="t-year">2019</div>
-                    <h4>青年就業計劃啟動</h4>
-                    <p>推出 SEN 青年職訓與就業配對計劃，首批與 5 間企業建立合作。</p>
-                </div>
-                <div class="timeline-item reveal">
-                    <div class="t-year">2021</div>
-                    <h4>線上知識庫上線</h4>
-                    <p>因應疫情，將培訓課程轉為線上，並開放免費知識庫供公眾查閱。</p>
-                </div>
-                <div class="timeline-item reveal">
-                    <div class="t-year">2023</div>
-                    <h4>國際認證課程合作</h4>
-                    <p>與國際特教機構簽署合作，引進專業證書課程，會員數突破 300 人。</p>
-                </div>
-                <div class="timeline-item reveal">
-                    <div class="t-year">2025</div>
-                    <h4>ESG 企業夥伴網絡</h4>
-                    <p>正式推出 ESG 合作方案，超過 50 間企業與機構加入共融行列。</p>
-                </div>
-                <div class="timeline-item reveal">
-                    <div class="t-year">2026</div>
-                    <h4>展望未來</h4>
-                    <p>目標：服務超過 1,000 名 SEN 青年，將共融模式推廣至亞太地區。</p>
-                </div>
+                <div class="timeline-item reveal"><div class="t-year">2018</div><h4 data-i18n="about.timeline.1.title">協會成立</h4><p data-i18n="about.timeline.1.desc">由一群特教教師、治療師與家長共同創立，舉辦首屆「共融教育講座」。</p></div>
+                <div class="timeline-item reveal"><div class="t-year">2019</div><h4 data-i18n="about.timeline.2.title">青年就業計劃啟動</h4><p data-i18n="about.timeline.2.desc">推出 SEN 青年職訓與就業配對計劃，首批與 5 間企業建立合作。</p></div>
+                <div class="timeline-item reveal"><div class="t-year">2021</div><h4 data-i18n="about.timeline.3.title">線上知識庫上線</h4><p data-i18n="about.timeline.3.desc">因應疫情，將培訓課程轉為線上，並開放免費知識庫供公眾查閱。</p></div>
+                <div class="timeline-item reveal"><div class="t-year">2023</div><h4 data-i18n="about.timeline.4.title">國際認證課程合作</h4><p data-i18n="about.timeline.4.desc">與國際特教機構簽署合作，引進專業證書課程，會員數突破 300 人。</p></div>
+                <div class="timeline-item reveal"><div class="t-year">2025</div><h4 data-i18n="about.timeline.5.title">ESG 企業夥伴網絡</h4><p data-i18n="about.timeline.5.desc">正式推出 ESG 合作方案，超過 50 間企業與機構加入共融行列。</p></div>
+                <div class="timeline-item reveal"><div class="t-year">2026</div><h4 data-i18n="about.timeline.6.title">展望未來</h4><p data-i18n="about.timeline.6.desc">目標：服務超過 1,000 名 SEN 青年，將共融模式推廣至亞太地區。</p></div>
             </div>
         </div>
     </section>
-
-    <!-- 6. 核心團隊 -->
     <section class="section section-alt">
         <div class="container">
-            <h2 class="section-title">👥 核心團隊</h2>
-            <p class="section-sub">來自教育、心理、社福與商界的專業夥伴，攜手同行。</p>
+            <h2 class="section-title" data-i18n="about.team.title">👥 核心團隊</h2>
+            <p class="section-sub" data-i18n="about.team.sub">來自教育、心理、社福與商界的專業夥伴，攜手同行。</p>
             <div class="team-grid">
-                <div class="team-card reveal">
-                    <div class="team-avatar">🎓</div>
-                    <h4>王博士</h4>
-                    <div class="t-role">創會會長・特教教授</div>
-                    <div class="t-desc">30 年特殊教育研究與教學經驗</div>
-                </div>
-                <div class="team-card reveal">
-                    <div class="team-avatar">🧠</div>
-                    <h4>李姑娘</h4>
-                    <div class="t-role">副會長・臨床心理學家</div>
-                    <div class="t-desc">專注 SEN 兒童及青少年心理支援</div>
-                </div>
-                <div class="team-card reveal">
-                    <div class="team-avatar">💼</div>
-                    <h4>陳先生</h4>
-                    <div class="t-role">總幹事・職涯輔導專家</div>
-                    <div class="t-desc">主理青年就業與企業合作計劃</div>
-                </div>
-                <div class="team-card reveal">
-                    <div class="team-avatar">📚</div>
-                    <h4>張老師</h4>
-                    <div class="t-role">培訓總監・資深特教教師</div>
-                    <div class="t-desc">負責從業者培訓與國際證書課程</div>
-                </div>
+                <div class="team-card reveal"><div class="team-avatar">🎓</div><h4 data-i18n="about.team.1.name">王博士</h4><div class="t-role" data-i18n="about.team.1.role">創會會長・特教教授</div><div class="t-desc" data-i18n="about.team.1.desc">30 年特殊教育研究與教學經驗</div></div>
+                <div class="team-card reveal"><div class="team-avatar">🧠</div><h4 data-i18n="about.team.2.name">李姑娘</h4><div class="t-role" data-i18n="about.team.2.role">副會長・臨床心理學家</div><div class="t-desc" data-i18n="about.team.2.desc">專注 SEN 兒童及青少年心理支援</div></div>
+                <div class="team-card reveal"><div class="team-avatar">💼</div><h4 data-i18n="about.team.3.name">陳先生</h4><div class="t-role" data-i18n="about.team.3.role">總幹事・職涯輔導專家</div><div class="t-desc" data-i18n="about.team.3.desc">主理青年就業與企業合作計劃</div></div>
+                <div class="team-card reveal"><div class="team-avatar">📚</div><h4 data-i18n="about.team.4.name">張老師</h4><div class="t-role" data-i18n="about.team.4.role">培訓總監・資深特教教師</div><div class="t-desc" data-i18n="about.team.4.desc">負責從業者培訓與國際證書課程</div></div>
             </div>
         </div>
     </section>
-
-    <!-- 7. CTA -->
     <section class="cta-band">
         <div class="container">
-            <h3>🤗 想認識我們更多？</h3>
-            <p>歡迎參加我們的公開活動，或直接成為會員，加入這個溫暖的大家庭。</p>
-            <a href="members.html" class="btn-hero-secondary">立即加入會員 💡</a>
-            <a href="events.html" class="btn-hero-primary" style="margin-left: 10px;">看看近期活動 🗓️</a>
+            <h3 data-i18n="about.cta.title">🤗 想認識我們更多？</h3>
+            <p data-i18n="about.cta.desc">歡迎參加我們的公開活動，或直接成為會員，加入這個溫暖的大家庭。</p>
+            <a href="members.html" class="btn-hero-secondary" data-i18n="about.cta.btn1">立即加入會員 💡</a>
+            <a href="events.html" class="btn-hero-primary" style="margin-left: 10px;" data-i18n="about.cta.btn2">看看近期活動 🗓️</a>
         </div>
     </section>
-
-    <!-- 8. 頁尾 -->
     <footer>
         <div class="container">
             <div class="footer-top">
                 <div class="footer-newsletter">
-                    <h4>✉️ 訂閱最新消息</h4>
-                    <p>填寫電郵，即可免費訂閱我們的特教文章、活動通知與會員資訊。</p>
+                    <h4 data-i18n="footer.newsletter.title">✉️ 訂閱最新消息</h4>
+                    <p data-i18n="footer.newsletter.desc">填寫電郵，即可免費訂閱我們的特教文章、活動通知與會員資訊。</p>
                     <div class="newsletter-form">
-                        <input type="email" id="newsletter-email" placeholder="輸入您的電子郵件...">
-                        <button type="button" id="newsletter-btn">立即訂閱 📥</button>
+                        <input type="email" id="newsletter-email" data-i18n-placeholder="footer.newsletter.placeholder" placeholder="輸入您的電子郵件...">
+                        <button type="button" id="newsletter-btn" data-i18n="footer.newsletter.btn">立即訂閱 📥</button>
                     </div>
-                    <div class="form-success" id="newsletter-success">✅ 訂閱成功！我們會定期寄送最新消息給您。</div>
+                    <div class="form-success" id="newsletter-success" data-i18n="footer.newsletter.success">✅ 訂閱成功！我們會定期寄送最新消息給您。</div>
                 </div>
                 <div class="footer-info">
-                    <h5>聯絡我們</h5>
+                    <h5 data-i18n="footer.contact">聯絡我們</h5>
                     <p>📧 Email: info@iseda.org</p>
-                    <p>📞 電話: +852 xxxx xxxx</p>
-                    <p>📍 地址: 香港九龍某共融社區中心</p>
+                    <p data-i18n="footer.contact.phone">📞 電話: +852 xxxx xxxx</p>
+                    <p data-i18n="footer.contact.address">📍 地址: 香港九龍某共融社區中心</p>
                 </div>
                 <div class="footer-links">
-                    <h5>快速連結</h5>
+                    <h5 data-i18n="footer.links">快速連結</h5>
                     <ul>
-                        <li><a href="about.html">• 關於我們</a></li>
-                        <li><a href="events.html">• 最新活動</a></li>
-                        <li><a href="knowledge.html">• 專業知識庫</a></li>
-                        <li><a href="members.html">• 會員專區</a></li>
-                        <li><a href="partners.html">• 合作洽談</a></li>
+                        <li><a href="about.html">• <span data-i18n="nav.about">關於我們</span></a></li>
+                        <li><a href="events.html">• <span data-i18n="nav.events">最新活動</span></a></li>
+                        <li><a href="knowledge.html">• <span data-i18n="nav.knowledge">專業知識庫</span></a></li>
+                        <li><a href="members.html">• <span data-i18n="nav.members">會員專區</span></a></li>
+                        <li><a href="partners.html">• <span data-i18n="nav.partners">合作洽談</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -225,6 +146,7 @@
 
     <button class="back-to-top" id="backToTop" aria-label="回到頂端">↑</button>
 
+    <script src="lang.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
