@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>活動專區 - ISEdA 國際特殊教育協會</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. 頂部導航欄 -->
+    <header>
+        <div class="container header-container">
+            <a class="logo-placeholder" href="index.html">
+                <div class="logo-box">ISEdA</div>
+                <div class="logo-text">
+                    <h1>國際特殊教育協會</h1>
+                    <p>International Special Education Association</p>
+                </div>
+            </a>
+            <nav id="site-nav">
+                <ul>
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="about.html">關於我們</a></li>
+                    <li><a href="events.html" class="active">活動專區</a></li>
+                    <li><a href="knowledge.html">專業知識庫</a></li>
+                    <li><a href="members.html">會員專區</a></li>
+                    <li><a href="partners.html">合作洽談</a></li>
+                    <li class="lang-switch">繁 / 简 / EN</li>
+                    <li><a href="members.html" class="btn-join">登入/加入會員 🔘</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="開啟選單">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 2. 頁面橫幅 -->
+    <section class="page-hero">
+        <div class="container">
+            <h2>🗓️ 活動專區</h2>
+            <p>從青年聯誼、家長座談到專業培訓，一起參與、一起成長。</p>
+            <div class="breadcrumb"><a href="index.html">首頁</a> / 活動專區</div>
+        </div>
+    </section>
+
+    <!-- 3. 活動篩選與列表 -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">即將舉辦的活動</h2>
+            <p class="section-sub">點擊分類標籤，快速找到適合您的活動。</p>
+
+            <!-- 篩選標籤 -->
+            <div class="filter-tabs" id="filterTabs">
+                <button class="filter-tab active" data-filter="all">全部</button>
+                <button class="filter-tab" data-filter="youth">🙋‍♂️ 青年活動</button>
+                <button class="filter-tab" data-filter="professional">🧑‍🏫 專業培訓</button>
+                <button class="filter-tab" data-filter="parents">👨‍👩‍👦 家長支援</button>
+                <button class="filter-tab" data-filter="online">💻 線上活動</button>
+            </div>
+
+            <div class="event-grid" id="eventGrid">
+                <!-- 活動 1：青年 -->
+                <div class="event-card reveal" data-category="youth">
+                    <div class="event-img" style="background-image: url('https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=600&q=80')">
+                        [活動海報預留區]
+                    </div>
+                    <div class="event-content">
+                        <div class="event-title">青年聯誼：共融手工藝工作坊</div>
+                        <div class="event-meta">📅 日期：2026年8月15日 (六) 14:00-17:00</div>
+                        <div class="event-meta">📍 地點：九龍區青年中心</div>
+                        <div class="event-meta">👥 對象：SEN 青年（16-30歲）</div>
+                        <div class="event-limit">🔥 剩餘名額：5 位</div>
+                        <a href="members.html" class="btn-event">立即登記 (RSVP) ✍️</a>
+                    </div>
+                </div>
+                <!-- 活動 2：線上 -->
+                <div class="event-card reveal" data-category="online">
+                    <div class="event-img" style="background-image: url('https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=600&q=80')">
+                        [活動海報預留區]
+                    </div>
+                    <div class="event-content">
+                        <div class="event-title">特教從業者：國際證書線上分享會</div>
+                        <div class="event-meta">📅 日期：2026年9月10日 (四) 19:30-21:00</div>
+                        <div class="event-meta">📍 地點：Zoom 線上視訊</div>
+                        <div class="event-meta">👥 對象：特教從業者、教師</div>
+                        <div class="event-limit full">⌛ 已額滿 (開啟候補)</div>
+                        <a href="members.html" class="btn-event disabled">加入候補名單 ⏱️</a>
+                    </div>
+                </div>
+                <!-- 活動 3：家長 -->
+                <div class="event-card reveal" data-category="parents">
+                    <div class="event-img" style="background-image: url('https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&w=600&q=80')">
+                        [活動海報預留區]
+                    </div>
+                    <div class="event-content">
+                        <div class="event-title">家長支援小組：開學適應座談會</div>
+                        <div class="event-meta">📅 日期：2026年8月29日 (六) 10:00-12:00</div>
+                        <div class="event-meta">📍 地點：荃灣區社區中心</div>
+                        <div class="event-meta">👥 對象：SEN 孩子家長與照顧者</div>
+                        <div class="event-limit">🟢 尚有名額：12 位</div>
+                        <a href="members.html" class="btn-event">立即登記 (RSVP) ✍️</a>
+                    </div>
+                </div>
+                <!-- 活動 4：專業培訓 -->
+                <div class="event-card reveal" data-category="professional">
+                    <div class="event-img" style="background-image: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=80')">
+                        [活動海報預留區]
+                    </div>
+                    <div class="event-content">
+                        <div class="event-title">正向行為支援 (PBS) 實務工作坊</div>
+                        <div class="event-meta">📅 日期：2026年9月19日 (六) 09:30-16:30</div>
+                        <div class="event-meta">📍 地點：旺角培訓中心</div>
+                        <div class="event-meta">👥 對象：特教教師、社工、治療師</div>
+                        <div class="event-limit">🔥 剩餘名額：8 位</div>
+                        <a href="members.html" class="btn-event">立即登記 (RSVP) ✍️</a>
+                    </div>
+                </div>
+                <!-- 活動 5：線上 -->
+                <div class="event-card reveal" data-category="online">
+                    <div class="event-img" style="background-image: url('https://images.unsplash.com/photo-1491308056670-583b1cf1ff2f?auto=format&fit=crop&w=600&q=80')">
+                        [活動海報預留區]
+                    </div>
+                    <div class="event-content">
+                        <div class="event-title">ADHD 職場適應：線上講座系列</div>
+                        <div class="event-meta">📅 日期：2026年10月3日 (六) 15:00-16:30</div>
+                        <div class="event-meta">📍 地點：Zoom 線上視訊</div>
+                        <div class="event-meta">👥 對象：SEN 青年、家長、僱主</div>
+                        <div class="event-limit">🟢 尚有名額：30 位</div>
+                        <a href="members.html" class="btn-event">立即登記 (RSVP) ✍️</a>
+                    </div>
+                </div>
+                <!-- 活動 6：青年 -->
+                <div class="event-card reveal" data-category="youth">
+                    <div class="event-img" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80')">
+                        [活動海報預留區]
+                    </div>
+                    <div class="event-content">
+                        <div class="event-title">青年領袖培訓營：認識自己・勇敢發聲</div>
+                        <div class="event-meta">📅 日期：2026年10月17-18日 (六日)</div>
+                        <div class="event-meta">📍 地點：西貢戶外訓練營</div>
+                        <div class="event-meta">👥 對象：SEN 青年（18-30歲）</div>
+                        <div class="event-limit">🟢 尚有名額：15 位</div>
+                        <a href="members.html" class="btn-event">立即登記 (RSVP) ✍️</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. 活動小貼士 -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">💡 參加活動小貼士</h2>
+            <div class="benefit-grid">
+                <div class="benefit-item reveal">
+                    <div class="b-icon">🎟️</div>
+                    <div>
+                        <h4>會員優先報名</h4>
+                        <p>會員可提早 3 天優先報名熱門活動，避免向隅。</p>
+                    </div>
+                </div>
+                <div class="benefit-item reveal">
+                    <div class="b-icon">♿</div>
+                    <div>
+                        <h4>無障礙參與</h4>
+                        <p>所有實體活動場地皆設有無障礙設施，歡迎提出特殊需要。</p>
+                    </div>
+                </div>
+                <div class="benefit-item reveal">
+                    <div class="b-icon">🔄</div>
+                    <div>
+                        <h4>取消政策</h4>
+                        <p>如需取消，請最遲於活動前 3 天通知，名額將轉讓給候補人士。</p>
+                    </div>
+                </div>
+                <div class="benefit-item reveal">
+                    <div class="b-icon">📣</div>
+                    <div>
+                        <h4>想舉辦活動？</h4>
+                        <p>機構或學校想與我們合辦活動，歡迎到合作洽談頁聯絡我們。</p>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align:center; margin-top: 40px;">
+                <a href="partners.html" class="btn-outline">合辦活動・合作洽談 →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. 頁尾 -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-newsletter">
+                    <h4>✉️ 訂閱最新消息</h4>
+                    <p>填寫電郵，即可免費訂閱我們的特教文章、活動通知與會員資訊。</p>
+                    <div class="newsletter-form">
+                        <input type="email" id="newsletter-email" placeholder="輸入您的電子郵件...">
+                        <button type="button" id="newsletter-btn">立即訂閱 📥</button>
+                    </div>
+                    <div class="form-success" id="newsletter-success">✅ 訂閱成功！我們會定期寄送最新消息給您。</div>
+                </div>
+                <div class="footer-info">
+                    <h5>聯絡我們</h5>
+                    <p>📧 Email: info@iseda.org</p>
+                    <p>📞 電話: +852 xxxx xxxx</p>
+                    <p>📍 地址: 香港九龍某共融社區中心</p>
+                </div>
+                <div class="footer-links">
+                    <h5>快速連結</h5>
+                    <ul>
+                        <li><a href="about.html">• 關於我們</a></li>
+                        <li><a href="events.html">• 最新活動</a></li>
+                        <li><a href="knowledge.html">• 專業知識庫</a></li>
+                        <li><a href="members.html">• 會員專區</a></li>
+                        <li><a href="partners.html">• 合作洽談</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 國際特殊教育協會 ISEdA. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="回到頂端">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
