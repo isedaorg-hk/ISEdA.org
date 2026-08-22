@@ -1524,3 +1524,94 @@ footer {
         font-size: 32px;
     }
 }
+
+/* Founder profile cards */
+.founder-team-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: stretch;
+}
+
+.founder-card {
+    padding: 0;
+    overflow: hidden;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.founder-card .team-photo {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    background: #eef4f7;
+}
+
+.founder-card .team-card-body {
+    padding: 22px 20px 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.team-kicker {
+    color: var(--primary-sky);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+
+.founder-card h4 {
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    margin: 0;
+}
+
+.founder-card .t-role {
+    color: var(--primary-dark);
+    font-weight: 600;
+    line-height: 1.55;
+    min-height: 44px;
+}
+
+.founder-card .t-desc {
+    color: var(--text-light);
+    font-size: 13px;
+    line-height: 1.75;
+    margin: 12px 0 0;
+}
+
+.team-credentials {
+    margin-top: 18px;
+    border-top: 1px solid #e5edf2;
+    padding-top: 14px;
+}
+
+.team-credentials summary {
+    color: var(--primary-dark);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.team-credentials ul {
+    color: var(--text-light);
+    font-size: 12px;
+    line-height: 1.65;
+    margin: 12px 0 0 18px;
+    padding: 0;
+}
+
+.team-credentials li + li {
+    margin-top: 8px;
+}
+
+@media (max-width: 1024px) {
+    .founder-team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 600px) {
+    .founder-team-grid { grid-template-columns: 1fr; }
+}
