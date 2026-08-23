@@ -55,7 +55,7 @@ const I18N = {
     // 首頁
     'index.hero.title': '🌟 連結希望・共融未來',
     'index.hero.sub': '為特殊教育需要 (SEN) 青年、家庭與從業者打造的國際共融平台。',
-    'index.hero.btn1': '立即免費加入會員 💡',
+    'index.hero.btn1': '加入我們',
     'index.hero.btn2': '探索我們的服務 ↗',
     'index.stats.1': 'SEN 青年受惠',
     'index.stats.2': '特教從業者會員',
@@ -110,7 +110,7 @@ const I18N = {
     'index.testi.3.role': '特教從業者・特殊學校教師',
     'index.cta.title': '✨ 準備好加入我們了嗎？',
     'index.cta.desc': '免費成為會員，立即獲得活動優先報名、知識庫資源與最新消息。',
-    'index.cta.btn': '立即免費加入 💡',
+    'index.cta.btn': '加入我們',
 
     // 關於我們
     'about.hero.title': '🏫 關於我們',
@@ -413,7 +413,7 @@ const I18N = {
 
     'index.hero.title': '🌟 连结希望・共融未来',
     'index.hero.sub': '为特殊教育需要 (SEN) 青年、家庭与从业者打造的国际共融平台。',
-    'index.hero.btn1': '立即免费加入会员 💡',
+    'index.hero.btn1': '加入我们',
     'index.hero.btn2': '探索我们的服务 ↗',
     'index.stats.1': 'SEN 青年受惠',
     'index.stats.2': '特教从业者会员',
@@ -468,7 +468,7 @@ const I18N = {
     'index.testi.3.role': '特教从业者・特殊学校教师',
     'index.cta.title': '✨ 准备好加入我们了吗？',
     'index.cta.desc': '免费成为会员，立即获得活动优先报名、知识库资源与最新消息。',
-    'index.cta.btn': '立即免费加入 💡',
+    'index.cta.btn': '加入我们',
 
     'about.hero.title': '🏫 关于我们',
     'about.hero.sub': '了解 ISEdA 的使命、愿景与发展历程。',
@@ -766,7 +766,7 @@ const I18N = {
 
     'index.hero.title': '🌟 Connecting Hope, Building an Inclusive Future',
     'index.hero.sub': 'An international inclusive platform for young people with Special Educational Needs (SEN), their families and practitioners.',
-    'index.hero.btn1': 'Join Free Now 💡',
+    'index.hero.btn1': 'Join Us',
     'index.hero.btn2': 'Explore Our Services ↗',
     'index.stats.1': 'SEN youth supported',
     'index.stats.2': 'practitioner members',
@@ -821,7 +821,7 @@ const I18N = {
     'index.testi.3.role': 'Practitioner · Special school teacher',
     'index.cta.title': '✨ Ready to Join Us?',
     'index.cta.desc': 'Become a member for free and get priority event registration, knowledge resources and the latest news.',
-    'index.cta.btn': 'Join Free Now 💡',
+    'index.cta.btn': 'Join Us',
 
     'about.hero.title': '🏫 About Us',
     'about.hero.sub': 'Learn about ISEdA\'s mission, vision and journey.',

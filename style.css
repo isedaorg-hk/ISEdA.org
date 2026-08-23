@@ -1710,6 +1710,11 @@ footer {
     line-height: 1.8;
 }
 
+.index-events-link {
+    display: inline-flex;
+    margin-top: 22px;
+}
+
 @media (max-width: 600px) {
     .events-coming-soon { padding: 42px 22px; }
 }
