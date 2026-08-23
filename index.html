@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n-title="title.index">ISEdA | International Special Education Association</title>
-    <link rel="stylesheet" href="style.css?v=20260823.2">
+    <link rel="stylesheet" href="style.css?v=20260823.3">
     <!-- 社群分享預覽（Open Graph / Twitter Card） -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="ISEdA 國際特殊教育協會">
@@ -60,7 +60,7 @@
             <h2 data-i18n="index.hero.title">🌟 連結希望・共融未來</h2>
             <p data-i18n="index.hero.sub">為特殊教育需要 (SEN) 青年、家庭與從業者打造的國際共融平台。</p>
             <div class="hero-btns">
-                <a href="join.html" class="btn-hero-primary" data-i18n="index.hero.btn1">立即免費加入會員 💡</a>
+                <a href="join.html" class="btn-hero" data-i18n="index.hero.btn1">加入我們</a>
                 <a href="about.html" class="btn-hero-secondary" data-i18n="index.hero.btn2">探索我們的服務 ↗</a>
             </div>
         </div>
@@ -144,54 +144,16 @@
         </div>
     </section>
 
-    <!-- 6. 最新活動預覽 -->
+    <!-- 6. 活動預覽：目前沒有已公布活動時，沿用活動專區的誠實空狀態 -->
     <section class="section">
         <div class="container">
-            <h2 class="section-title" data-i18n="index.events.title">🗓️ 即將舉辦的精彩活動</h2>
-            <p class="section-sub" data-i18n="index.events.sub">從青年聯誼到專業進修，總有一場活動適合您。立即報名，與我們一起成長！</p>
-            <div class="event-grid">
-                <!-- 活動 1 -->
-                <div class="event-card reveal">
-                    <div class="event-img" style="background-image: url('https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=600&q=80')">
-                        <span data-i18n="poster">[活動海報預留區]</span>
-                    </div>
-                    <div class="event-content">
-                        <div class="event-title" data-i18n="events.1.title">青年聯誼：共融手工藝工作坊</div>
-                        <div class="event-meta" data-i18n="events.1.date">📅 日期：2026年8月15日 (六)</div>
-                        <div class="event-meta" data-i18n="events.1.loc">📍 地點：九龍區青年中心</div>
-                        <div class="event-limit" data-i18n="events.1.limit">🔥 剩餘名額：5 位</div>
-                        <a href="events.html" class="btn-event" data-i18n="events.btn">立即登記 (RSVP) ✍️</a>
-                    </div>
-                </div>
-                <!-- 活動 2 -->
-                <div class="event-card reveal">
-                    <div class="event-img" style="background-image: url('https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=600&q=80')">
-                        <span data-i18n="poster">[活動海報預留區]</span>
-                    </div>
-                    <div class="event-content">
-                        <div class="event-title" data-i18n="events.2.title">特教從業者：國際證書線上分享會</div>
-                        <div class="event-meta" data-i18n="events.2.date">📅 日期：2026年9月10日 (四)</div>
-                        <div class="event-meta" data-i18n="events.2.loc">📍 地點：Zoom 線上視訊</div>
-                        <div class="event-limit full" data-i18n="events.2.limit">⌛ 已額滿 (開啟候補)</div>
-                        <a href="events.html" class="btn-event disabled" data-i18n="events.btn2">加入候補名單 ⏱️</a>
-                    </div>
-                </div>
-                <!-- 活動 3 -->
-                <div class="event-card reveal">
-                    <div class="event-img" style="background-image: url('https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&w=600&q=80')">
-                        <span data-i18n="poster">[活動海報預留區]</span>
-                    </div>
-                    <div class="event-content">
-                        <div class="event-title" data-i18n="events.3.title">家長支援小組：開學適應座談會</div>
-                        <div class="event-meta" data-i18n="events.3.date">📅 日期：2026年8月29日 (六)</div>
-                        <div class="event-meta" data-i18n="events.3.loc">📍 地點：荃灣區社區中心</div>
-                        <div class="event-limit" data-i18n="events.3.limit">🟢 尚有名額：12 位</div>
-                        <a href="events.html" class="btn-event" data-i18n="events.btn">立即登記 (RSVP) ✍️</a>
-                    </div>
-                </div>
-            </div>
-            <div style="text-align:center; margin-top: 40px;">
-                <a href="events.html" class="btn-outline" data-i18n="events.more">查看所有活動 →</a>
+            <h2 class="section-title" data-i18n="events.title">📅 敬請期待</h2>
+            <p class="section-sub" data-i18n="events.sub">我們正在籌備更多精彩活動，敬請期待。</p>
+            <div class="events-coming-soon reveal">
+                <div class="events-coming-soon-icon" aria-hidden="true">✨</div>
+                <h3 data-i18n="events.empty.title">敬請期待</h3>
+                <p data-i18n="events.empty.desc">最新活動資訊將於此公布，歡迎稍後再回來查看。</p>
+                <a href="events.html" class="btn-outline index-events-link"><span data-i18n="nav.events">活動專區</span> →</a>
             </div>
         </div>
     </section>
@@ -281,7 +243,7 @@
         <div class="container">
             <h3 data-i18n="index.cta.title">✨ 準備好加入我們了嗎？</h3>
             <p data-i18n="index.cta.desc">免費成為會員，立即獲得活動優先報名、知識庫資源與最新消息。</p>
-            <a href="join.html" class="btn-hero-secondary" data-i18n="index.cta.btn">立即免費加入 💡</a>
+            <a href="join.html" class="btn-hero-secondary" data-i18n="index.cta.btn">加入我們</a>
         </div>
     </section>
 
@@ -322,7 +284,7 @@
 
     <button class="back-to-top" id="backToTop" aria-label="回到頂端">↑</button>
 
-    <script src="lang.js?v=20260823.2"></script>
+    <script src="lang.js?v=20260823.3"></script>
     <script src="script.js?v=20260823.2"></script>
 </body>
 </html>
