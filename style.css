@@ -1941,7 +1941,7 @@ footer {
 
 .whatsapp-card h3 {
     margin: 0;
-    color: var(--primary-blue);
+    color: var(--primary-dark);
     font-size: clamp(1.35rem, 3vw, 1.8rem);
 }
 
