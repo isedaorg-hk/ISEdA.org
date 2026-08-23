@@ -63,28 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    /* 4. 訂閱電子報（示範功能，不真正送出） */
-    const newsletterBtn = document.getElementById('newsletter-btn');
-    const newsletterEmail = document.getElementById('newsletter-email');
-    const newsletterSuccess = document.getElementById('newsletter-success');
-
-    if (newsletterBtn && newsletterSuccess) {
-        newsletterBtn.addEventListener('click', function () {
-            const email = newsletterEmail ? newsletterEmail.value.trim() : '';
-            if (!email || !email.includes('@')) {
-                alert(t('alert.email'));
-                return;
-            }
-            newsletterSuccess.classList.add('show');
-            if (newsletterEmail) newsletterEmail.value = '';
-            // 5 秒後自動隱藏提示
-            setTimeout(function () {
-                newsletterSuccess.classList.remove('show');
-            }, 6000);
-        });
-    }
-
-    /* 5. 會員註冊表單（示範功能，不真正送出） */
+    /* 4. 會員註冊表單（示範功能，不真正送出） */
     const memberForm = document.getElementById('member-form');
     const memberSuccess = document.getElementById('member-success');
 
@@ -100,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    /* 6. 合作提案表單（示範功能，不真正送出） */
+    /* 5. 合作提案表單（示範功能，不真正送出） */
     const partnerForm = document.getElementById('partner-form');
     const partnerSuccess = document.getElementById('partner-success');
 
@@ -116,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    /* 7. 活動分類篩選 */
+    /* 6. 活動分類篩選 */
     const filterTabs = document.getElementById('filterTabs');
     const eventGrid = document.getElementById('eventGrid');
 

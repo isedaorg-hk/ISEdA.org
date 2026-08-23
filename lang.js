@@ -41,16 +41,9 @@ const I18N = {
     'title.partners': '合作洽談 - ISEdA 國際特殊教育協會',
 
     // 頁尾
-    'footer.newsletter.title': '✉️ 訂閱最新消息',
-    'footer.newsletter.desc': '填寫電郵，即可免費訂閱我們的特教文章、活動通知與會員資訊。',
-    'footer.newsletter.placeholder': '輸入您的電子郵件...',
-    'footer.newsletter.btn': '立即訂閱 📥',
-    'footer.newsletter.success': '✅ 訂閱成功！我們會定期寄送最新消息給您。',
     'footer.contact': '聯絡我們',
-    'footer.contact.phone': '📞 電話: +852 xxxx xxxx',
-    'footer.contact.address': '📍 地址: 香港九龍某共融社區中心',
+    'footer.contact.whatsapp': '💬 WhatsApp 聯繫',
     'footer.links': '快速連結',
-    'alert.email': '請先輸入有效的電子郵件地址 📧',
 
     // 首頁
     'index.hero.title': '🌟 連結希望・共融未來',
@@ -400,16 +393,9 @@ const I18N = {
     'title.members': '会员专区 - ISEdA 国际特殊教育协会',
     'title.partners': '合作洽谈 - ISEdA 国际特殊教育协会',
 
-    'footer.newsletter.title': '✉️ 订阅最新消息',
-    'footer.newsletter.desc': '填写电邮，即可免费订阅我们的特教文章、活动通知与会员资讯。',
-    'footer.newsletter.placeholder': '输入您的电子邮件...',
-    'footer.newsletter.btn': '立即订阅 📥',
-    'footer.newsletter.success': '✅ 订阅成功！我们会定期寄送最新消息给您。',
     'footer.contact': '联系我们',
-    'footer.contact.phone': '📞 电话: +852 xxxx xxxx',
-    'footer.contact.address': '📍 地址: 香港九龙某共融社区中心',
+    'footer.contact.whatsapp': '💬 WhatsApp 联系',
     'footer.links': '快速链接',
-    'alert.email': '请先输入有效的电子邮件地址 📧',
 
     'index.hero.title': '🌟 连结希望・共融未来',
     'index.hero.sub': '为特殊教育需要 (SEN) 青年、家庭与从业者打造的国际共融平台。',
@@ -753,16 +739,9 @@ const I18N = {
     'title.members': 'Membership - ISEdA International Special Education Association',
     'title.partners': 'Partners - ISEdA International Special Education Association',
 
-    'footer.newsletter.title': '✉️ Subscribe to Our Newsletter',
-    'footer.newsletter.desc': 'Enter your email to get our special education articles, event updates and member news for free.',
-    'footer.newsletter.placeholder': 'Enter your email...',
-    'footer.newsletter.btn': 'Subscribe 📥',
-    'footer.newsletter.success': '✅ Subscribed! We will send you our latest news regularly.',
     'footer.contact': 'Contact Us',
-    'footer.contact.phone': '📞 Tel: +852 xxxx xxxx',
-    'footer.contact.address': '📍 Address: An Inclusive Community Centre, Kowloon, Hong Kong',
+    'footer.contact.whatsapp': '💬 WhatsApp',
     'footer.links': 'Quick Links',
-    'alert.email': 'Please enter a valid email address 📧',
 
     'index.hero.title': '🌟 Connecting Hope, Building an Inclusive Future',
     'index.hero.sub': 'An international inclusive platform for young people with Special Educational Needs (SEN), their families and practitioners.',
