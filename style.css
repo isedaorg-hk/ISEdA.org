@@ -1615,3 +1615,381 @@ footer {
 @media (max-width: 600px) {
     .founder-team-grid { grid-template-columns: 1fr; }
 }
+
+/* Join Us Google Form */
+.join-hero {
+    background: linear-gradient(135deg, rgba(10, 58, 133, 0.88), rgba(75, 184, 235, 0.78)), url('images/hero-bg.jpg') center / cover;
+}
+
+.join-form-section {
+    background: #f7fbfe;
+}
+
+.join-form-intro {
+    max-width: 760px;
+    margin: 0 auto 26px;
+    text-align: center;
+}
+
+.join-form-shell {
+    width: min(100%, 940px);
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: var(--radius);
+    background: #fff;
+    box-shadow: var(--shadow);
+}
+
+.join-form-embed {
+    display: block;
+    width: 100%;
+    min-height: 1450px;
+    border: 0;
+    background: #fff;
+}
+
+.join-form-alternative {
+    max-width: 940px;
+    margin: 20px auto 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.join-form-alternative a {
+    color: var(--primary-dark);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.join-form-alternative a:focus-visible {
+    outline: 3px solid var(--accent-orange);
+    outline-offset: 4px;
+    border-radius: 3px;
+}
+
+@media (max-width: 600px) {
+    .join-form-section { padding-inline: 12px; }
+    .join-form-shell { border-radius: 10px; }
+    .join-form-embed { min-height: 1650px; }
+}
+
+/* Upcoming events placeholder */
+.events-coming-soon {
+    max-width: 760px;
+    margin: 34px auto 0;
+    padding: 56px 32px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #dcebf4;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.events-coming-soon-icon {
+    display: grid;
+    place-items: center;
+    width: 68px;
+    height: 68px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-sky), var(--accent-green));
+    font-size: 32px;
+}
+
+.events-coming-soon h3 {
+    color: var(--primary-dark);
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+.events-coming-soon p {
+    max-width: 510px;
+    margin: 0 auto;
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+    .events-coming-soon { padding: 42px 22px; }
+}
+
+
+/* Taste-skill refinement: trust-first event controls */
+.filter-tabs {
+    margin: 0 auto 34px;
+    max-width: 100%;
+}
+
+.filter-tab {
+    min-height: 44px;
+    padding: 9px 24px;
+    border-color: #d8e0e7;
+    white-space: nowrap;
+    transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+}
+
+.filter-tab:hover:not(.active) {
+    background: #f4f9fd;
+}
+
+.filter-tab:active {
+    transform: translateY(1px);
+}
+
+.filter-tab:focus-visible {
+    outline: 3px solid rgba(100, 181, 246, 0.55);
+    outline-offset: 3px;
+}
+
+.events-action-placeholder {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 22px;
+}
+
+.events-action-placeholder .btn-event {
+    min-width: 190px;
+    margin-top: 0;
+    border: 0;
+    cursor: not-allowed;
+    opacity: 0.72;
+}
+
+.events-action-placeholder .btn-event.disabled:hover {
+    background-color: #999;
+}
+
+@media (max-width: 600px) {
+    .filter-tabs {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 4px 2px 12px;
+        scrollbar-width: thin;
+    }
+
+    .filter-tab {
+        flex: 0 0 auto;
+        padding-inline: 18px;
+    }
+
+    .events-action-placeholder .btn-event {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}
+
+
+/* PDF page 45 partner-logo wall */
+.partner-grid[role="list"] {
+    align-items: stretch;
+}
+
+.partner-logo {
+    height: 118px;
+    padding: 16px;
+    border-color: #e6edf3;
+    background: #ffffff;
+}
+
+.partner-logo img {
+    width: 100%;
+    height: 84px;
+    object-fit: contain;
+}
+
+.partner-logo:focus-within {
+    outline: 3px solid rgba(100, 181, 246, 0.55);
+    outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+    .partner-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .partner-logo { height: 108px; padding: 12px; }
+    .partner-logo img { height: 78px; }
+}
+
+
+/* Individual partner-logo optical sizing */
+.partner-mark {
+    --partner-logo-scale: 1;
+    transform: scale(var(--partner-logo-scale));
+    transform-origin: center;
+}
+
+.partner-mark--md { --partner-logo-scale: 1.15; }
+.partner-mark--lg { --partner-logo-scale: 1.30; }
+.partner-mark--xl { --partner-logo-scale: 1.45; }
+
+.partner-logo:has(.partner-mark--xl) {
+    overflow: visible;
+}
+
+@media (max-width: 600px) {
+    .partner-mark--md { --partner-logo-scale: 1.10; }
+    .partner-mark--lg { --partner-logo-scale: 1.18; }
+    .partner-mark--xl { --partner-logo-scale: 1.28; }
+}
+
+
+/* Partner #7: joint sponsor mark spans two logo positions on desktop */
+.partner-logo--double {
+    grid-column: span 2;
+    padding-inline: 28px;
+}
+
+.partner-logo--double img {
+    max-width: 88%;
+}
+
+@media (max-width: 768px) {
+    .partner-logo--double {
+        grid-column: span 1;
+        padding-inline: 16px;
+    }
+
+    .partner-logo--double img {
+        max-width: 100%;
+    }
+}
+
+
+/* Partner #7: use the supplied wide sponsor mark with minimal side whitespace */
+.partner-logo--double {
+    padding-inline: 8px;
+}
+
+.partner-logo--double img {
+    width: 100%;
+    max-width: 100%;
+    height: 92px;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .partner-logo--double img {
+        height: 78px;
+    }
+}
+
+
+/* One-step larger partner-logo system */
+.partner-logo {
+    height: 138px;
+}
+
+.partner-logo img {
+    height: 100px;
+}
+
+@media (max-width: 600px) {
+    .partner-logo {
+        height: 122px;
+    }
+
+    .partner-logo img {
+        height: 90px;
+    }
+}
+
+
+@media (min-width: 769px) {
+    .partner-grid[role="list"] {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .partner-logo--double img {
+        height: 100px;
+    }
+}
+
+
+/* WhatsApp partnership contact */
+.whatsapp-card {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 42px 32px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #dcefe3;
+    border-radius: 18px;
+    box-shadow: 0 14px 34px rgba(10, 83, 45, 0.10);
+}
+
+.whatsapp-mark {
+    display: grid;
+    width: 58px;
+    height: 58px;
+    margin: 0 auto 16px;
+    place-items: center;
+    border-radius: 50%;
+    background: #e7f8ed;
+    font-size: 30px;
+}
+
+.whatsapp-card h3 {
+    margin: 0;
+    color: var(--primary-blue);
+    font-size: clamp(1.35rem, 3vw, 1.8rem);
+}
+
+.whatsapp-desc {
+    max-width: 580px;
+    margin: 14px auto 26px;
+    color: #536273;
+    line-height: 1.8;
+}
+
+.btn-whatsapp {
+    display: inline-flex;
+    min-height: 52px;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 28px;
+    border: 2px solid #1ca34a;
+    border-radius: 999px;
+    background: #25d366;
+    color: #073d1d;
+    font-weight: 800;
+    text-decoration: none;
+    box-shadow: 0 8px 16px rgba(37, 211, 102, 0.22);
+    transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+.btn-whatsapp:hover {
+    background: #54e786;
+    box-shadow: 0 10px 20px rgba(37, 211, 102, 0.30);
+    transform: translateY(-1px);
+}
+
+.btn-whatsapp:focus-visible {
+    outline: 3px solid var(--primary-sky);
+    outline-offset: 4px;
+}
+
+.whatsapp-note {
+    margin: 18px auto 0;
+    color: #657588;
+    font-size: 0.92rem;
+}
+
+@media (max-width: 600px) {
+    .whatsapp-card { padding: 32px 20px; }
+    .btn-whatsapp { display: flex; width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .btn-whatsapp { transition: none; }
+}
