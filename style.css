@@ -1308,41 +1308,6 @@ footer {
     margin-bottom: 40px;
 }
 
-.footer-newsletter h4 {
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-
-.footer-newsletter p {
-    font-size: 14px;
-    color: #ccc;
-    margin-bottom: 20px;
-}
-
-.newsletter-form {
-    display: flex;
-    gap: 10px;
-}
-
-.newsletter-form input {
-    flex: 1;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    font-size: 14px;
-    min-width: 0;
-}
-
-.newsletter-form button {
-    background-color: var(--accent-orange);
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
 .footer-info h5, .footer-links h5 {
     font-size: 16px;
     margin-bottom: 20px;
@@ -1354,6 +1319,23 @@ footer {
     font-size: 14px;
     color: #ccc;
     margin-bottom: 10px;
+}
+
+.footer-info a {
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.footer-info a:hover {
+    color: var(--primary-sky);
+}
+
+.footer-info a:focus-visible {
+    outline: 3px solid var(--accent-orange);
+    outline-offset: 3px;
+    border-radius: 3px;
 }
 
 .footer-links ul {
@@ -1416,24 +1398,6 @@ footer {
 .reveal.visible {
     opacity: 1;
     transform: translateY(0);
-}
-
-/* 24. 表單送出成功提示 */
-.form-success {
-    display: none;
-    background: rgba(0, 230, 118, 0.12);
-    border: 2px solid var(--accent-green);
-    color: #1b7a4b;
-    padding: 14px 20px;
-    border-radius: 8px;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 15px;
-}
-
-.form-success.show {
-    display: block;
 }
 
 /* 25. 響應式微調 */
@@ -1514,10 +1478,6 @@ footer {
 
     .section-title {
         font-size: 24px;
-    }
-
-    .newsletter-form {
-        flex-direction: column;
     }
 
     .stat-item .stat-num {
@@ -1668,10 +1628,77 @@ footer {
     border-radius: 3px;
 }
 
+.privacy-notice {
+    max-width: 940px;
+    margin: 32px auto 0;
+    padding: 32px;
+    background: #ffffff;
+    border: 1px solid #dcebf4;
+    border-top: 4px solid var(--primary-sky);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    color: var(--text-light);
+}
+
+.privacy-notice h3 {
+    margin: 0 0 16px;
+    color: var(--primary-dark);
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    line-height: 1.5;
+}
+
+.privacy-notice > p,
+.privacy-notice li,
+.privacy-notice li p {
+    line-height: 1.8;
+}
+
+.privacy-notice > p {
+    margin: 0;
+    color: var(--text-light);
+}
+
+.privacy-notice ol {
+    margin: 22px 0 0;
+    padding-left: 1.45rem;
+}
+
+.privacy-notice ol > li + li {
+    margin-top: 18px;
+}
+
+.privacy-notice h4 {
+    margin: 0 0 8px;
+    color: var(--primary-dark);
+    font-size: 1rem;
+}
+
+.privacy-notice ul {
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+.privacy-notice li p {
+    margin: 0;
+}
+
+.privacy-notice a {
+    color: var(--primary-dark);
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+.privacy-notice a:focus-visible {
+    outline: 3px solid var(--accent-orange);
+    outline-offset: 3px;
+    border-radius: 3px;
+}
+
 @media (max-width: 600px) {
     .join-form-section { padding-inline: 12px; }
     .join-form-shell { border-radius: 10px; }
     .join-form-embed { min-height: 1650px; }
+    .privacy-notice { padding: 24px 20px; }
 }
 
 /* Upcoming events placeholder */
