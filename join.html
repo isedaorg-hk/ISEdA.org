@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n-title="title.events">活動專區 - ISEdA 國際特殊教育協會</title>
+    <title data-i18n-title="title.join">加入我們 - ISEdA 國際特殊教育協會</title>
     <link rel="stylesheet" href="style.css">
     <!-- 社群分享預覽（Open Graph / Twitter Card） -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="ISEdA 國際特殊教育協會">
-    <meta property="og:title" content="活動專區｜ISEdA 國際特殊教育協會">
+    <meta property="og:title" content="會員專區｜ISEdA 國際特殊教育協會">
     <meta property="og:description" content="國際特殊教育協會（ISEdA）致力連結特殊教育需要青年、家庭、特教從業者與社會各界，推動共融教育與社會參與。">
-    <meta property="og:url" content="https://iseda.org.hk/events.html">
+    <meta property="og:url" content="https://iseda.org.hk/join.html">
     <meta property="og:image" content="https://iseda.org.hk/logo-2026-08-21.jpeg">
     <meta property="og:image:secure_url" content="https://iseda.org.hk/logo-2026-08-21.jpeg">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="1600">
     <meta property="og:image:height" content="914">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="活動專區｜ISEdA 國際特殊教育協會">
+    <meta name="twitter:title" content="會員專區｜ISEdA 國際特殊教育協會">
     <meta name="twitter:description" content="國際特殊教育協會（ISEdA）致力連結特殊教育需要青年、家庭、特教從業者與社會各界，推動共融教育與社會參與。">
     <meta name="twitter:image" content="https://iseda.org.hk/logo-2026-08-21.jpeg">
 </head>
@@ -35,7 +35,7 @@
                 <ul>
                     <li><a href="index.html" data-i18n="nav.home">首頁</a></li>
                     <li><a href="about.html" data-i18n="nav.about">關於我們</a></li>
-                    <li><a href="events.html" class="active" data-i18n="nav.events">活動專區</a></li>
+                    <li><a href="events.html" data-i18n="nav.events">活動專區</a></li>
                     <li><a href="knowledge.html" data-i18n="nav.knowledge">專業知識庫</a></li>
                     <li><a href="partners.html" data-i18n="nav.partners">合作洽談</a></li>
                     <li class="lang-switch">
@@ -51,50 +51,42 @@
             </button>
         </div>
     </header>
-    <section class="page-hero">
+<main id="main-content">
+    <section class="hero-inner join-hero" aria-labelledby="join-page-title">
         <div class="container">
-            <h2 data-i18n="events.hero.title">🗓️ 活動專區</h2>
-            <p data-i18n="events.hero.sub">從青年聯誼、家長座談到專業培訓，一起參與、一起成長。</p>
-            <div class="breadcrumb"><a href="index.html" data-i18n="crumb.home">首頁</a> / <span data-i18n="crumb.events">crumb.events</span></div>
+            <h1 id="join-page-title" data-i18n="join.hero.title">加入我們</h1>
+            <p data-i18n="join.hero.sub">填寫會員登記表單，加入國際特殊教育協會的共融社群。</p>
+            <div class="breadcrumb" aria-label="Breadcrumb">
+                <a href="index.html" data-i18n="nav.home">首頁</a> / <span data-i18n="join.breadcrumb">加入我們</span>
+            </div>
         </div>
     </section>
 
-    <section class="section" aria-labelledby="upcoming-events-heading">
+    <section class="section join-form-section" aria-labelledby="join-form-heading">
         <div class="container">
-            <h2 id="upcoming-events-heading" class="section-title" data-i18n="events.title">📅 敬請期待</h2>
-            <p class="section-sub" data-i18n="events.sub">我們正在籌備更多精彩活動，敬請期待。</p>
-            <div class="filter-tabs" role="group" aria-label="Event category filters">
-                <button class="filter-tab active" data-filter="all" type="button" aria-pressed="true" data-i18n="events.filter.all">全部</button>
-                <button class="filter-tab" data-filter="youth" type="button" aria-pressed="false" data-i18n="events.filter.youth">🙋‍♂️ 青年活動</button>
-                <button class="filter-tab" data-filter="pro" type="button" aria-pressed="false" data-i18n="events.filter.pro">🧑‍🏫 專業培訓</button>
-                <button class="filter-tab" data-filter="parents" type="button" aria-pressed="false" data-i18n="events.filter.parents">👨‍👩‍👦 家長支援</button>
-                <button class="filter-tab" data-filter="online" type="button" aria-pressed="false" data-i18n="events.filter.online">💻 線上活動</button>
+            <div class="join-form-intro">
+                <h2 id="join-form-heading" class="section-title" data-i18n="join.form.title">會員登記表單</h2>
+                <p id="join-form-description" class="section-sub" data-i18n="join.form.sub">請在下方填寫表單；您的資料會透過 Google Forms 安全提交。</p>
             </div>
-            <div class="events-coming-soon reveal" role="status" aria-live="polite">
-                <div class="events-coming-soon-icon" aria-hidden="true">✨</div>
-                <h3 data-i18n="events.empty.title">敬請期待</h3>
-                <p data-i18n="events.empty.desc">最新活動資訊將於此公布，歡迎稍後再回來查看。</p>
-                <div class="events-action-placeholder" aria-label="Registration actions currently unavailable">
-                    <button type="button" class="btn-event disabled" disabled aria-disabled="true" data-i18n="events.btn">立即登記 (RSVP) ✍️</button>
-                    <button type="button" class="btn-event disabled" disabled aria-disabled="true" data-i18n="events.btn2">加入候補名單 ⏱️</button>
-                </div>
+            <div class="join-form-shell">
+                <iframe
+                    class="join-form-embed"
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSfqPW1gnltIzDQhCMWF3dLttabe7VCC4iZHB7kONuUxXFb46w/viewform?embedded=true"
+                    title="ISEdA membership registration form"
+                    aria-label="ISEdA membership registration form"
+                    aria-describedby="join-form-description"
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allow="clipboard-write">
+                    <p data-i18n="join.form.unavailable">您的瀏覽器無法顯示內嵌表單。</p>
+                </iframe>
             </div>
+            <p class="join-form-alternative">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfqPW1gnltIzDQhCMWF3dLttabe7VCC4iZHB7kONuUxXFb46w/viewform" target="_blank" rel="noopener noreferrer" data-i18n="join.form.open">無法使用內嵌表單？在新視窗開啟會員登記表單</a>
+            </p>
         </div>
     </section>
-    <section class="section section-alt">
-        <div class="container">
-            <h2 class="section-title" data-i18n="events.tips.title">💡 參加活動小貼士</h2>
-            <div class="benefit-grid">
-                <div class="benefit-item reveal"><div class="b-icon">🎟️</div><div><h4 data-i18n="events.tips.1.title">會員優先報名</h4><p data-i18n="events.tips.1.desc">會員可提早 3 天優先報名熱門活動，避免向隅。</p></div></div>
-                <div class="benefit-item reveal"><div class="b-icon">♿</div><div><h4 data-i18n="events.tips.2.title">無障礙參與</h4><p data-i18n="events.tips.2.desc">所有實體活動場地皆設有無障礙設施，歡迎提出特殊需要。</p></div></div>
-                <div class="benefit-item reveal"><div class="b-icon">🔄</div><div><h4 data-i18n="events.tips.3.title">取消政策</h4><p data-i18n="events.tips.3.desc">如需取消，請最遲於活動前 3 天通知，名額將轉讓給候補人士。</p></div></div>
-                <div class="benefit-item reveal"><div class="b-icon">📣</div><div><h4 data-i18n="events.tips.4.title">想舉辦活動？</h4><p data-i18n="events.tips.4.desc">機構或學校想與我們合辦活動，歡迎到合作洽談頁聯絡我們。</p></div></div>
-            </div>
-            <div style="text-align:center; margin-top: 40px;">
-                <a href="partners.html" class="btn-outline" data-i18n="events.tips.more">合辦活動・合作洽談 →</a>
-            </div>
-        </div>
-    </section>
+</main>
     <footer>
         <div class="container">
             <div class="footer-top">

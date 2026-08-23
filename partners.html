@@ -37,14 +37,13 @@
                     <li><a href="about.html" data-i18n="nav.about">關於我們</a></li>
                     <li><a href="events.html" data-i18n="nav.events">活動專區</a></li>
                     <li><a href="knowledge.html" data-i18n="nav.knowledge">專業知識庫</a></li>
-                    <li><a href="members.html" data-i18n="nav.members">會員專區</a></li>
                     <li><a href="partners.html" class="active" data-i18n="nav.partners">合作洽談</a></li>
                     <li class="lang-switch">
                         <button class="lang-btn active" data-lang="zh-Hant">繁</button><span class="lang-sep">/</span>
                         <button class="lang-btn" data-lang="zh-Hans">简</button><span class="lang-sep">/</span>
                         <button class="lang-btn" data-lang="en">EN</button>
                     </li>
-                    <li><a href="members.html" class="btn-join" data-i18n="nav.login">登入/加入會員 🔘</a></li>
+                    <li><a href="join.html" class="btn-join" data-i18n="nav.login">加入我們</a></li>
 </ul>
             </nav>
             <button class="hamburger" id="hamburger" aria-label="開啟選單">
@@ -87,16 +86,24 @@
     <section class="section">
         <div class="container">
             <h2 class="section-title" data-i18n="partners.wall.title">🏆 我們的合作夥伴</h2>
-            <p class="section-sub" data-i18n="partners.wall.sub">感謝以下機構與企業與我們同行（標誌預留區）。</p>
-            <div class="partner-grid">
-                <div class="partner-logo reveal"><span data-i18n="partners.wall.logo">[機構標誌]</span></div>
-                <div class="partner-logo reveal"><span data-i18n="partners.wall.logo">[機構標誌]</span></div>
-                <div class="partner-logo reveal"><span data-i18n="partners.wall.logo">[機構標誌]</span></div>
-                <div class="partner-logo reveal"><span data-i18n="partners.wall.logo">[機構標誌]</span></div>
-                <div class="partner-logo reveal"><span data-i18n="partners.wall.logo">[機構標誌]</span></div>
-                <div class="partner-logo reveal"><span data-i18n="partners.wall.logo">[機構標誌]</span></div>
-                <div class="partner-logo reveal"><span data-i18n="partners.wall.logo">[機構標誌]</span></div>
-                <div class="partner-logo reveal"><span data-i18n="partners.wall.logo">[機構標誌]</span></div>
+            <p class="section-sub" data-i18n="partners.wall.sub">感謝以下機構與企業與我們同行。</p>
+            <div class="partner-grid" role="list">
+                <div class="partner-logo reveal" role="listitem"><img src="assets/partners/miss-helen.png" alt="Miss Helen 流動教室" loading="lazy"></div>
+                <div class="partner-logo reveal" role="listitem"><img src="assets/partners/oko-healing-education.png" alt="OKO Healing Education 療心教育" loading="lazy"></div>
+                <div class="partner-logo reveal" role="listitem"><img class="partner-mark partner-mark--lg" src="assets/partners/mannaz-life-education.png" alt="漫事生命培育 Mannaz Life Education" loading="lazy"></div>
+                <div class="partner-logo reveal" role="listitem"><img src="assets/partners/cheche-education-vermilion.png" alt="CheChe Education Vermilion" loading="lazy"></div>
+                <div class="partner-logo reveal" role="listitem"><img src="assets/partners/smbc.png" alt="SMBC 三井住友銀行" loading="lazy"></div>
+                <div class="partner-logo reveal" role="listitem"><img class="partner-mark partner-mark--xl" src="assets/partners/saint-francis-university.png" alt="Saint Francis University 聖方濟大學" loading="lazy"></div>
+                <div class="partner-logo partner-logo--double reveal" role="listitem"><img src="assets/partners/community-sponsors.png" alt="Home Affairs Department、政府資助計劃、New Home Association 與 HOME Centre" loading="lazy"></div>
+                <div class="partner-logo reveal" role="listitem"><img class="partner-mark partner-mark--md" src="assets/partners/imagine-art.png" alt="Imagine Art 聯繫藝術" loading="lazy"></div>
+                <div class="partner-logo reveal" role="listitem"><img src="assets/partners/tin-shing-dojo.png" alt="天盛道場 Tin Shing Dojang" loading="lazy"></div>
+                <div class="partner-logo reveal" role="listitem"><img class="partner-mark partner-mark--md" src="assets/partners/community-inclusion-tin-shing.png" alt="社區共融天盛協會有限公司" loading="lazy"></div>
+                <div class="partner-logo reveal" role="listitem"><img src="assets/partners/tin-shing-chinese-medicine.png" alt="天盛中醫館 Tin Shing Chinese Medicine Clinic" loading="lazy"></div>
+                <div class="partner-logo reveal" role="listitem"><img src="assets/partners/life-leading-association.png" alt="生命領航協會 Life Leading Association" loading="lazy"></div>
+                <div class="partner-logo reveal" role="listitem"><img class="partner-mark partner-mark--xl" src="assets/partners/pawer-hub.png" alt="Pawer Hub" loading="lazy"></div>
+                <div class="partner-logo reveal" role="listitem"><img src="assets/partners/willie-leung-training.png" alt="Willie Leung Training and Production Limited" loading="lazy"></div>
+                <div class="partner-logo reveal" role="listitem"><img class="partner-mark partner-mark--lg" src="assets/partners/sen-concern-association.png" alt="SEN Concern Association 特殊教育關注協會" loading="lazy"></div>
+                <div class="partner-logo reveal" role="listitem"><img src="assets/partners/incandescent-healing.png" alt="光明之丘工作室 Incandescent Healing" loading="lazy"></div>
             </div>
         </div>
     </section>
@@ -104,22 +111,12 @@
         <div class="container">
             <h2 class="section-title" data-i18n="partners.contact.title">📩 與我們洽談合作</h2>
             <p class="section-sub" data-i18n="partners.contact.sub">填寫以下資料，我們的團隊會在 5 個工作天內與您聯絡。</p>
-            <div class="form-card reveal">
-                <form id="partner-form">
-                    <div class="form-grid-2">
-                        <div class="form-row"><label data-i18n="partners.form.org.label">機構／公司名稱 *</label><input type="text" data-i18n-placeholder="partners.form.org.ph" placeholder="您的機構名稱" required></div>
-                        <div class="form-row"><label data-i18n="partners.form.name.label">聯絡人姓名 *</label><input type="text" data-i18n-placeholder="partners.form.name.ph" placeholder="您的姓名" required></div>
-                    </div>
-                    <div class="form-grid-2">
-                        <div class="form-row"><label data-i18n="partners.form.email.label">聯絡電郵 *</label><input type="email" data-i18n-placeholder="partners.form.email.ph" placeholder="您的電子郵件" required></div>
-                        <div class="form-row"><label data-i18n="partners.form.phone.label">聯絡電話</label><input type="tel" placeholder="+852 ..."></div>
-                    </div>
-                    <div class="form-row"><label data-i18n="partners.form.mode.label">感興趣的合作模式 *</label><select required><option value="" data-i18n="select.default">請選擇...</option><option value="sponsor" data-i18n="select.sponsor">贊助支持</option><option value="volunteer" data-i18n="select.volunteer">企業義工</option><option value="jobs" data-i18n="select.jobs">職位配對</option><option value="venue" data-i18n="select.venue">場地與資源</option><option value="other" data-i18n="select.other">其他／想了解更多</option></select></div>
-                    <div class="form-row"><label data-i18n="partners.form.msg.label">合作構想 *</label><textarea data-i18n-placeholder="partners.form.msg.ph" placeholder="簡單描述您的合作構想、時間與預算範圍..." required></textarea></div>
-                    <button type="submit" class="btn-submit" data-i18n="partners.form.submit">送出合作提案 📨</button>
-                    <div class="form-note" data-i18n="partners.form.note">您的資料只會用於本次合作洽談，絕不對外分享。</div>
-                    <div class="form-success" id="partner-success" data-i18n="partners.form.success">✅ 提案已送出！我們會盡快與您聯絡。</div>
-                </form>
+            <div class="whatsapp-card reveal" role="region" aria-labelledby="whatsapp-contact-heading" aria-describedby="whatsapp-contact-note">
+                <div class="whatsapp-mark" aria-hidden="true">💬</div>
+                <h3 id="whatsapp-contact-heading" data-i18n="partners.whatsapp.heading">立即透過 WhatsApp 聯繫我們</h3>
+                <p class="whatsapp-desc" data-i18n="partners.whatsapp.desc">歡迎透過 WhatsApp 與我們討論合作構想、資源配對或其他查詢；我們會盡快回覆您。</p>
+                <a class="btn-whatsapp" href="https://wa.me/85268267865" target="_blank" rel="noopener noreferrer" data-i18n="partners.whatsapp.cta" data-i18n-aria-label="partners.whatsapp.aria" aria-label="透過 WhatsApp 與 ISEdA 聯繫（於新視窗開啟）">在 WhatsApp 聯繫我們 ↗</a>
+                <p class="whatsapp-note" id="whatsapp-contact-note" data-i18n="partners.whatsapp.note">點擊後將開啟 WhatsApp；您可在對話中自由提供需要的資料。</p>
             </div>
         </div>
     </section>
@@ -147,7 +144,6 @@
                         <li><a href="about.html">• <span data-i18n="nav.about">關於我們</span></a></li>
                         <li><a href="events.html">• <span data-i18n="nav.events">最新活動</span></a></li>
                         <li><a href="knowledge.html">• <span data-i18n="nav.knowledge">專業知識庫</span></a></li>
-                        <li><a href="members.html">• <span data-i18n="nav.members">會員專區</span></a></li>
                         <li><a href="partners.html">• <span data-i18n="nav.partners">合作洽談</span></a></li>
                     </ul>
                 </div>
