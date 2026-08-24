@@ -23,7 +23,85 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    /* 2. 回到頂端按鈕 */
+    /* 2. 關於我們下拉選單：鍵盤、點擊與手機版支援 */
+    const navDropdowns = siteNav ? siteNav.querySelectorAll('.nav-dropdown') : [];
+
+    function setNavDropdownState(dropdown, isOpen) {
+        const toggle = dropdown.querySelector('.nav-dropdown-toggle');
+        if (!toggle) return;
+        dropdown.classList.toggle('is-open', isOpen);
+        if (isOpen) dropdown.classList.remove('is-keyboard-closed');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+        if (typeof t === 'function') {
+            toggle.setAttribute('aria-label', t(isOpen ? 'nav.about.toggle.close' : 'nav.about.toggle.open'));
+        }
+    }
+
+    function closeNavDropdowns(except) {
+        navDropdowns.forEach(function (dropdown) {
+            if (dropdown === except) return;
+            setNavDropdownState(dropdown, false);
+        });
+    }
+
+    navDropdowns.forEach(function (dropdown) {
+        const toggle = dropdown.querySelector('.nav-dropdown-toggle');
+        if (!toggle) return;
+
+        toggle.addEventListener('click', function (event) {
+            event.preventDefault();
+            const willOpen = !dropdown.classList.contains('is-open');
+            closeNavDropdowns(dropdown);
+            setNavDropdownState(dropdown, willOpen);
+        });
+
+        // On desktop, moving the mouse over the About Us item reveals its two links.
+        // Touch layouts retain the explicit arrow control defined in the mobile CSS.
+        dropdown.addEventListener('mouseenter', function () {
+            if (window.matchMedia('(min-width: 769px)').matches) {
+                closeNavDropdowns(dropdown);
+                setNavDropdownState(dropdown, true);
+            }
+        });
+        dropdown.addEventListener('mouseleave', function () {
+            if (window.matchMedia('(min-width: 769px)').matches) {
+                setNavDropdownState(dropdown, false);
+            }
+        });
+
+        dropdown.addEventListener('focusout', function () {
+            window.setTimeout(function () {
+                if (!dropdown.contains(document.activeElement)) closeNavDropdowns();
+            }, 0);
+        });
+    });
+
+    document.addEventListener('click', function (event) {
+        if (!event.target.closest('.nav-dropdown')) closeNavDropdowns();
+    });
+
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') {
+            const openDropdown = document.querySelector('.nav-dropdown.is-open');
+            const openToggle = openDropdown ? openDropdown.querySelector('.nav-dropdown-toggle') : null;
+            const openMainLink = openDropdown ? openDropdown.querySelector('.nav-dropdown-main') : null;
+            closeNavDropdowns();
+            if (openDropdown) openDropdown.classList.add('is-keyboard-closed');
+            if (window.matchMedia('(min-width: 769px)').matches && openMainLink) {
+                openMainLink.focus();
+            } else if (openToggle) {
+                openToggle.focus();
+            }
+        }
+    });
+
+    document.addEventListener('langchange', function () {
+        navDropdowns.forEach(function (dropdown) {
+            setNavDropdownState(dropdown, dropdown.classList.contains('is-open'));
+        });
+    });
+
+    /* 3. 回到頂端按鈕 */
     const backToTop = document.getElementById('backToTop');
 
     if (backToTop) {
