@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n-title="title.about">關於我們 - ISEdA 國際特殊教育協會</title>
-    <link rel="stylesheet" href="style.css?v=20260823.5">
+    <link rel="stylesheet" href="style.css?v=20260823.15">
     <!-- 社群分享預覽（Open Graph / Twitter Card） -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="ISEdA 國際特殊教育協會">
@@ -22,6 +22,7 @@
     <meta name="twitter:image" content="https://iseda.org.hk/logo-2026-08-21.jpeg">
 </head>
 <body>
+    <a class="skip-link" href="#main-content" data-i18n="a11y.skip">跳至主要內容</a>
     <header>
         <div class="container header-container">
             <a class="logo-placeholder" href="index.html">
@@ -34,7 +35,25 @@
             <nav id="site-nav">
                 <ul>
                     <li><a href="index.html" data-i18n="nav.home">首頁</a></li>
-                    <li><a href="about.html" class="active" data-i18n="nav.about">關於我們</a></li>
+                    <li class="nav-dropdown">
+
+                        <a href="about.html" class="nav-dropdown-main active" data-i18n="nav.about">關於我們</a>
+
+                        <button class="nav-dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="about-menu" data-i18n-aria-label="nav.about.toggle.open">
+
+                            <span aria-hidden="true">⌄</span>
+
+                        </button>
+
+                        <ul class="nav-dropdown-menu" id="about-menu" aria-label="關於我們子選單" data-i18n-aria-label="nav.about.menu">
+
+                            <li><a href="founders.html#elvin-lam" data-i18n="nav.about.founders">核心團隊</a></li>
+
+                            <li><a href="honorary-advisors.html#frank-kusse" data-i18n="nav.about.advisors">榮譽顧問團隊</a></li>
+
+                        </ul>
+
+                    </li>
                     <li><a href="events.html" data-i18n="nav.events">活動專區</a></li>
                     <li><a href="knowledge.html" data-i18n="nav.knowledge">專業知識庫</a></li>
                     <li><a href="partners.html" data-i18n="nav.partners">合作洽談</a></li>
@@ -51,7 +70,7 @@
             </button>
         </div>
     </header>
-    <section class="page-hero">
+    <section id="main-content" class="page-hero">
         <div class="container">
             <h2 data-i18n="about.hero.title">🏫 關於我們</h2>
             <p data-i18n="about.hero.sub">了解 ISEdA 的使命、願景與發展歷程。</p>
@@ -89,79 +108,100 @@
             </div>
         </div>
     </section>
-    <section class="section section-alt">
+    <section class="section section-alt" id="core-team">
         <div class="container">
             <h2 class="section-title" data-i18n="about.team.title">👥 核心團隊</h2>
             <p class="section-sub" data-i18n="about.team.sub">四位聯合創辦人結合教育、心理、家庭輔導與創意教育專業，攜手同行。</p>
             <div class="team-grid founder-team-grid">
-                <article class="team-card founder-card reveal">
-                    <img class="team-photo" src="assets/team/elvin-lam.png" alt="Elvin Lam，ISEdA 聯合創辦人及註冊心理諮詢師">
-                    <div class="team-card-body">
-                        <p class="team-kicker" data-i18n="about.team.founder">聯合創辦人</p>
-                        <h4>ELVIN LAM</h4>
-                        <div class="t-role" data-i18n="about.team.1.role">註冊心理諮詢師・聯合創辦人</div>
-                        <p class="t-desc" data-i18n="about.team.1.desc">「療心教育」創辦人、「生命領航協會」總幹事及「看不見的力量」公開演講冠軍。</p>
-                        <details class="team-credentials">
-                            <summary data-i18n="about.team.details">專業背景</summary>
-                            <ul>
-                                <li data-i18n="about.team.1.cred1">國際款待及服務管理文學士（ENU, UK）</li>
-                                <li data-i18n="about.team.1.cred2">註冊心理諮詢師（中國醫學科學院）</li>
-                                <li data-i18n="about.team.1.cred3">2025 年成功挑戰戈壁徒步行走 131 公里；2022 年獲人生首項健力士世界紀錄</li>
-                            </ul>
-                        </details>
-                    </div>
-                </article>
-                <article class="team-card founder-card reveal">
-                    <img class="team-photo" src="assets/team/helen-mok.png" alt="Helen Mok，ISEdA 聯合創辦人及兒童心理輔導與家庭教育顧問">
-                    <div class="team-card-body">
-                        <p class="team-kicker" data-i18n="about.team.founder">聯合創辦人</p>
-                        <h4>HELEN MOK</h4>
-                        <div class="t-role" data-i18n="about.team.2.role">兒童心理輔導及家庭教育顧問・聯合創辦人</div>
-                        <p class="t-desc" data-i18n="about.team.2.desc">「Miss Helen 流動教室」創辦人，並擔任家庭輔導、兒童心理與 SEN 生涯規劃相關工作。</p>
-                        <details class="team-credentials">
-                            <summary data-i18n="about.team.details">專業背景</summary>
-                            <ul>
-                                <li data-i18n="about.team.2.cred1">香港中文大學家庭輔導及家庭教育碩士</li>
-                                <li data-i18n="about.team.2.cred2">香港浸會大學心理學一級榮譽學士</li>
-                                <li data-i18n="about.team.2.cred3">「愛孩子慈善基金」家庭輔導及教育總監；「OKO Healing」兒童心理諮詢師；「生命領航協會」SEN 生涯規劃顧問</li>
-                            </ul>
-                        </details>
-                    </div>
-                </article>
-                <article class="team-card founder-card reveal">
-                    <img class="team-photo" src="assets/team/cheche-cheng.png" alt="Cheche Cheng，ISEdA 聯合創辦人及 SEN STEM 創意教育總監">
-                    <div class="team-card-body">
-                        <p class="team-kicker" data-i18n="about.team.founder">聯合創辦人</p>
-                        <h4>CHECHE CHENG</h4>
-                        <div class="t-role" data-i18n="about.team.3.role">SEN STEM 創意教育總監・聯合創辦人</div>
-                        <p class="t-desc" data-i18n="about.team.3.desc">「樹鳥計劃」創辦人、「車兒教育」創辦人及營運總監，並統籌教育部活動。</p>
-                        <details class="team-credentials">
-                            <summary data-i18n="about.team.details">專業背景</summary>
-                            <ul>
-                                <li data-i18n="about.team.3.cred1">教育碩士、PGDE of Early Childhood 及中文系文學士（HKBU）</li>
-                                <li data-i18n="about.team.3.cred2">特殊教育輔導證書（香港樹仁大學進修學院）；國家語委普通話水平測試（香港教育大學）</li>
-                                <li data-i18n="about.team.3.cred3">ABRSM 五級樂理、龍鳳字畫導師及泰拳三段位教學導師</li>
-                            </ul>
-                        </details>
-                    </div>
-                </article>
-                <article class="team-card founder-card reveal">
-                    <img class="team-photo" src="assets/team/kimberly-chak.png" alt="Kimberly Chak，ISEdA 聯合創辦人及註冊心理諮詢師">
-                    <div class="team-card-body">
-                        <p class="team-kicker" data-i18n="about.team.founder">聯合創辦人</p>
-                        <h4>KIMBERLY CHAK</h4>
-                        <div class="t-role" data-i18n="about.team.4.role">註冊心理諮詢師・聯合創辦人</div>
-                        <p class="t-desc" data-i18n="about.team.4.desc">「漫事生命培育」及「毛療萬事屋」創辦人，並擔任藝術課程與共融服務顧問。</p>
-                        <details class="team-credentials">
-                            <summary data-i18n="about.team.details">專業背景</summary>
-                            <ul>
-                                <li data-i18n="about.team.4.cred1">註冊催眠治療師及高級心理諮詢師</li>
-                                <li data-i18n="about.team.4.cred2">香港浸會大學視覺藝術文學士</li>
-                                <li data-i18n="about.team.4.cred3">曾任香港幼兒教育及服務聯會項目主任及東華三院綜合服務中心工場及宿舍藝術發展主任</li>
-                            </ul>
-                        </details>
-                    </div>
-                </article>
+                <a class="advisor-card founder-card-link reveal" href="founders.html#elvin-lam">
+                    <img src="assets/team/elvin-lam.png" alt="Elvin Lam，ISEdA 聯合創辦人及註冊高級心理諮詢師" data-i18n-alt="founders.person1.alt">
+                    <span class="advisor-card-body">
+                        <span class="advisor-card-label" data-i18n="about.team.founder">聯合創辦人</span>
+                        <strong>ELVIN LAM</strong>
+                        <span class="advisor-card-role" data-i18n="founders.person1.role">註冊高級心理諮詢師・聯合創辦人</span>
+                        <span class="advisor-card-cta" data-i18n="founders.view">查看詳細資料 →</span>
+                    </span>
+                </a>
+                <a class="advisor-card founder-card-link reveal" href="founders.html#helen-mok">
+                    <img src="assets/team/helen-mok.png" alt="Helen Mok，ISEdA 聯合創辦人及兒童心理輔導與家庭教育顧問" data-i18n-alt="founders.person2.alt">
+                    <span class="advisor-card-body">
+                        <span class="advisor-card-label" data-i18n="about.team.founder">聯合創辦人</span>
+                        <strong>HELEN MOK</strong>
+                        <span class="advisor-card-role" data-i18n="founders.person2.role">兒童心理輔導及家庭教育顧問・聯合創辦人</span>
+                        <span class="advisor-card-cta" data-i18n="founders.view">查看詳細資料 →</span>
+                    </span>
+                </a>
+                <a class="advisor-card founder-card-link reveal" href="founders.html#cheche-cheng">
+                    <img src="assets/team/cheche-cheng.png" alt="Cheche Cheng，ISEdA 聯合創辦人及 STEM 創意教育總監" data-i18n-alt="founders.person3.alt">
+                    <span class="advisor-card-body">
+                        <span class="advisor-card-label" data-i18n="about.team.founder">聯合創辦人</span>
+                        <strong>CHECHE CHENG</strong>
+                        <span class="advisor-card-role" data-i18n="founders.person3.role">STEM 創意教育總監・聯合創辦人</span>
+                        <span class="advisor-card-cta" data-i18n="founders.view">查看詳細資料 →</span>
+                    </span>
+                </a>
+                <a class="advisor-card founder-card-link reveal" href="founders.html#kimberly-chak">
+                    <img src="assets/team/kimberly-chak.png" alt="Kimberly Chak，ISEdA 聯合創辦人及註冊高級心理諮詢師" data-i18n-alt="founders.person4.alt">
+                    <span class="advisor-card-body">
+                        <span class="advisor-card-label" data-i18n="about.team.founder">聯合創辦人</span>
+                        <strong>KIMBERLY CHAK</strong>
+                        <span class="advisor-card-role" data-i18n="founders.person4.role">註冊高級心理諮詢師・聯合創辦人</span>
+                        <span class="advisor-card-cta" data-i18n="founders.view">查看詳細資料 →</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="section honorary-advisors-section" id="honorary-advisors" aria-labelledby="honorary-advisors-title">
+        <div class="container">
+            <h2 id="honorary-advisors-title" class="section-title" data-i18n="about.advisors.title">🏅 榮譽顧問團隊</h2>
+            <p class="section-sub" data-i18n="about.advisors.sub">匯聚跨界專業，共同推動特殊教育與社會共融。</p>
+            <div class="advisor-grid">
+                <a class="advisor-card reveal" href="honorary-advisors.html#frank-kusse">
+                    <img src="assets/advisors/frank-kusse.png" alt="Frank Kusse，ISEdA 榮譽顧問" data-i18n-alt="advisors.person1.alt">
+                    <span class="advisor-card-body">
+                        <span class="advisor-card-label" data-i18n="advisors.honorary">榮譽顧問</span>
+                        <strong>FRANK KUSSE</strong>
+                        <span class="advisor-card-role" data-i18n="advisors.person1.role">前 ABN AMRO 亞太區行政總裁</span>
+                        <span class="advisor-card-cta" data-i18n="advisors.view">查看詳細資料 →</span>
+                    </span>
+                </a>
+                <a class="advisor-card reveal" href="honorary-advisors.html#gilbert-tam">
+                    <img src="assets/advisors/gilbert-tam.png" alt="Gilbert Tam，ISEdA 榮譽顧問" data-i18n-alt="advisors.person2.alt">
+                    <span class="advisor-card-body">
+                        <span class="advisor-card-label" data-i18n="advisors.honorary">榮譽顧問</span>
+                        <strong>GILBERT TAM</strong>
+                        <span class="advisor-card-role" data-i18n="advisors.person2.role">Genesis Advisory Service Limited 創辦人</span>
+                        <span class="advisor-card-cta" data-i18n="advisors.view">查看詳細資料 →</span>
+                    </span>
+                </a>
+                <a class="advisor-card reveal" href="honorary-advisors.html#canis-lin">
+                    <img src="assets/advisors/canis-lin.png" alt="Dr. Canis Lin，ISEdA 心理健康與人類潛能顧問" data-i18n-alt="advisors.person3.alt">
+                    <span class="advisor-card-body">
+                        <span class="advisor-card-label" data-i18n="advisors.honorary">榮譽顧問</span>
+                        <strong>DR. CANIS LIN</strong>
+                        <span class="advisor-card-role" data-i18n="advisors.person3.role">心理健康與人類潛能顧問</span>
+                        <span class="advisor-card-cta" data-i18n="advisors.view">查看詳細資料 →</span>
+                    </span>
+                </a>
+                <a class="advisor-card reveal" href="honorary-advisors.html#cheung-moon-wing">
+                    <img src="assets/advisors/cheung-moon-wing.png" alt="Cheung Moon-Wing，ISEdA 運動教育顧問" data-i18n-alt="advisors.person4.alt">
+                    <span class="advisor-card-body">
+                        <span class="advisor-card-label" data-i18n="advisors.honorary">榮譽顧問</span>
+                        <strong>CHEUNG MOON-WING</strong>
+                        <span class="advisor-card-role" data-i18n="advisors.person4.role">運動教育顧問</span>
+                        <span class="advisor-card-cta" data-i18n="advisors.view">查看詳細資料 →</span>
+                    </span>
+                </a>
+                <a class="advisor-card reveal" href="honorary-advisors.html#law-wai-kit">
+                    <img src="assets/advisors/law-wai-kit.png" alt="Law Wai Kit，ISEdA 藝術教育顧問" data-i18n-alt="advisors.person5.alt">
+                    <span class="advisor-card-body">
+                        <span class="advisor-card-label" data-i18n="advisors.honorary">榮譽顧問</span>
+                        <strong>LAW WAI KIT</strong>
+                        <span class="advisor-card-role" data-i18n="advisors.person5.role">藝術教育顧問</span>
+                        <span class="advisor-card-cta" data-i18n="advisors.view">查看詳細資料 →</span>
+                    </span>
+                </a>
             </div>
         </div>
     </section>
@@ -199,7 +239,7 @@
 
     <button class="back-to-top" id="backToTop" aria-label="回到頂端">↑</button>
 
-    <script src="lang.js?v=20260823.5"></script>
-    <script src="script.js?v=20260823.5"></script>
+    <script src="lang.js?v=20260823.9"></script>
+    <script src="script.js?v=20260823.12"></script>
 </body>
 </html>
