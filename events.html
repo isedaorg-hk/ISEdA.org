@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n-title="title.events">活動專區 - ISEdA 國際特殊教育協會</title>
-    <link rel="stylesheet" href="style.css?v=20260823.15">
+    <link rel="stylesheet" href="style.css?v=20260824.18">
     <!-- 社群分享預覽（Open Graph / Twitter Card） -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="ISEdA 國際特殊教育協會">
@@ -80,24 +80,87 @@
 
     <section class="section" aria-labelledby="upcoming-events-heading">
         <div class="container">
-            <h2 id="upcoming-events-heading" class="section-title" data-i18n="events.title">📅 敬請期待</h2>
-            <p class="section-sub" data-i18n="events.sub">我們正在籌備更多精彩活動，敬請期待。</p>
-            <div class="filter-tabs" role="group" aria-label="Event category filters">
+            <h2 id="upcoming-events-heading" class="section-title" data-i18n="events.title">📅 即將舉辦的活動</h2>
+            <p class="section-sub" data-i18n="events.sub">由閱讀開始，讓理解、陪伴與成長同行。</p>
+            <div class="filter-tabs" id="filterTabs" role="group" aria-label="Event category filters" data-i18n-aria-label="events.filter.label">
                 <button class="filter-tab active" data-filter="all" type="button" aria-pressed="true" data-i18n="events.filter.all">全部</button>
                 <button class="filter-tab" data-filter="youth" type="button" aria-pressed="false" data-i18n="events.filter.youth">🙋‍♂️ 青年活動</button>
                 <button class="filter-tab" data-filter="pro" type="button" aria-pressed="false" data-i18n="events.filter.pro">🧑‍🏫 專業培訓</button>
                 <button class="filter-tab" data-filter="parents" type="button" aria-pressed="false" data-i18n="events.filter.parents">👨‍👩‍👦 家長支援</button>
                 <button class="filter-tab" data-filter="online" type="button" aria-pressed="false" data-i18n="events.filter.online">💻 線上活動</button>
             </div>
-            <div class="events-coming-soon reveal" role="status" aria-live="polite">
-                <div class="events-coming-soon-icon" aria-hidden="true">✨</div>
-                <h3 data-i18n="events.empty.title">敬請期待</h3>
-                <p data-i18n="events.empty.desc">最新活動資訊將於此公布，歡迎稍後再回來查看。</p>
-                <div class="events-action-placeholder" aria-label="Registration actions currently unavailable">
-                    <button type="button" class="btn-event disabled" disabled aria-disabled="true" data-i18n="events.btn">立即登記 (RSVP) ✍️</button>
-                    <button type="button" class="btn-event disabled" disabled aria-disabled="true" data-i18n="events.btn2">加入候補名單 ⏱️</button>
-                </div>
+
+            <div class="event-grid" id="eventGrid">
+                <article class="event-card reading-companion-event reveal" data-category="youth parents" aria-labelledby="reading-companion-title">
+                    <div class="reading-companion-hero">
+                        <div>
+                            <p class="reading-companion-kicker" data-i18n="events.reading.kicker">共融學習計劃</p>
+                            <h3 id="reading-companion-title" data-i18n="events.reading.title">傷健伴讀計劃</h3>
+                            <p data-i18n="events.reading.hero">以一對一配對，讓閱讀、學習與真誠交流成為彼此理解的起點。</p>
+                        </div>
+                        <div class="reading-companion-hero-mark" aria-hidden="true">🤝</div>
+                    </div>
+
+                    <div class="reading-companion-body">
+                        <div class="reading-companion-intro">
+                            <h4 data-i18n="events.reading.intro.title">陪伴學習，也陪伴成長</h4>
+                            <p data-i18n="events.reading.intro.desc">本計劃為有特殊教育需要（SEN）或殘疾的學生，配對合適義工夥伴，按雙方步伐提供閱讀、學習及日常互動支援，建立更安心、更有連結的學習經驗。</p>
+                        </div>
+
+                        <div class="reading-companion-supports" aria-label="Programme support areas" data-i18n-aria-label="events.reading.supports.label">
+                            <div class="reading-support-item">
+                                <span aria-hidden="true">📚</span>
+                                <div><h4 data-i18n="events.reading.supports.learning.title">學習支援</h4><p data-i18n="events.reading.supports.learning.desc">透過伴讀、概念理解、作業整理及學習方法探索，按個別需要提供支持。</p></div>
+                            </div>
+                            <div class="reading-support-item">
+                                <span aria-hidden="true">💬</span>
+                                <div><h4 data-i18n="events.reading.supports.social.title">社交支援</h4><p data-i18n="events.reading.supports.social.desc">在共同閱讀與交流中，練習表達、聆聽與建立互信的相處方式。</p></div>
+                            </div>
+                            <div class="reading-support-item">
+                                <span aria-hidden="true">🌱</span>
+                                <div><h4 data-i18n="events.reading.supports.emotional.title">情感支持</h4><p data-i18n="events.reading.supports.emotional.desc">以尊重和關懷回應需要，讓參加者在安全的互動中累積自信。</p></div>
+                            </div>
+                        </div>
+
+                        <div class="reading-companion-meta" aria-label="Programme arrangements" data-i18n-aria-label="events.reading.meta.label">
+                            <span data-i18n="events.reading.meta.mode">🤝 一對一配對</span>
+                            <span data-i18n="events.reading.meta.time">🕒 時間由雙方協商</span>
+                            <span data-i18n="events.reading.meta.cost">🎈 免費參與</span>
+                        </div>
+
+                        <div class="reading-companion-signups" aria-label="Registration options" data-i18n-aria-label="events.reading.signup.label">
+                            <section class="reading-signup-card reading-signup-card--participant" aria-labelledby="participant-signup-title">
+                                <div class="reading-signup-heading">
+                                    <span class="reading-signup-icon" aria-hidden="true">🎓</span>
+                                    <div><p class="reading-signup-eyebrow" data-i18n="events.reading.participant.eyebrow">需要支援</p><h4 id="participant-signup-title" data-i18n="events.reading.participant.title">參加者報名</h4></div>
+                                </div>
+                                <p data-i18n="events.reading.participant.desc">歡迎有 SEN 或殘疾的學生，以及希望為子女尋找伴讀支援的家長／照顧者，預先登記服務需要。</p>
+                                <div class="event-form-placeholder" id="participant-form-slot">
+                                    <span class="event-form-placeholder-label" data-i18n="events.reading.form.participant.label">Google Form 預留位置：參加者報名表</span>
+                                    <p data-i18n="events.reading.form.placeholder.desc">報名表連結將於準備完成後加入此處。</p>
+                                    <button type="button" class="event-registration-button event-registration-button--participant" disabled aria-disabled="true" data-i18n="events.reading.participant.button">參加者報名表（準備中）</button>
+                                </div>
+                            </section>
+
+                            <section class="reading-signup-card reading-signup-card--volunteer" aria-labelledby="volunteer-signup-title">
+                                <div class="reading-signup-heading">
+                                    <span class="reading-signup-icon" aria-hidden="true">🙌</span>
+                                    <div><p class="reading-signup-eyebrow" data-i18n="events.reading.volunteer.eyebrow">同行招募</p><h4 id="volunteer-signup-title" data-i18n="events.reading.volunteer.title">義工報名</h4></div>
+                                </div>
+                                <p data-i18n="events.reading.volunteer.desc">歡迎具耐心、同理心與關懷態度的朋友加入；具良好閱讀及溝通能力，並願意穩定投入配對服務者尤佳。</p>
+                                <div class="event-form-placeholder" id="volunteer-form-slot">
+                                    <span class="event-form-placeholder-label" data-i18n="events.reading.form.volunteer.label">Google Form 預留位置：義工報名表</span>
+                                    <p data-i18n="events.reading.form.placeholder.desc">報名表連結將於準備完成後加入此處。</p>
+                                    <button type="button" class="event-registration-button event-registration-button--volunteer" disabled aria-disabled="true" data-i18n="events.reading.volunteer.button">義工報名表（準備中）</button>
+                                </div>
+                            </section>
+                        </div>
+
+                        <p class="reading-companion-note" data-i18n="events.reading.note">配對安排將按參加者需要、義工專長、可服務時間及整體服務容量作個別評估；詳情會於成功登記後另行通知。</p>
+                    </div>
+                </article>
             </div>
+            <p class="event-filter-empty" id="eventFilterEmpty" hidden role="status" aria-live="polite" data-i18n="events.filter.empty">此分類的活動正在籌備中，歡迎查看「全部」了解現正招募的傷健伴讀計劃。</p>
         </div>
     </section>
     <section class="section section-alt">
@@ -140,7 +203,7 @@
 
     <button class="back-to-top" id="backToTop" aria-label="回到頂端">↑</button>
 
-    <script src="lang.js?v=20260824.13"></script>
-    <script src="script.js?v=20260823.12"></script>
+    <script src="lang.js?v=20260824.18"></script>
+    <script src="script.js?v=20260824.18"></script>
 </body>
 </html>

@@ -179,30 +179,38 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (filterTabs && eventGrid) {
         const eventCards = eventGrid.querySelectorAll('.event-card');
+        const eventFilterEmpty = document.getElementById('eventFilterEmpty');
 
         filterTabs.addEventListener('click', function (e) {
             const tab = e.target.closest('.filter-tab');
             if (!tab) return;
 
-            // 更新標籤狀態
+            // 更新標籤狀態與讀屏器狀態
             filterTabs.querySelectorAll('.filter-tab').forEach(function (t) {
-                t.classList.remove('active');
+                const isActive = t === tab;
+                t.classList.toggle('active', isActive);
+                t.setAttribute('aria-pressed', String(isActive));
             });
-            tab.classList.add('active');
 
             const filter = tab.getAttribute('data-filter');
+            let visibleEvents = 0;
 
-            // 篩選活動卡片
+            // 支援一張活動卡片屬於多個分類（以空格分隔）
             eventCards.forEach(function (card) {
-                const category = card.getAttribute('data-category');
-                const show = (filter === 'all' || category === filter);
+                const categories = (card.getAttribute('data-category') || '').split(/\s+/);
+                const show = (filter === 'all' || categories.includes(filter));
                 card.style.display = show ? '' : 'none';
 
-                // 顯示時重新觸發出現動畫
                 if (show) {
+                    visibleEvents += 1;
+                    // 顯示時重新觸發出現動畫
                     card.classList.add('visible');
                 }
             });
+
+            if (eventFilterEmpty) {
+                eventFilterEmpty.hidden = visibleEvents > 0;
+            }
         });
     }
 

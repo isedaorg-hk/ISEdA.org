@@ -2758,3 +2758,322 @@ html[lang="en"] .sen-type-card-head span { display: none; }
 @media (max-width: 980px) { .awareness-layout { grid-template-columns: 1fr; } .awareness-sidebar { position: static; grid-template-columns: repeat(3,minmax(0,1fr)); } }
 @media (max-width: 760px) { .awareness-article { padding-top: 36px; } .awareness-metrics, .awareness-action-grid { grid-template-columns: 1fr; } .awareness-trend { grid-template-columns: 1fr; gap: 18px; } .awareness-trend > div:first-child { text-align: left; } .awareness-sidebar { grid-template-columns: 1fr; } .awareness-intro, .awareness-global, .awareness-closing { padding: 24px; } .awareness-bars p { grid-template-columns: 72px minmax(0,1fr) 68px; gap: 8px; font-size: .79rem; } }
 @media (prefers-reduced-motion: reduce) { .awareness-action-grid > div { transition: none !important; } }
+
+/* 24. 傷健伴讀活動卡片 */
+.reading-companion-event {
+    grid-column: 1 / -1;
+    background: #ffffff;
+    border: 1px solid rgba(20, 82, 151, 0.13);
+    overflow: hidden;
+}
+
+.reading-companion-event:hover {
+    transform: none;
+}
+
+.reading-companion-hero {
+    align-items: center;
+    background: linear-gradient(135deg, #073b73 0%, #0d62ad 55%, #1e88e5 100%);
+    color: #ffffff;
+    display: flex;
+    gap: 28px;
+    justify-content: space-between;
+    padding: 38px 42px;
+}
+
+.reading-companion-kicker,
+.reading-signup-eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin: 0 0 8px;
+    text-transform: uppercase;
+}
+
+.reading-companion-kicker {
+    color: #dcefff;
+}
+
+.reading-companion-hero h3 {
+    color: #ffffff;
+    font-size: clamp(28px, 4vw, 40px);
+    line-height: 1.2;
+    margin: 0 0 10px;
+}
+
+.reading-companion-hero p:not(.reading-companion-kicker) {
+    color: rgba(255, 255, 255, 0.92);
+    line-height: 1.75;
+    margin: 0;
+    max-width: 720px;
+}
+
+.reading-companion-hero-mark {
+    align-items: center;
+    background: rgba(255, 255, 255, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 50%;
+    display: flex;
+    flex: 0 0 auto;
+    font-size: 36px;
+    height: 82px;
+    justify-content: center;
+    width: 82px;
+}
+
+.reading-companion-body {
+    padding: 38px 42px 42px;
+}
+
+.reading-companion-intro {
+    border-left: 4px solid var(--primary-sky);
+    color: var(--text-dark);
+    margin-bottom: 28px;
+    max-width: 960px;
+    padding: 4px 0 4px 20px;
+}
+
+.reading-companion-intro h4 {
+    color: var(--primary-dark);
+    font-size: 21px;
+    margin: 0 0 8px;
+}
+
+.reading-companion-intro p,
+.reading-support-item p,
+.reading-signup-card > p,
+.reading-companion-note {
+    color: var(--text-light);
+    line-height: 1.75;
+    margin: 0;
+}
+
+.reading-companion-supports {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-bottom: 24px;
+}
+
+.reading-support-item {
+    align-items: flex-start;
+    background: #f7fbff;
+    border: 1px solid #dcecfb;
+    border-radius: 12px;
+    display: flex;
+    gap: 13px;
+    min-width: 0;
+    padding: 20px;
+}
+
+.reading-support-item > span {
+    align-items: center;
+    background: #e1f1ff;
+    border-radius: 10px;
+    display: flex;
+    flex: 0 0 auto;
+    font-size: 21px;
+    height: 42px;
+    justify-content: center;
+    width: 42px;
+}
+
+.reading-support-item h4 {
+    color: var(--primary-dark);
+    font-size: 16px;
+    margin: 1px 0 7px;
+}
+
+.reading-support-item p {
+    font-size: 14px;
+}
+
+.reading-companion-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 0 30px;
+}
+
+.reading-companion-meta span {
+    background: #eef8f2;
+    border: 1px solid #ccebd7;
+    border-radius: 999px;
+    color: #196a43;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 8px 13px;
+}
+
+.reading-companion-signups {
+    display: grid;
+    gap: 22px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.reading-signup-card {
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 26px;
+}
+
+.reading-signup-card--participant {
+    background: linear-gradient(180deg, #f0f8ff 0%, #ffffff 100%);
+    border: 1px solid #b9dcfb;
+}
+
+.reading-signup-card--volunteer {
+    background: linear-gradient(180deg, #effcf5 0%, #ffffff 100%);
+    border: 1px solid #bfe9d0;
+}
+
+.reading-signup-heading {
+    align-items: center;
+    display: flex;
+    gap: 13px;
+    margin-bottom: 13px;
+}
+
+.reading-signup-icon {
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    flex: 0 0 auto;
+    font-size: 22px;
+    height: 46px;
+    justify-content: center;
+    width: 46px;
+}
+
+.reading-signup-card--participant .reading-signup-icon {
+    background: #dceeff;
+}
+
+.reading-signup-card--volunteer .reading-signup-icon {
+    background: #dff6e8;
+}
+
+.reading-signup-eyebrow {
+    color: #60758d;
+    font-size: 10px;
+    margin-bottom: 3px;
+}
+
+.reading-signup-heading h4 {
+    color: var(--text-dark);
+    font-size: 20px;
+    margin: 0;
+}
+
+.event-form-placeholder {
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px dashed #b8c8d8;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 22px;
+    min-height: 164px;
+    padding: 20px;
+    text-align: center;
+}
+
+.event-form-placeholder-label {
+    color: #44627f;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.event-form-placeholder p {
+    color: #6a7c8e;
+    font-size: 13px;
+    line-height: 1.55;
+    margin: 8px 0 16px;
+}
+
+.event-registration-button {
+    border: 0;
+    border-radius: 8px;
+    color: #ffffff;
+    cursor: not-allowed;
+    font: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    opacity: 0.72;
+    padding: 11px 16px;
+    width: 100%;
+}
+
+.event-registration-button--participant {
+    background: #1976d2;
+}
+
+.event-registration-button--volunteer {
+    background: #238a56;
+}
+
+.reading-companion-note {
+    background: #fff9eb;
+    border-left: 3px solid #efb332;
+    border-radius: 0 8px 8px 0;
+    font-size: 13px;
+    margin-top: 25px;
+    padding: 13px 16px;
+}
+
+.event-filter-empty {
+    background: #f7fbff;
+    border: 1px solid #d4e7f8;
+    border-radius: 10px;
+    color: #49637b;
+    margin: 0;
+    padding: 18px 20px;
+    text-align: center;
+}
+
+@media (max-width: 760px) {
+    .reading-companion-hero {
+        align-items: flex-start;
+        padding: 30px 24px;
+    }
+
+    .reading-companion-hero-mark {
+        font-size: 27px;
+        height: 58px;
+        width: 58px;
+    }
+
+    .reading-companion-body {
+        padding: 28px 20px 24px;
+    }
+
+    .reading-companion-supports,
+    .reading-companion-signups {
+        grid-template-columns: 1fr;
+    }
+
+    .reading-signup-card {
+        padding: 22px;
+    }
+}
+
+@media (max-width: 420px) {
+    .reading-companion-hero {
+        gap: 16px;
+        padding: 26px 18px;
+    }
+
+    .reading-companion-hero h3 {
+        font-size: 28px;
+    }
+
+    .reading-companion-hero-mark {
+        display: none;
+    }
+
+    .reading-companion-body {
+        padding: 24px 16px 20px;
+    }
+}
