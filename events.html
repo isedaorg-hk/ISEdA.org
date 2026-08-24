@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n-title="title.events">活動專區 - ISEdA 國際特殊教育協會</title>
-    <link rel="stylesheet" href="style.css?v=20260825.19">
+    <link rel="stylesheet" href="style.css?v=20260825.21">
     <!-- 社群分享預覽（Open Graph / Twitter Card） -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="ISEdA 國際特殊教育協會">
@@ -135,10 +135,8 @@
                                     <div><p class="reading-signup-eyebrow" data-i18n="events.reading.participant.eyebrow">需要支援</p><h4 id="participant-signup-title" data-i18n="events.reading.participant.title">參加者報名</h4></div>
                                 </div>
                                 <p data-i18n="events.reading.participant.desc">歡迎有 SEN 或殘疾的學生，以及希望為子女尋找伴讀支援的家長／照顧者，預先登記服務需要。</p>
-                                <div class="event-form-placeholder" id="participant-form-slot">
-                                    <span class="event-form-placeholder-label" data-i18n="events.reading.form.participant.label">Google Form 預留位置：參加者報名表</span>
-                                    <p data-i18n="events.reading.form.placeholder.desc">報名表連結將於準備完成後加入此處。</p>
-                                    <button type="button" class="event-registration-button event-registration-button--participant" disabled aria-disabled="true" data-i18n="events.reading.participant.button">參加者報名表（準備中）</button>
+                                <div class="event-application-action" id="participant-form-slot" data-form-target="participant">
+                                    <button type="button" class="event-registration-button event-registration-button--participant" disabled aria-disabled="true" data-i18n="events.reading.participant.button">立即申請</button>
                                 </div>
                             </section>
 
@@ -148,10 +146,8 @@
                                     <div><p class="reading-signup-eyebrow" data-i18n="events.reading.volunteer.eyebrow">同行招募</p><h4 id="volunteer-signup-title" data-i18n="events.reading.volunteer.title">義工報名</h4></div>
                                 </div>
                                 <p data-i18n="events.reading.volunteer.desc">歡迎具耐心、同理心與關懷態度的朋友加入；具良好閱讀及溝通能力，並願意穩定投入配對服務者尤佳。</p>
-                                <div class="event-form-placeholder" id="volunteer-form-slot">
-                                    <span class="event-form-placeholder-label" data-i18n="events.reading.form.volunteer.label">Google Form 預留位置：義工報名表</span>
-                                    <p data-i18n="events.reading.form.placeholder.desc">報名表連結將於準備完成後加入此處。</p>
-                                    <button type="button" class="event-registration-button event-registration-button--volunteer" disabled aria-disabled="true" data-i18n="events.reading.volunteer.button">義工報名表（準備中）</button>
+                                <div class="event-application-action" id="volunteer-form-slot" data-form-target="volunteer">
+                                    <button type="button" class="event-registration-button event-registration-button--volunteer" disabled aria-disabled="true" data-i18n="events.reading.volunteer.button">立即申請</button>
                                 </div>
                             </section>
                         </div>
@@ -247,7 +243,7 @@
 
     <button class="back-to-top" id="backToTop" aria-label="回到頂端">↑</button>
 
-    <script src="lang.js?v=20260825.20"></script>
+    <script src="lang.js?v=20260825.21"></script>
     <script src="script.js?v=20260825.19"></script>
 </body>
 </html>

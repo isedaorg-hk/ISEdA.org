@@ -3366,3 +3366,20 @@ html[lang="en"] .sen-type-card-head span { display: none; }
         padding: 24px 16px 20px;
     }
 }
+
+/* 26. 傷健伴讀公開申請按鈕 */
+.event-application-action {
+    margin-top: 24px;
+}
+
+.event-application-action .event-registration-button {
+    display: block;
+    margin: 0;
+    opacity: 1;
+    width: 100%;
+}
+
+.event-application-action .event-registration-button:disabled {
+    cursor: default;
+    opacity: 1;
+}
