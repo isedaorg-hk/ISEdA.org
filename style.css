@@ -1917,13 +1917,13 @@ footer {
 }
 
 
-/* One-step larger partner-logo system */
+/* Standard partner-logo image frame */
 .partner-logo {
     height: 138px;
 }
 
 .partner-logo img {
-    height: 100px;
+    height: 90px;
 }
 
 @media (max-width: 600px) {
