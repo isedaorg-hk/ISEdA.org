@@ -209,7 +209,7 @@ const I18N = {
     'about.hero.title': '🏫 關於我們',
     'about.hero.sub': '了解 ISEdA 的使命、願景、核心團隊與榮譽顧問。',
     'about.who.title': '我們是誰？',
-    'about.who.p1': '國際特殊教育協會 (International Special Education Association, ISEdA) 成立於 2018 年，是一個以香港為基地、面向全球的非牟利組織。',
+    'about.who.p1': '國際特殊教育協會 (International Special Education Association, ISEdA) 成立於 2026 年，是一個以香港為基地、面向全球的非牟利組織。',
     'about.who.p2': '我們相信：<strong>每一個人都值得被看見、被理解、被支持。</strong>無論是 SEN 青年、家長，還是站在第一線的特教從業者，我們都在這裡為您撐起一把傘。',
     'about.who.check1': '以「人」為本，尊重每個人的差異與節奏',
     'about.who.check2': '連結國際資源，接軌全球特教趨勢',
