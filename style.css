@@ -3077,3 +3077,292 @@ html[lang="en"] .sen-type-card-head span { display: none; }
         padding: 24px 16px 20px;
     }
 }
+
+/* 25. SEN 大專生專業形象照計劃 */
+.profile-photo-event {
+    grid-column: 1 / -1;
+    background: #ffffff;
+    border: 1px solid rgba(107, 56, 135, 0.16);
+    overflow: hidden;
+}
+
+.profile-photo-event:hover {
+    transform: none;
+}
+
+.profile-photo-hero {
+    align-items: center;
+    background: linear-gradient(135deg, #472064 0%, #72478f 56%, #a86c9d 100%);
+    color: #ffffff;
+    display: flex;
+    gap: 28px;
+    justify-content: space-between;
+    padding: 38px 42px;
+}
+
+.profile-photo-kicker,
+.profile-photo-registration-kicker,
+.profile-photo-eligibility-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin: 0 0 8px;
+    text-transform: uppercase;
+}
+
+.profile-photo-kicker {
+    color: #f2ddff;
+}
+
+.profile-photo-hero h3 {
+    color: #ffffff;
+    font-size: clamp(28px, 4vw, 40px);
+    line-height: 1.2;
+    margin: 0 0 10px;
+}
+
+.profile-photo-hero p:not(.profile-photo-kicker) {
+    color: rgba(255, 255, 255, 0.93);
+    line-height: 1.75;
+    margin: 0;
+    max-width: 720px;
+}
+
+.profile-photo-hero-mark {
+    align-items: center;
+    background: rgba(255, 255, 255, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.29);
+    border-radius: 50%;
+    display: flex;
+    flex: 0 0 auto;
+    font-size: 35px;
+    height: 82px;
+    justify-content: center;
+    width: 82px;
+}
+
+.profile-photo-body {
+    padding: 38px 42px 42px;
+}
+
+.profile-photo-intro {
+    border-left: 4px solid #9563a7;
+    margin-bottom: 28px;
+    max-width: 990px;
+    padding: 4px 0 4px 20px;
+}
+
+.profile-photo-intro h4 {
+    color: #5a2b73;
+    font-size: 21px;
+    margin: 0 0 8px;
+}
+
+.profile-photo-intro p,
+.profile-photo-detail p,
+.profile-photo-eligibility-card p,
+.profile-photo-registration p {
+    color: var(--text-light);
+    line-height: 1.75;
+    margin: 0;
+}
+
+.profile-photo-details {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-bottom: 25px;
+}
+
+.profile-photo-detail {
+    align-items: flex-start;
+    background: #fbf8fd;
+    border: 1px solid #eadff0;
+    border-radius: 12px;
+    display: flex;
+    gap: 12px;
+    min-width: 0;
+    padding: 18px;
+}
+
+.profile-photo-detail > span {
+    align-items: center;
+    background: #f0e5f5;
+    border-radius: 9px;
+    display: flex;
+    flex: 0 0 auto;
+    font-size: 18px;
+    height: 39px;
+    justify-content: center;
+    width: 39px;
+}
+
+.profile-photo-detail strong {
+    color: #5a2b73;
+    display: block;
+    font-size: 15px;
+    margin: 1px 0 5px;
+}
+
+.profile-photo-detail p {
+    font-size: 13px;
+}
+
+.profile-photo-eligibility {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-bottom: 26px;
+}
+
+.profile-photo-eligibility-card {
+    align-items: flex-start;
+    border-radius: 12px;
+    display: flex;
+    gap: 14px;
+    min-width: 0;
+    padding: 22px;
+}
+
+.profile-photo-eligibility-card--free {
+    background: linear-gradient(180deg, #effaf3 0%, #ffffff 100%);
+    border: 1px solid #c3e7d0;
+}
+
+.profile-photo-eligibility-card--paid {
+    background: linear-gradient(180deg, #fff8ec 0%, #ffffff 100%);
+    border: 1px solid #f1d6a3;
+}
+
+.profile-photo-eligibility-icon {
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    flex: 0 0 auto;
+    font-size: 19px;
+    font-weight: 800;
+    height: 38px;
+    justify-content: center;
+    width: 38px;
+}
+
+.profile-photo-eligibility-card--free .profile-photo-eligibility-icon {
+    background: #ccefd8;
+    color: #1a7547;
+}
+
+.profile-photo-eligibility-card--paid .profile-photo-eligibility-icon {
+    background: #ffe6b5;
+    color: #9a5c00;
+}
+
+.profile-photo-eligibility-label {
+    color: #697787;
+    font-size: 10px;
+    margin-bottom: 4px;
+}
+
+.profile-photo-eligibility-card h4 {
+    color: var(--text-dark);
+    font-size: 19px;
+    line-height: 1.35;
+    margin: 0 0 7px;
+}
+
+.profile-photo-eligibility-card p {
+    font-size: 14px;
+}
+
+.profile-photo-registration {
+    align-items: center;
+    background: #f6f5fc;
+    border: 1px solid #ddd8ee;
+    border-radius: 13px;
+    display: flex;
+    gap: 26px;
+    justify-content: space-between;
+    padding: 25px 28px;
+}
+
+.profile-photo-registration-kicker {
+    color: #76548d;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+.profile-photo-registration h4 {
+    color: #4e2268;
+    font-size: 21px;
+    margin: 0 0 7px;
+}
+
+.profile-photo-registration p {
+    font-size: 14px;
+    max-width: 760px;
+}
+
+.profile-photo-whatsapp {
+    background: #1e8f50;
+    border-radius: 8px;
+    color: #ffffff;
+    display: inline-block;
+    flex: 0 0 auto;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 13px 18px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.profile-photo-whatsapp:hover {
+    background: #16723e;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 760px) {
+    .profile-photo-hero {
+        align-items: flex-start;
+        padding: 30px 24px;
+    }
+
+    .profile-photo-hero-mark {
+        font-size: 27px;
+        height: 58px;
+        width: 58px;
+    }
+
+    .profile-photo-body {
+        padding: 28px 20px 24px;
+    }
+
+    .profile-photo-details,
+    .profile-photo-eligibility {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-photo-registration {
+        align-items: stretch;
+        flex-direction: column;
+        padding: 22px;
+    }
+}
+
+@media (max-width: 420px) {
+    .profile-photo-hero {
+        gap: 16px;
+        padding: 26px 18px;
+    }
+
+    .profile-photo-hero h3 {
+        font-size: 28px;
+    }
+
+    .profile-photo-hero-mark {
+        display: none;
+    }
+
+    .profile-photo-body {
+        padding: 24px 16px 20px;
+    }
+}
