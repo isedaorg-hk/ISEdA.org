@@ -3561,3 +3561,64 @@ html[lang="en"] .sen-type-card-head span { display: none; }
         padding: 29px 24px;
     }
 }
+
+/* 28. 合作夥伴名錄版面修正 */
+.partner-grid--directory {
+    grid-template-columns: repeat(4, minmax(0, 230px));
+    justify-content: center;
+    margin: 0 auto 42px;
+    max-width: 1010px;
+}
+
+.partner-grid--directory .partner-logo {
+    min-width: 0;
+    width: 100%;
+}
+
+.partner-directory-link {
+    align-items: center;
+    flex-direction: column;
+    gap: 14px;
+    max-width: 660px;
+    padding: 24px 28px;
+    text-align: center;
+}
+
+.partner-directory-link .btn-partner-directory {
+    background: #135e9a;
+    border-color: #135e9a;
+    box-shadow: 0 8px 16px rgba(19, 94, 154, 0.2);
+    color: #ffffff;
+    min-width: 180px;
+}
+
+.partner-directory-link .btn-partner-directory:hover {
+    background: #0c497a;
+    border-color: #0c497a;
+    color: #ffffff;
+}
+
+.btn-partner-directory {
+    background: #135e9a;
+    border-color: #135e9a;
+}
+
+.btn-partner-directory:hover {
+    background: #0c497a;
+    border-color: #0c497a;
+}
+
+@media (max-width: 1050px) and (min-width: 701px) {
+    .partner-grid--directory {
+        grid-template-columns: repeat(3, minmax(0, 230px));
+        max-width: 730px;
+    }
+}
+
+@media (max-width: 700px) {
+    .partner-grid--directory {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin-bottom: 30px;
+        max-width: none;
+    }
+}
