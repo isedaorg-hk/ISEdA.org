@@ -3667,3 +3667,16 @@ html[lang="en"] .sen-type-card-head span { display: none; }
 .btn-partner-directory {
     touch-action: manipulation;
 }
+
+/* Keep the directory return control visually distinct from primary partner actions. */
+.partner-directory-return .btn-partner-directory--secondary {
+    background: #ffffff;
+    border-color: #135e9a;
+    color: #15558c;
+}
+
+.partner-directory-return .btn-partner-directory--secondary:hover {
+    background: #eaf6ff;
+    border-color: #0c497a;
+    color: #0b4777;
+}
