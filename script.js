@@ -33,7 +33,8 @@ document.addEventListener('DOMContentLoaded', function () {
         if (isOpen) dropdown.classList.remove('is-keyboard-closed');
         toggle.setAttribute('aria-expanded', String(isOpen));
         if (typeof t === 'function') {
-            toggle.setAttribute('aria-label', t(isOpen ? 'nav.about.toggle.close' : 'nav.about.toggle.open'));
+            const dropdownKey = dropdown.dataset.dropdownKey || 'about';
+            toggle.setAttribute('aria-label', t(isOpen ? `nav.${dropdownKey}.toggle.close` : `nav.${dropdownKey}.toggle.open`));
         }
     }
 

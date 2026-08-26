@@ -3383,3 +3383,181 @@ html[lang="en"] .sen-type-card-head span { display: none; }
     cursor: default;
     opacity: 1;
 }
+
+/* 27. 合作夥伴名錄與精簡預覽 */
+.partner-grid--featured {
+    margin-bottom: 28px;
+}
+
+.partner-directory-link {
+    align-items: center;
+    background: linear-gradient(135deg, #f1f8ff 0%, #f7fbff 100%);
+    border: 1px solid #cfe2f6;
+    border-radius: 14px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 720px;
+    padding: 20px 24px;
+}
+
+.partner-directory-link p {
+    color: var(--text-light);
+    line-height: 1.65;
+    margin: 0;
+}
+
+.btn-partner-directory {
+    align-items: center;
+    background: var(--primary-blue);
+    border: 1px solid var(--primary-blue);
+    border-radius: 8px;
+    color: #ffffff;
+    display: inline-flex;
+    flex: 0 0 auto;
+    font-weight: 700;
+    justify-content: center;
+    min-height: 44px;
+    padding: 11px 20px;
+    text-decoration: none;
+    transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.btn-partner-directory:hover {
+    background: var(--dark-blue);
+    border-color: var(--dark-blue);
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.btn-partner-directory:active {
+    transform: scale(0.97);
+}
+
+.btn-partner-directory--secondary {
+    background: #ffffff;
+    border-color: #2f6fa8;
+    color: #185486;
+}
+
+.btn-partner-directory--secondary:hover {
+    background: #edf6fe;
+    border-color: #185486;
+    color: #11466f;
+}
+
+.partner-directory-section {
+    padding-bottom: 74px;
+}
+
+.partner-directory-heading {
+    margin: 0 auto 36px;
+    max-width: 900px;
+    text-align: center;
+}
+
+.partner-directory-heading .section-title {
+    margin-bottom: 12px;
+}
+
+.partner-directory-eyebrow {
+    color: #2672ad;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.11em;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+}
+
+.partner-directory-heading .section-sub {
+    margin-bottom: 0;
+}
+
+.partner-grid--directory {
+    margin-bottom: 36px;
+}
+
+.partner-directory-return {
+    display: flex;
+    justify-content: center;
+}
+
+.partner-directory-callout {
+    align-items: center;
+    background: linear-gradient(120deg, #0b4b83 0%, #1d70ae 60%, #2f8bbf 100%);
+    border-radius: 16px;
+    color: #ffffff;
+    display: flex;
+    gap: 28px;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 36px 40px;
+    position: relative;
+}
+
+.partner-directory-callout::after {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    content: '';
+    height: 245px;
+    position: absolute;
+    right: -76px;
+    top: -144px;
+    width: 245px;
+}
+
+.partner-directory-callout > * {
+    position: relative;
+    z-index: 1;
+}
+
+.partner-directory-callout .partner-directory-eyebrow {
+    color: #cce9ff;
+}
+
+.partner-directory-callout h2 {
+    color: #ffffff;
+    font-size: clamp(25px, 3vw, 33px);
+    margin: 0 0 10px;
+}
+
+.partner-directory-callout p:not(.partner-directory-eyebrow) {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.7;
+    margin: 0;
+    max-width: 700px;
+}
+
+.partner-directory-callout .btn-partner-directory {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: #15558c;
+}
+
+.partner-directory-callout .btn-partner-directory:hover {
+    background: #eaf6ff;
+    border-color: #eaf6ff;
+    color: #0b4777;
+}
+
+@media (max-width: 700px) {
+    .partner-directory-link,
+    .partner-directory-callout {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .partner-directory-link {
+        padding: 20px;
+    }
+
+    .partner-directory-link .btn-partner-directory,
+    .partner-directory-callout .btn-partner-directory {
+        width: 100%;
+    }
+
+    .partner-directory-callout {
+        padding: 29px 24px;
+    }
+}
