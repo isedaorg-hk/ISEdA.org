@@ -3458,7 +3458,8 @@ html[lang="en"] .sen-type-card-head span { display: none; }
 }
 
 .partner-directory-heading .section-title {
-    margin-bottom: 12px;
+    /* Preserve space for the inherited underline decoration before the subtitle. */
+    margin-bottom: 40px;
 }
 
 .partner-directory-eyebrow {
