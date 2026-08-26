@@ -3622,3 +3622,47 @@ html[lang="en"] .sen-type-card-head span { display: none; }
         max-width: none;
     }
 }
+
+/* 29. 合作夥伴頁 UX 與無障礙優化 */
+.btn-partner-directory:focus-visible,
+.nav-dropdown-menu a:focus-visible {
+    outline: 3px solid #77b7e8;
+    outline-offset: 3px;
+}
+
+.partner-directory-link .btn-partner-directory {
+    touch-action: manipulation;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .partner-logo,
+    .btn-partner-directory,
+    .partner-directory-link {
+        transition: none;
+    }
+
+    .partner-logo:hover,
+    .btn-partner-directory:hover,
+    .btn-partner-directory:active {
+        transform: none;
+    }
+}
+
+@media (max-width: 390px) {
+    .partner-directory-heading {
+        margin-bottom: 28px;
+    }
+
+    .partner-directory-link {
+        padding: 20px 16px;
+    }
+
+    .partner-directory-link p {
+        font-size: 14px;
+    }
+}
+
+/* Primary partner actions should respond promptly on touch devices. */
+.btn-partner-directory {
+    touch-action: manipulation;
+}
