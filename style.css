@@ -3680,3 +3680,73 @@ html[lang="en"] .sen-type-card-head span { display: none; }
     border-color: #0c497a;
     color: #0b4777;
 }
+
+/* 31. 傷健伴讀計劃詳情 */
+.reading-companion-targets {
+    align-items: center;
+    background: linear-gradient(135deg, #f3faff 0%, #effcf7 100%);
+    border: 1px solid #cee6f7;
+    border-radius: 14px;
+    display: flex;
+    gap: 22px;
+    justify-content: space-between;
+    margin: 0 0 24px;
+    padding: 18px 20px;
+}
+
+.reading-companion-targets-title {
+    align-items: center;
+    color: #154b7a;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 9px;
+}
+
+.reading-companion-targets-title > span {
+    font-size: 22px;
+}
+
+.reading-companion-targets h4 {
+    font-size: 17px;
+    margin: 0;
+}
+
+.reading-companion-targets ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.reading-companion-targets li {
+    background: #ffffff;
+    border: 1px solid #c9dfef;
+    border-radius: 999px;
+    color: #2d5b7a;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 8px 11px;
+}
+
+.reading-companion-event .reading-companion-supports {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 760px) {
+    .reading-companion-targets {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .reading-companion-targets ul {
+        justify-content: flex-start;
+    }
+
+    .reading-companion-event .reading-companion-supports {
+        grid-template-columns: 1fr;
+    }
+}
