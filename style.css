@@ -4301,3 +4301,323 @@ html[lang="en"] .sen-type-card-head span { display: none; }
         transition: none;
     }
 }
+/* ============================================================
+   官方活動目錄：只影響 activity-directory.html
+   ============================================================ */
+.activity-directory-hero {
+    background:
+        radial-gradient(circle at 83% 22%, rgba(100, 181, 246, 0.32), transparent 24rem),
+        linear-gradient(135deg, rgba(0, 51, 141, 0.94), rgba(22, 92, 186, 0.88));
+}
+
+.activity-directory-eyebrow,
+.activity-directory-label {
+    margin-bottom: 8px;
+    color: #c7e7ff;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.activity-directory-hero h2 {
+    margin-bottom: 12px;
+}
+
+.activity-directory-hero .breadcrumb {
+    margin-top: 18px;
+}
+
+.activity-directory-section {
+    padding: 70px 0 88px;
+}
+
+.activity-directory-intro {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(250px, 0.46fr);
+    gap: 42px;
+    align-items: end;
+    margin-bottom: 36px;
+}
+
+.activity-directory-label {
+    color: var(--primary-dark);
+}
+
+.activity-directory-intro h2 {
+    color: var(--primary-dark);
+    font-size: clamp(28px, 3.2vw, 38px);
+    line-height: 1.25;
+}
+
+.activity-directory-intro > p {
+    margin: 0;
+    color: var(--text-light);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.activity-directory-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.activity-directory-card {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid #dce8f4;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: var(--shadow);
+    transition: transform 220ms cubic-bezier(0.23, 1, 0.32, 1), box-shadow 220ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.activity-directory-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+}
+
+.activity-directory-card-media {
+    display: grid;
+    min-height: 210px;
+    place-items: center;
+    overflow: hidden;
+    background: #eff5fa;
+}
+
+.activity-directory-card-media img {
+    width: 100%;
+    height: 100%;
+    min-height: 210px;
+    background: #eff5fa;
+    object-fit: contain;
+}
+
+.activity-directory-card-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    padding: 23px;
+}
+
+.activity-directory-status {
+    width: fit-content;
+    margin-bottom: 12px;
+    border-radius: 999px;
+    background: #e9f5ff;
+    padding: 4px 9px;
+    color: #13529c;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.activity-directory-card h3 {
+    color: var(--primary-dark);
+    font-size: 21px;
+    line-height: 1.35;
+}
+
+.activity-directory-card-summary {
+    margin: 12px 0 18px;
+    color: var(--text-light);
+    font-size: 15px;
+    line-height: 1.72;
+}
+
+.activity-directory-card-meta {
+    display: grid;
+    gap: 5px;
+    margin-top: auto;
+    border-top: 1px solid #edf1f5;
+    padding-top: 14px;
+}
+
+.activity-directory-card-meta-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    color: #48627d;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.activity-directory-card-meta-item dt,
+.activity-directory-card-meta-item dd {
+    margin: 0;
+}
+
+.activity-directory-card-meta-item:first-child dt {
+    color: var(--primary-dark);
+    font-weight: 800;
+}
+
+.activity-directory-meta-label {
+    color: var(--text-faint);
+    font-weight: 700;
+}
+
+.activity-directory-card-link {
+    display: inline-flex;
+    width: fit-content;
+    margin-top: 18px;
+    color: var(--primary-dark);
+    font-size: 14px;
+    font-weight: 800;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+.activity-directory-card-link::after {
+    margin-left: 7px;
+    content: '→';
+}
+
+.activity-directory-empty {
+    border: 1px dashed #b9cee5;
+    border-radius: 12px;
+    background: #f6fbff;
+    padding: 30px;
+    color: var(--text-light);
+    text-align: center;
+}
+
+.activity-directory-return {
+    margin-top: 46px;
+    text-align: center;
+}
+
+.activity-directory-page a:focus-visible,
+.activity-directory-page button:focus-visible {
+    outline: 3px solid var(--accent-yellow);
+    outline-offset: 3px;
+}
+
+@media (max-width: 960px) {
+    .activity-directory-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 680px) {
+    .activity-directory-section {
+        padding: 48px 0 64px;
+    }
+
+    .activity-directory-intro,
+    .activity-directory-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .activity-directory-intro {
+        gap: 15px;
+        margin-bottom: 27px;
+    }
+
+    .activity-directory-card-media,
+    .activity-directory-card-media img {
+        min-height: 190px;
+    }
+
+    .activity-directory-card-content {
+        padding: 20px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .activity-directory-card {
+        transition: none;
+    }
+}
+/* 活動專區：官方活動目錄入口 */
+.activity-directory-callout-section {
+    border-bottom: 1px solid #e4edf7;
+    background: #f5faff;
+    padding: 30px 0;
+}
+
+.activity-directory-callout {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #d7e8f8;
+    border-radius: 16px;
+    background: #ffffff;
+    padding: 26px 30px;
+    box-shadow: 0 8px 22px rgba(0, 51, 141, 0.06);
+}
+
+.activity-directory-callout > div {
+    max-width: 730px;
+}
+
+.activity-directory-callout-eyebrow {
+    margin-bottom: 6px;
+    color: var(--primary-dark);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+.activity-directory-callout h2 {
+    margin-bottom: 6px;
+    color: var(--primary-dark);
+    font-size: 23px;
+    line-height: 1.35;
+}
+
+.activity-directory-callout p:not(.activity-directory-callout-eyebrow) {
+    color: var(--text-light);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.activity-directory-callout-button {
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    min-height: 46px;
+    border-radius: 9px;
+    background: var(--primary-dark);
+    padding: 11px 19px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1), background-color 160ms cubic-bezier(0.23, 1, 0.32, 1), box-shadow 160ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.activity-directory-callout-button:hover,
+.activity-directory-callout-button:focus-visible {
+    transform: translateY(-2px);
+    background: #0050c4;
+    box-shadow: 0 8px 16px rgba(0, 51, 141, 0.2);
+}
+
+.activity-directory-callout-button:focus-visible {
+    outline: 3px solid var(--accent-yellow);
+    outline-offset: 3px;
+}
+
+@media (max-width: 700px) {
+    .activity-directory-callout {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 23px 22px;
+    }
+
+    .activity-directory-callout-button {
+        width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .activity-directory-callout-button {
+        transition: none;
+    }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n-title="activity.directory.title">ISEdA 活動目錄 - 國際特殊教育協會</title>
+    <meta name="description" content="瀏覽國際特殊教育協會（ISEdA）的官方活動目錄、校園共融活動、服務項目及活動回顧。">
+    <link rel="canonical" href="https://iseda.org.hk/activity-directory.html">
+    <link rel="stylesheet" href="style.css?v=20260828.activity-directory">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ISEdA 國際特殊教育協會">
+    <meta property="og:title" content="ISEdA 活動目錄｜國際特殊教育協會">
+    <meta property="og:description" content="探索 ISEdA 的官方活動、校園共融行動與活動回顧。">
+    <meta property="og:url" content="https://iseda.org.hk/activity-directory.html">
+    <meta property="og:image" content="https://iseda.org.hk/logo-2026-08-21.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ISEdA 活動目錄｜國際特殊教育協會">
+    <meta name="twitter:description" content="探索 ISEdA 的官方活動、校園共融行動與活動回顧。">
+    <meta name="twitter:image" content="https://iseda.org.hk/logo-2026-08-21.jpeg">
+</head>
+<body class="activity-directory-page">
+    <a class="skip-link" href="#main-content" data-i18n="a11y.skip">跳至主要內容</a>
+    <header>
+        <div class="container header-container">
+            <a class="logo-placeholder" href="index.html" data-i18n-aria-label="activity.directory.home.aria">
+                <div class="logo-box"><img src="logo-2026-08-21.jpeg" alt="ISEdA" width="55" height="55"></div>
+                <div class="logo-text">
+                    <h1 data-i18n="brand.zh">國際特殊教育協會</h1>
+                    <p data-i18n="brand.sub">International Special Education Association</p>
+                </div>
+            </a>
+            <nav id="site-nav">
+                <ul>
+                    <li><a href="index.html" data-i18n="nav.home">首頁</a></li>
+                    <li class="nav-dropdown">
+                        <a href="about.html" class="nav-dropdown-main" data-i18n="nav.about">關於我們</a>
+                        <button class="nav-dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="about-menu" data-i18n-aria-label="nav.about.toggle.open"><span aria-hidden="true">⌄</span></button>
+                        <ul class="nav-dropdown-menu" id="about-menu" aria-label="關於我們子選單" data-i18n-aria-label="nav.about.menu">
+                            <li><a href="founders.html#elvin-lam" data-i18n="nav.about.founders">核心團隊</a></li>
+                            <li><a href="honorary-advisors.html#frank-kusse" data-i18n="nav.about.advisors">榮譽顧問團隊</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="events.html" class="active" data-i18n="nav.events">活動專區</a></li>
+                    <li><a href="knowledge.html" data-i18n="nav.knowledge">專業知識庫</a></li>
+                    <li><a href="partners.html" data-i18n="nav.partners">合作洽談</a></li>
+                    <li class="lang-switch">
+                        <button class="lang-btn active" type="button" data-lang="zh-Hant">繁</button><span class="lang-sep">/</span>
+                        <button class="lang-btn" type="button" data-lang="zh-Hans">简</button><span class="lang-sep">/</span>
+                        <button class="lang-btn" type="button" data-lang="en">EN</button>
+                    </li>
+                    <li><a href="join.html" class="btn-join" data-i18n="nav.login">加入我們</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" id="hamburger" type="button" aria-label="開啟選單" data-i18n-aria-label="nav.toggle.open"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="page-hero activity-directory-hero" aria-labelledby="directory-heading">
+            <div class="container">
+                <p class="activity-directory-eyebrow" data-i18n="activity.directory.eyebrow">ISEdA 官方活動</p>
+                <h2 id="directory-heading" data-i18n="activity.directory.hero.title">活動目錄</h2>
+                <p data-i18n="activity.directory.hero.sub">探索 ISEdA 的活動、校園共融行動與活動回顧；點選任何活動即可閱讀完整詳情。</p>
+                <div class="breadcrumb"><a href="index.html" data-i18n="crumb.home">首頁</a> / <a href="events.html" data-i18n="crumb.events">活動專區</a> / <span data-i18n="activity.directory.crumb">活動目錄</span></div>
+            </div>
+        </section>
+
+        <section class="section activity-directory-section" aria-labelledby="directory-list-heading">
+            <div class="container">
+                <div class="activity-directory-intro">
+                    <div>
+                        <p class="activity-directory-label" data-i18n="activity.directory.list.eyebrow">活動與回顧</p>
+                        <h2 id="directory-list-heading" data-i18n="activity.directory.list.title">查看每一個共融行動</h2>
+                    </div>
+                    <p data-i18n="activity.directory.list.sub">每張活動卡片均連接至獨立詳情頁，集中呈現活動內容、相片紀錄和參與資訊。</p>
+                </div>
+                <div class="activity-directory-grid" id="activityDirectoryGrid" role="list" aria-live="polite" data-i18n-aria-label="activity.directory.list.aria"></div>
+                <p class="activity-directory-empty" id="activityDirectoryEmpty" hidden role="status" data-i18n="activity.directory.empty">活動目錄暫時未有可顯示項目。</p>
+                <div class="activity-directory-return">
+                    <a class="btn-outline" href="events.html" data-i18n="activity.directory.back">返回活動專區</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-info">
+                    <h5 data-i18n="footer.contact">聯絡我們</h5>
+                    <p>Email: <a href="mailto:info@iseda.org.hk">info@iseda.org.hk</a></p>
+                    <p><a href="https://wa.me/85268267865" target="_blank" rel="noopener noreferrer" data-i18n="footer.contact.whatsapp" data-i18n-aria-label="footer.contact.whatsapp">WhatsApp 聯繫</a></p>
+                </div>
+                <div class="footer-links">
+                    <h5 data-i18n="footer.links">快速連結</h5>
+                    <ul>
+                        <li><a href="about.html"><span data-i18n="nav.about">關於我們</span></a></li>
+                        <li><a href="events.html"><span data-i18n="nav.events">活動專區</span></a></li>
+                        <li><a href="knowledge.html"><span data-i18n="nav.knowledge">專業知識庫</span></a></li>
+                        <li><a href="partners.html"><span data-i18n="nav.partners">合作洽談</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>© 2026 國際特殊教育協會 ISEdA. All Rights Reserved.</p></div>
+        </div>
+    </footer>
+    <button class="back-to-top" id="backToTop" type="button" aria-label="回到頂端" data-i18n-aria-label="a11y.backToTop">↑</button>
+    <script src="lang.js?v=20260828.activity-directory"></script>
+    <script src="script.js?v=20260825.19"></script>
+    <script src="activity-directory.js?v=20260828.activity-directory"></script>
+</body>
+</html>

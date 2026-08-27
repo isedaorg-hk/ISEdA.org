@@ -1,0 +1,35 @@
+{
+  "activities": [
+    {
+      "slug": "lai-chack-sen-experience-20260625",
+      "status": "recap",
+      "cover": "assets/activities/lai-chack-sen-experience-20260625/group-photo.png",
+      "translations": {
+        "zh-Hant": {
+          "title": "麗澤中學 SEN 體驗活動回顧",
+          "status": "活動回顧",
+          "date": "2026 年 6 月 25 日",
+          "location": "麗澤中學",
+          "summary": "同學透過視障日常體驗、鈔票辨認與正確領路法，學習從理解與尊重出發，建立更友善的校園。",
+          "imageAlt": "麗澤中學 SEN 體驗活動後，學生與 ISEdA 及活動夥伴合照。"
+        },
+        "zh-Hans": {
+          "title": "丽泽中学 SEN 体验活动回顾",
+          "status": "活动回顾",
+          "date": "2026 年 6 月 25 日",
+          "location": "丽泽中学",
+          "summary": "同学透过视障日常体验、钞票辨认与正确领路法，学习从理解与尊重出发，建立更友善的校园。",
+          "imageAlt": "丽泽中学 SEN 体验活动后，学生与 ISEdA 及活动伙伴合照。"
+        },
+        "en": {
+          "title": "Lai Chack Middle School SEN Experience: Activity Recap",
+          "status": "Activity recap",
+          "date": "25 June 2026",
+          "location": "Lai Chack Middle School",
+          "summary": "Through visual-impairment experiences, banknote identification and sighted-guide practice, students explored how understanding and respect can build a friendlier school community.",
+          "imageAlt": "Students, ISEdA and activity partners at the Lai Chack Middle School SEN experience activity."
+        }
+      }
+    }
+  ]
+}

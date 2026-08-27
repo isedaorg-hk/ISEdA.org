@@ -2067,3 +2067,60 @@ Object.assign(I18N.en, {
   'activity.template.registration.title': 'Registration and enquiries',
   'activity.template.back': 'Back to Activities'
 });
+
+
+/* 官方活動目錄及入口介面文字 */
+Object.assign(I18N['zh-Hant'], {
+  'activity.directory.title': 'ISEdA 活動目錄 - 國際特殊教育協會',
+  'activity.directory.home.aria': '返回 ISEdA 首頁',
+  'activity.directory.eyebrow': 'ISEdA 官方活動',
+  'activity.directory.hero.title': '活動目錄',
+  'activity.directory.hero.sub': '探索 ISEdA 的活動、校園共融行動與活動回顧；點選任何活動即可閱讀完整詳情。',
+  'activity.directory.crumb': '活動目錄',
+  'activity.directory.list.eyebrow': '活動與回顧',
+  'activity.directory.list.title': '查看每一個共融行動',
+  'activity.directory.list.sub': '每張活動卡片均連接至獨立詳情頁，集中呈現活動內容、相片紀錄和參與資訊。',
+  'activity.directory.list.aria': '官方活動目錄',
+  'activity.directory.empty': '活動目錄暫時未有可顯示項目。',
+  'activity.directory.back': '返回活動專區',
+  'events.directory.eyebrow': '活動紀錄',
+  'events.directory.title': '想了解 ISEdA 已完成的活動？',
+  'events.directory.desc': '前往官方活動目錄，按活動卡片查看校園、社區及共融行動的完整詳情與活動相簿。',
+  'events.directory.cta': '瀏覽官方活動目錄'
+});
+Object.assign(I18N['zh-Hans'], {
+  'activity.directory.title': 'ISEdA 活动目录 - 国际特殊教育协会',
+  'activity.directory.home.aria': '返回 ISEdA 首页',
+  'activity.directory.eyebrow': 'ISEdA 官方活动',
+  'activity.directory.hero.title': '活动目录',
+  'activity.directory.hero.sub': '探索 ISEdA 的活动、校园共融行动与活动回顾；点击任何活动即可阅读完整详情。',
+  'activity.directory.crumb': '活动目录',
+  'activity.directory.list.eyebrow': '活动与回顾',
+  'activity.directory.list.title': '查看每一个共融行动',
+  'activity.directory.list.sub': '每张活动卡片均连接至独立详情页，集中呈现活动内容、照片记录和参与资讯。',
+  'activity.directory.list.aria': '官方活动目录',
+  'activity.directory.empty': '活动目录暂时未有可显示项目。',
+  'activity.directory.back': '返回活动专区',
+  'events.directory.eyebrow': '活动记录',
+  'events.directory.title': '想了解 ISEdA 已完成的活动？',
+  'events.directory.desc': '前往官方活动目录，按活动卡片查看校园、社区及共融行动的完整详情与活动相册。',
+  'events.directory.cta': '浏览官方活动目录'
+});
+Object.assign(I18N.en, {
+  'activity.directory.title': 'ISEdA Activity Directory - International Special Education Association',
+  'activity.directory.home.aria': 'Return to the ISEdA home page',
+  'activity.directory.eyebrow': 'Official ISEdA activities',
+  'activity.directory.hero.title': 'Activity directory',
+  'activity.directory.hero.sub': 'Explore ISEdA activities, school-based inclusion initiatives and activity recaps. Select any activity to read its full details.',
+  'activity.directory.crumb': 'Activity directory',
+  'activity.directory.list.eyebrow': 'Activities and recaps',
+  'activity.directory.list.title': 'See every inclusion action',
+  'activity.directory.list.sub': 'Every activity card links to its own detail page, bringing together the activity content, photographs and participation information.',
+  'activity.directory.list.aria': 'Official activity directory',
+  'activity.directory.empty': 'There are no activities to show in the directory yet.',
+  'activity.directory.back': 'Back to Events',
+  'events.directory.eyebrow': 'Activity record',
+  'events.directory.title': 'Would you like to learn about completed ISEdA activities?',
+  'events.directory.desc': 'Visit the official activity directory and select a card to read the full details and view the activity gallery for school, community and inclusion initiatives.',
+  'events.directory.cta': 'Browse the official activity directory'
+});
