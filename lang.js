@@ -1992,3 +1992,78 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   applyLang(currentLang);
 });
+
+
+/* 通用活動詳情模板介面文字 */
+Object.assign(I18N['zh-Hant'], {
+  'activity.template.title': '活動詳情 - ISEdA 國際特殊教育協會',
+  'activity.template.home.aria': '返回 ISEdA 首頁',
+  'activity.template.breadcrumb.aria': '頁面位置',
+  'activity.template.detail': '活動詳情',
+  'activity.template.facts.aria': '活動基本資料',
+  'activity.template.cover.aria': '活動封面相片位置',
+  'activity.template.cover.placeholder': '日後上傳的活動封面相片會顯示在這裡',
+  'activity.template.overview.eyebrow': '活動介紹',
+  'activity.template.overview.title': '了解這項活動',
+  'activity.template.highlights.eyebrow': '活動重點',
+  'activity.template.highlights.title': '我們希望一起做到的事',
+  'activity.template.schedule.eyebrow': '流程與安排',
+  'activity.template.schedule.title': '活動流程',
+  'activity.template.support.eyebrow': '共融參與',
+  'activity.template.support.title': '支援與注意事項',
+  'activity.template.gallery.eyebrow': '活動回顧',
+  'activity.template.gallery.title': '活動相簿',
+  'activity.template.aside.aria': '活動資料與參與方式',
+  'activity.template.info.title': '活動資料',
+  'activity.template.registration.eyebrow': '參與活動',
+  'activity.template.registration.title': '報名及查詢',
+  'activity.template.back': '返回活動專區'
+});
+Object.assign(I18N['zh-Hans'], {
+  'activity.template.title': '活动详情 - ISEdA 国际特殊教育协会',
+  'activity.template.home.aria': '返回 ISEdA 首页',
+  'activity.template.breadcrumb.aria': '页面位置',
+  'activity.template.detail': '活动详情',
+  'activity.template.facts.aria': '活动基本资料',
+  'activity.template.cover.aria': '活动封面照片位置',
+  'activity.template.cover.placeholder': '日后上传的活动封面照片会显示在这里',
+  'activity.template.overview.eyebrow': '活动介绍',
+  'activity.template.overview.title': '了解这项活动',
+  'activity.template.highlights.eyebrow': '活动重点',
+  'activity.template.highlights.title': '我们希望一起做到的事',
+  'activity.template.schedule.eyebrow': '流程与安排',
+  'activity.template.schedule.title': '活动流程',
+  'activity.template.support.eyebrow': '共融参与',
+  'activity.template.support.title': '支持与注意事项',
+  'activity.template.gallery.eyebrow': '活动回顾',
+  'activity.template.gallery.title': '活动相册',
+  'activity.template.aside.aria': '活动资料与参与方式',
+  'activity.template.info.title': '活动资料',
+  'activity.template.registration.eyebrow': '参与活动',
+  'activity.template.registration.title': '报名及查询',
+  'activity.template.back': '返回活动专区'
+});
+Object.assign(I18N.en, {
+  'activity.template.title': 'Activity Details - ISEdA International Special Education Association',
+  'activity.template.home.aria': 'Return to the ISEdA home page',
+  'activity.template.breadcrumb.aria': 'Breadcrumb',
+  'activity.template.detail': 'Activity details',
+  'activity.template.facts.aria': 'Activity highlights',
+  'activity.template.cover.aria': 'Activity cover photo placeholder',
+  'activity.template.cover.placeholder': 'The activity cover photo will appear here',
+  'activity.template.overview.eyebrow': 'About the activity',
+  'activity.template.overview.title': 'Learn about this activity',
+  'activity.template.highlights.eyebrow': 'Key points',
+  'activity.template.highlights.title': 'What we hope to achieve together',
+  'activity.template.schedule.eyebrow': 'Programme and arrangements',
+  'activity.template.schedule.title': 'Activity schedule',
+  'activity.template.support.eyebrow': 'Inclusive participation',
+  'activity.template.support.title': 'Support and notes',
+  'activity.template.gallery.eyebrow': 'Activity review',
+  'activity.template.gallery.title': 'Activity gallery',
+  'activity.template.aside.aria': 'Activity information and participation',
+  'activity.template.info.title': 'Activity information',
+  'activity.template.registration.eyebrow': 'Take part',
+  'activity.template.registration.title': 'Registration and enquiries',
+  'activity.template.back': 'Back to Activities'
+});
