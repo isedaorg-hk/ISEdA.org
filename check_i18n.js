@@ -6,16 +6,24 @@ const dir = path.dirname(process.argv[1]) || '.';
 const langs = ['zh-Hant', 'zh-Hans', 'en'];
 const js = fs.readFileSync(path.join(dir, 'lang.js'), 'utf8');
 
-// 依區塊頭尾擷取每種語言的字典
+// 擷取主字典，以及其後以 Object.assign 追加的字典鍵。
+function collectKeys(source, keys) {
+  const re = /'([\w.]+)':\s*'/g;
+  let match;
+  while ((match = re.exec(source))) keys.add(match[1]);
+}
+
 function extractKeys(lang) {
   const start = js.indexOf(`'${lang}': {`);
   if (start < 0) return null;
   const end = js.indexOf('\n  }', start);
-  const block = js.slice(start, end);
   const keys = new Set();
-  const re = /'([\w.]+)':\s*'/g;
-  let m;
-  while ((m = re.exec(block))) keys.add(m[1]);
+  collectKeys(js.slice(start, end), keys);
+
+  const target = lang === 'en' ? 'I18N\\.en' : `I18N\\['${lang}'\\]`;
+  const additions = new RegExp(`Object\\.assign\\(${target}, \\{([\\s\\S]*?)\\}\\);`, 'g');
+  let addition;
+  while ((addition = additions.exec(js))) collectKeys(addition[1], keys);
   return keys;
 }
 

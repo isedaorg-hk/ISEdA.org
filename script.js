@@ -142,39 +142,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    /* 4. 會員註冊表單（示範功能，不真正送出） */
-    const memberForm = document.getElementById('member-form');
-    const memberSuccess = document.getElementById('member-success');
-
-    if (memberForm && memberSuccess) {
-        memberForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-            memberSuccess.classList.add('show');
-            memberForm.reset();
-            memberSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            setTimeout(function () {
-                memberSuccess.classList.remove('show');
-            }, 6000);
-        });
-    }
-
-    /* 5. 合作提案表單（示範功能，不真正送出） */
-    const partnerForm = document.getElementById('partner-form');
-    const partnerSuccess = document.getElementById('partner-success');
-
-    if (partnerForm && partnerSuccess) {
-        partnerForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-            partnerSuccess.classList.add('show');
-            partnerForm.reset();
-            partnerSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            setTimeout(function () {
-                partnerSuccess.classList.remove('show');
-            }, 6000);
-        });
-    }
-
-    /* 6. 活動分類篩選 */
+    /* 4. 活動分類篩選 */
     const filterTabs = document.getElementById('filterTabs');
     const eventGrid = document.getElementById('eventGrid');
 

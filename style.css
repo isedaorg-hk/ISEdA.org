@@ -1140,92 +1140,6 @@ nav a.active {
     color: var(--text-light);
 }
 
-/* 19. 表單 */
-.form-card {
-    background: #fff;
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    padding: 40px;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-.form-row {
-    margin-bottom: 20px;
-}
-
-.form-row label {
-    display: block;
-    font-size: 14px;
-    font-weight: bold;
-    color: var(--primary-dark);
-    margin-bottom: 8px;
-}
-
-.form-row input,
-.form-row select,
-.form-row textarea {
-    width: 100%;
-    padding: 12px 15px;
-    border: 2px solid #e0e0e0;
-    border-radius: 8px;
-    font-size: 14px;
-    font-family: inherit;
-    transition: border-color 0.3s;
-    background: #fff;
-    color: var(--text-dark);
-}
-
-.form-row input:focus,
-.form-row select:focus,
-.form-row textarea:focus {
-    outline: none;
-    border-color: var(--primary-sky);
-}
-
-.form-row textarea {
-    min-height: 120px;
-    resize: vertical;
-}
-
-.form-row .hint {
-    font-size: 12px;
-    color: var(--text-faint);
-    margin-top: 5px;
-}
-
-.form-grid-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.btn-submit {
-    width: 100%;
-    background-color: var(--primary-dark);
-    color: #fff;
-    border: none;
-    padding: 14px;
-    border-radius: 25px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    font-family: inherit;
-    transition: opacity 0.3s, transform 0.3s;
-}
-
-.btn-submit:hover {
-    opacity: 0.9;
-    transform: translateY(-2px);
-}
-
-.form-note {
-    text-align: center;
-    font-size: 12px;
-    color: var(--text-faint);
-    margin-top: 15px;
-}
-
 /* 20. 合作夥伴 */
 .partner-grid {
     display: grid;
@@ -1413,10 +1327,6 @@ footer {
 
     .featured-img {
         min-height: 200px;
-    }
-
-    .form-grid-2 {
-        grid-template-columns: 1fr;
     }
 }
 
