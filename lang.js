@@ -49,6 +49,8 @@ const I18N = {
     // 頁尾
     'footer.contact': '聯絡我們',
     'footer.contact.whatsapp': '💬 WhatsApp 聯繫',
+    'footer.contact.instagram': 'Instagram：@iseda.hk ↗',
+    'footer.contact.instagram.aria': '前往 ISEdA Instagram 官方帳戶（於新視窗開啟）',
     'footer.links': '快速連結',
     'nav.about.toggle.open': '展開關於我們子選單',
     'nav.about.toggle.close': '收合關於我們子選單',
@@ -691,6 +693,8 @@ const I18N = {
 
     'footer.contact': '联系我们',
     'footer.contact.whatsapp': '💬 WhatsApp 联系',
+    'footer.contact.instagram': 'Instagram：@iseda.hk ↗',
+    'footer.contact.instagram.aria': '前往 ISEdA Instagram 官方账号（在新窗口打开）',
     'footer.links': '快速链接',
     'nav.about.toggle.open': '展开关于我们子菜单',
     'nav.about.toggle.close': '收起关于我们子菜单',
@@ -1327,6 +1331,8 @@ const I18N = {
 
     'footer.contact': 'Contact Us',
     'footer.contact.whatsapp': '💬 WhatsApp',
+    'footer.contact.instagram': 'Instagram: @iseda.hk ↗',
+    'footer.contact.instagram.aria': 'Visit ISEdA’s official Instagram account (opens in a new window)',
     'footer.links': 'Quick Links',
     'nav.about.toggle.open': 'Open About Us submenu',
     'nav.about.toggle.close': 'Close About Us submenu',
