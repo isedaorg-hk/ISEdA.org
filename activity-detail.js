@@ -29,6 +29,11 @@
         return activity.translations[lang] || activity.translations['zh-Hant'] || activity.translations.en || null;
     }
 
+    function isSafeImageSource(value) {
+        const source = text(value);
+        return /^https:\/\//i.test(source) || /^assets\/activities\/[a-z0-9][a-z0-9/_-]*\.(?:png|jpe?g|webp|avif)$/i.test(source);
+    }
+
     function createElement(tag, className, content) {
         const element = document.createElement(tag);
         if (className) element.className = className;
@@ -49,22 +54,25 @@
 
     function renderCover(lang) {
         const cover = document.getElementById('activityCover');
-        const placeholder = document.getElementById('activityCoverPlaceholder');
-        if (!cover || !placeholder) return;
+        if (!cover) return;
 
-        const hasCover = activity.cover && /^https?:\/\//i.test(text(activity.cover.src));
+        const hasCover = activity.cover && isSafeImageSource(activity.cover.src);
+        const alt = text(activity.cover && activity.cover.alt && activity.cover.alt[lang]);
         cover.classList.toggle('has-activity-cover', hasCover);
-        cover.setAttribute('aria-label', text(activity.cover && activity.cover.alt && activity.cover.alt[lang]) || placeholder.textContent.trim());
+        cover.setAttribute('aria-label', alt || 'Activity cover photo');
         if (!hasCover) return;
 
-        cover.replaceChildren();
-        const image = document.createElement('img');
+        let image = cover.querySelector('img');
+        if (!image) {
+            cover.replaceChildren();
+            image = document.createElement('img');
+            image.width = 1200;
+            image.height = 760;
+            image.decoding = 'async';
+            cover.appendChild(image);
+        }
         image.src = activity.cover.src;
-        image.alt = text(activity.cover.alt && activity.cover.alt[lang]);
-        image.width = 1200;
-        image.height = 760;
-        image.decoding = 'async';
-        cover.appendChild(image);
+        image.alt = alt;
     }
 
     function renderDescription(translation) {
@@ -84,9 +92,13 @@
     }
 
     function renderSchedule(translation) {
+        const section = document.getElementById('activityScheduleSection');
         const target = document.getElementById('activitySchedule');
+        const schedule = Array.isArray(translation.schedule) ? translation.schedule : [];
+        if (!section || !target) return;
+        section.hidden = schedule.length === 0;
         target.replaceChildren();
-        (Array.isArray(translation.schedule) ? translation.schedule : []).forEach(function (item) {
+        schedule.forEach(function (item) {
             const listItem = createElement('li', 'activity-schedule-item');
             const time = createElement('p', 'activity-schedule-time', item.time);
             const copy = createElement('div', 'activity-schedule-copy');
@@ -124,7 +136,7 @@
         section.hidden = gallery.length === 0;
         target.replaceChildren();
         gallery.forEach(function (item) {
-            if (!/^https?:\/\//i.test(text(item.src))) return;
+            if (!isSafeImageSource(item.src)) return;
             const figure = createElement('figure', 'activity-gallery-item');
             const image = document.createElement('img');
             image.src = item.src;

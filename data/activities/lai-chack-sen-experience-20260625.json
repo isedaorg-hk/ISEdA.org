@@ -1,0 +1,154 @@
+{
+  "slug": "lai-chack-sen-experience-20260625",
+  "status": "recap",
+  "cover": {
+    "src": "assets/activities/lai-chack-sen-experience-20260625/group-photo.png",
+    "alt": {
+      "zh-Hant": "麗澤中學 SEN 體驗活動後，學生與 ISEdA 及活動夥伴合照。",
+      "zh-Hans": "丽泽中学 SEN 体验活动后，学生与 ISEdA 及活动伙伴合照。",
+      "en": "Students, ISEdA and activity partners at the Lai Chack Middle School SEN experience activity."
+    }
+  },
+  "gallery": [
+    {
+      "src": "assets/activities/lai-chack-sen-experience-20260625/experience-banknotes.webp",
+      "alt": {
+        "zh-Hant": "學生戴上眼罩，在講者引導下以觸覺和技巧辨認鈔票。",
+        "zh-Hans": "学生戴上眼罩，在讲者引导下以触觉和技巧辨认钞票。",
+        "en": "Students wear blindfolds and learn to identify banknotes through touch and technique."
+      },
+      "caption": {
+        "zh-Hant": "在體驗中學習以觸覺和技巧辨認鈔票。",
+        "zh-Hans": "在体验中学习以触觉和技巧辨认钞票。",
+        "en": "Learning to identify banknotes through touch and technique."
+      }
+    },
+    {
+      "src": "assets/activities/lai-chack-sen-experience-20260625/experience-guiding.webp",
+      "alt": {
+        "zh-Hant": "學生參與視障體驗，學習在安全和尊重下互相配合。",
+        "zh-Hans": "学生参与视障体验，学习在安全和尊重下互相配合。",
+        "en": "Students take part in a visual-impairment experience and learn to support one another safely and respectfully."
+      },
+      "caption": {
+        "zh-Hant": "從親身體驗中理解他人的處境與需要。",
+        "zh-Hans": "从亲身体验中理解他人的处境与需要。",
+        "en": "Understanding other people’s experiences and needs through participation."
+      }
+    },
+    {
+      "src": "assets/activities/lai-chack-sen-experience-20260625/guiding-method.webp",
+      "alt": {
+        "zh-Hant": "講者與學生示範正確領路法，投影畫面展示協助視障人士上下樓梯的要點。",
+        "zh-Hans": "讲者与学生示范正确领路法，投影画面展示协助视障人士上下楼梯的要点。",
+        "en": "A presenter and students demonstrate correct sighted-guide techniques, with guidance for supporting a visually impaired person on stairs shown on screen."
+      },
+      "caption": {
+        "zh-Hant": "實踐正確領路法，學習安全、體貼地引領視障人士前行。",
+        "zh-Hans": "实践正确领路法，学习安全、体贴地引领视障人士前行。",
+        "en": "Practising correct sighted-guide techniques for safe and considerate support."
+      }
+    }
+  ],
+  "translations": {
+    "zh-Hant": {
+      "title": "麗澤中學 SEN 體驗活動回顧",
+      "kicker": "校園共融講座與體驗",
+      "status": "活動回顧",
+      "summary": "感謝麗澤中學邀請 ISEdA 舉辦 SEN 共融講座；同學透過視障日常體驗、鈔票辨認與正確領路法，學習以理解和尊重建立更友善的校園。",
+      "description": [
+        "非常感謝麗澤中學的邀請。這次 SEN 共融講座在同學們的投入參與下順利完成。",
+        "活動中，同學親身體驗視障人士的日常生活，學習如何透過觸覺和技巧辨認鈔票，並實踐正確的「領路法」，體會如何安全、體貼地引領視障人士前行。",
+        "透過這次深刻的體驗，同學不僅放下對未知的隔閡，更學會換位思考，理解不同群體的需要。期待共融的種子在大家心中發芽，一起建立更友善、更包容的社會。"
+      ],
+      "heroFacts": [
+        { "label": "活動類型", "value": "SEN 共融講座與體驗" },
+        { "label": "活動日期", "value": "2026 年 6 月 25 日" }
+      ],
+      "info": [
+        { "label": "活動日期", "value": "2026 年 6 月 25 日" },
+        { "label": "活動地點", "value": "麗澤中學" },
+        { "label": "活動形式", "value": "校園 SEN 共融講座與互動體驗" },
+        { "label": "活動狀態", "value": "已完成・活動回顧" }
+      ],
+      "highlights": [
+        "親身體驗視障人士在日常生活中可能面對的處境。",
+        "透過觸覺和辨認技巧，探索如何分辨不同面額的鈔票。",
+        "學習並實踐正確領路法，安全、體貼地協助視障人士前行。",
+        "從體驗和交流中練習換位思考，建立理解、尊重和共融的態度。"
+      ],
+      "schedule": [],
+      "supports": [
+        { "title": "由體驗建立理解", "description": "活動以親身參與和引導分享為主，讓同學從具體處境中認識視障人士的日常需要。" },
+        { "title": "把共融帶回校園", "description": "理解不止於一次活動；每一位同學都可從日常溝通、同行與互相尊重開始，建立更友善的校園文化。" }
+      ],
+      "registration": {}
+    },
+    "zh-Hans": {
+      "title": "丽泽中学 SEN 体验活动回顾",
+      "kicker": "校园共融讲座与体验",
+      "status": "活动回顾",
+      "summary": "感谢丽泽中学邀请 ISEdA 举办 SEN 共融讲座；同学透过视障日常体验、钞票辨认与正确领路法，学习以理解和尊重建立更友善的校园。",
+      "description": [
+        "非常感谢丽泽中学的邀请。这次 SEN 共融讲座在同学们的投入参与下顺利完成。",
+        "活动中，同学亲身体验视障人士的日常生活，学习如何透过触觉和技巧辨认钞票，并实践正确的“领路法”，体会如何安全、体贴地引领视障人士前行。",
+        "透过这次深刻的体验，同学不仅放下对未知的隔阂，更学会换位思考，理解不同群体的需要。期待共融的种子在大家心中发芽，一起建立更友善、更包容的社会。"
+      ],
+      "heroFacts": [
+        { "label": "活动类型", "value": "SEN 共融讲座与体验" },
+        { "label": "活动日期", "value": "2026 年 6 月 25 日" }
+      ],
+      "info": [
+        { "label": "活动日期", "value": "2026 年 6 月 25 日" },
+        { "label": "活动地点", "value": "丽泽中学" },
+        { "label": "活动形式", "value": "校园 SEN 共融讲座与互动体验" },
+        { "label": "活动状态", "value": "已完成・活动回顾" }
+      ],
+      "highlights": [
+        "亲身体验视障人士在日常生活中可能面对的处境。",
+        "透过触觉和辨认技巧，探索如何分辨不同面额的钞票。",
+        "学习并实践正确领路法，安全、体贴地协助视障人士前行。",
+        "从体验和交流中练习换位思考，建立理解、尊重和共融的态度。"
+      ],
+      "schedule": [],
+      "supports": [
+        { "title": "由体验建立理解", "description": "活动以亲身参与和引导分享为主，让同学从具体处境中认识视障人士的日常需要。" },
+        { "title": "把共融带回校园", "description": "理解不止于一次活动；每一位同学都可从日常沟通、同行与互相尊重开始，建立更友善的校园文化。" }
+      ],
+      "registration": {}
+    },
+    "en": {
+      "title": "Lai Chack Middle School SEN Experience: Activity Recap",
+      "kicker": "School-based inclusion talk and experience",
+      "status": "Activity recap",
+      "summary": "We thank Lai Chack Middle School for inviting ISEdA to deliver an SEN inclusion talk. Through visual-impairment experiences, banknote identification and sighted-guide practice, students explored how understanding and respect can build a friendlier school community.",
+      "description": [
+        "We sincerely thank Lai Chack Middle School for the invitation. This SEN inclusion talk was successfully completed with the students’ engaged participation.",
+        "During the activity, students experienced aspects of the daily life of people with visual impairments. They learned to identify banknotes through touch and technique, and practised correct sighted-guide methods to understand how to guide a visually impaired person safely and considerately.",
+        "Through this meaningful experience, students moved beyond uncertainty about the unfamiliar and practised seeing situations from another person’s perspective. We hope the seeds of inclusion will continue to grow and help build a more welcoming, caring society."
+      ],
+      "heroFacts": [
+        { "label": "Activity type", "value": "SEN inclusion talk and experience" },
+        { "label": "Date", "value": "25 June 2026" }
+      ],
+      "info": [
+        { "label": "Date", "value": "25 June 2026" },
+        { "label": "Venue", "value": "Lai Chack Middle School" },
+        { "label": "Format", "value": "School-based SEN inclusion talk and interactive experience" },
+        { "label": "Status", "value": "Completed · activity recap" }
+      ],
+      "highlights": [
+        "Experience situations that visually impaired people may encounter in everyday life.",
+        "Explore how touch and identification techniques can help distinguish banknote denominations.",
+        "Learn and practise correct sighted-guide techniques for safe and considerate support.",
+        "Develop empathy, understanding, respect and an inclusive mindset through experience and dialogue."
+      ],
+      "schedule": [],
+      "supports": [
+        { "title": "Understanding through experience", "description": "The activity combined hands-on participation with guided sharing, helping students recognise the everyday needs of people with visual impairments through concrete experiences." },
+        { "title": "Bringing inclusion into school life", "description": "Understanding goes beyond a single event. Every student can help build a friendlier school culture through everyday communication, companionship and mutual respect." }
+      ],
+      "registration": {}
+    }
+  }
+}
