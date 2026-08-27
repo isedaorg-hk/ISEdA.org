@@ -1,0 +1,5 @@
+# ISEdA public search crawling rules
+User-agent: *
+Allow: /
+
+Sitemap: https://iseda.org.hk/sitemap.xml
