@@ -6,7 +6,7 @@
 (function () {
     'use strict';
 
-    const fallbackSlug = 'community-inclusion-day-demo';
+    const fallbackSlug = 'lai-chack-sen-experience-20260625';
     const validSlug = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
     const brands = {
         'zh-Hant': 'ISEdA 國際特殊教育協會',
