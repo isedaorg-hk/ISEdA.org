@@ -3890,6 +3890,19 @@ html[lang="en"] .sen-type-card-head span { display: none; }
     object-fit: contain;
 }
 
+/* 實際封面按原始比例顯示，避免圖片上下出現容器空白 */
+.activity-detail-cover.has-activity-cover {
+    min-height: 0;
+    background: transparent;
+}
+
+.activity-detail-cover.has-activity-cover img {
+    display: block;
+    height: auto;
+    min-height: 0;
+    object-fit: initial;
+}
+
 .activity-detail-cover-placeholder {
     position: absolute;
     z-index: 1;
