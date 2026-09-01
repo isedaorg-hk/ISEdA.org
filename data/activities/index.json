@@ -1,6 +1,37 @@
 {
   "activities": [
     {
+      "slug": "new-home-centre-pet-inclusion-20260721",
+      "status": "recap",
+      "cover": "assets/activities/new-home-centre-pet-inclusion-20260721/parent-child-pet-workshop.webp",
+      "translations": {
+        "zh-Hant": {
+          "title": "新家園協會——親子寵物共融活動",
+          "status": "活動回顧",
+          "date": "2026 年 7 月 21 日",
+          "location": "新家園協會",
+          "summary": "透過角色對調、寵物互動和「我訊息」練習，與少數族裔家庭探索更輕鬆、更有愛的親子溝通方式。",
+          "imageAlt": "新家園協會親子寵物共融活動中，家長、孩子、工作坊團隊與寵物互動後的合照。"
+        },
+        "zh-Hans": {
+          "title": "新家园协会——亲子宠物共融活动",
+          "status": "活动回顾",
+          "date": "2026 年 7 月 21 日",
+          "location": "新家园协会",
+          "summary": "通过角色互换、宠物互动和「我讯息」练习，与少数族裔家庭探索更轻松、更有爱的亲子沟通方式。",
+          "imageAlt": "新家园协会亲子宠物共融活动中，家长、孩子、工作坊团队与宠物互动后的合照。"
+        },
+        "en": {
+          "title": "New Home Association — Parent-Child Pet Inclusion Activity",
+          "status": "Activity recap",
+          "date": "21 July 2026",
+          "location": "New Home Association",
+          "summary": "Through role reversal, pet interaction and “I-messages”, families explored more relaxed and caring ways to communicate during a workshop for ethnic minority families.",
+          "imageAlt": "Parents, children, workshop facilitators and pets after the New Home Association parent-child pet inclusion activity."
+        }
+      }
+    },
+    {
       "slug": "twgh-kap-yan-sen-stakeholder-20251017-24",
       "status": "recap",
       "cover": "assets/activities/twgh-kap-yan-sen-stakeholder-20251017-24/stakeholder-experience-main.jpeg",
