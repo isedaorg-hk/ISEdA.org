@@ -2219,7 +2219,9 @@ nav .nav-dropdown-main.active {
     left: -24px;
     z-index: 300;
     display: grid;
-    width: min(380px, calc(100vw - 32px));
+    /* Follow the longest menu label while staying inside the viewport. */
+    width: max-content;
+    max-width: calc(100vw - 32px);
     margin: 0;
     padding: 16px;
     list-style: none;
@@ -2253,7 +2255,7 @@ nav .nav-dropdown-menu a {
     font-weight: 700;
     line-height: 1.35;
     text-decoration: none;
-    white-space: normal;
+    white-space: nowrap;
     transition: background-color 0.18s ease, color 0.18s ease;
 }
 nav .nav-dropdown-menu a:hover {
@@ -2309,6 +2311,7 @@ nav .nav-dropdown-menu a:hover {
     nav .nav-dropdown-menu a {
         min-height: 44px;
         padding: 12px;
+        white-space: normal;
     }
 }
 
@@ -2362,7 +2365,8 @@ main [id] {
         position: absolute;
         top: 100%;
         left: -24px;
-        width: min(380px, calc(100vw - 32px));
+        /* 280px balances long bilingual labels with compact one-item menus. */
+    width: min(280px, calc(100vw - 32px));
         height: 14px;
         content: '';
     }

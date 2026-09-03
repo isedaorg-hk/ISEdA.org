@@ -56,7 +56,13 @@
                         </ul>
 
                     </li>
-                    <li><a href="events.html" data-i18n="nav.events">活動專區</a></li>
+                    <li class="nav-dropdown" data-dropdown-key="events">
+                        <a href="events.html" class="nav-dropdown-main" data-i18n="nav.events">活動專區</a>
+                        <button class="nav-dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="events-menu" data-i18n-aria-label="nav.events.toggle.open"><span aria-hidden="true">⌄</span></button>
+                        <ul class="nav-dropdown-menu" id="events-menu" aria-label="更多活動" data-i18n-aria-label="nav.events.menu">
+                            <li><a href="activity-directory.html" data-i18n="nav.events.past">過往活動</a></li>
+                        </ul>
+                    </li>
                     <li><a href="knowledge.html" data-i18n="nav.knowledge">專業知識庫</a></li>
                     <li><a href="partners.html" data-i18n="nav.partners">合作洽談</a></li>
                     <li class="lang-switch">
