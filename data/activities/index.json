@@ -1,6 +1,37 @@
 {
   "activities": [
     {
+      "slug": "maritime-youth-leadership-training-20260808",
+      "status": "recap",
+      "cover": "assets/activities/maritime-youth-leadership-training-20260808/maritime-youth-leadership-group.jpg",
+      "translations": {
+        "zh-Hant": {
+          "title": "海事青年領袖訓練",
+          "status": "活動回顧",
+          "date": "2026 年 8 月 8 日",
+          "location": "香港海事青年團普照分隊",
+          "summary": "國際特殊教育協會與香港海事青年團普照分隊首度合辦「破浪同行：現代青年領袖的溝通與共融智慧」領袖培訓，透過心理專業帶領、體驗式學習及團隊實戰，培養青年溝通、協作、領導及 SEN 共融能力。",
+          "imageAlt": "香港海事青年團普照分隊隊員、國際特殊教育協會團隊及培訓講者於「破浪同行：現代青年領袖的溝通與共融智慧」領袖培訓後合照。"
+        },
+        "zh-Hans": {
+          "title": "海事青年领袖培训",
+          "status": "活动回顾",
+          "date": "2026 年 8 月 8 日",
+          "location": "香港海事青年团普照分队",
+          "summary": "国际特殊教育协会与香港海事青年团普照分队首次合办「破浪同行：现代青年领袖的沟通与共融智慧」领袖培训，通过心理专业带领、体验式学习及团队实战，培养青年的沟通、协作、领导及 SEN 共融能力。",
+          "imageAlt": "香港海事青年团普照分队队员、国际特殊教育协会团队及培训讲者于「破浪同行：现代青年领袖的沟通与共融智慧」领袖培训后合照。"
+        },
+        "en": {
+          "title": "Maritime Youth Leadership Training",
+          "status": "Activity recap",
+          "date": "8 August 2026",
+          "location": "Hong Kong Sea Cadet Corps Po Chiu Unit",
+          "summary": "ISEdA and the Hong Kong Sea Cadet Corps Po Chiu Unit co-hosted “Sailing Together: Communication and Inclusion Wisdom for Modern Youth Leaders”, using professional guidance, experiential learning and team practice to develop young people’s communication, collaboration, leadership and SEN inclusion skills.",
+          "imageAlt": "Members of the Hong Kong Sea Cadet Corps Po Chiu Unit, ISEdA team and trainers pose together after the “Sailing Together: Communication and Inclusion Wisdom for Modern Youth Leaders” training."
+        }
+      }
+    },
+    {
       "slug": "new-home-centre-pet-inclusion-20260721",
       "status": "recap",
       "cover": "assets/activities/new-home-centre-pet-inclusion-20260721/parent-child-pet-workshop.webp",

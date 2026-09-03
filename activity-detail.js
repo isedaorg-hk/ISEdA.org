@@ -178,11 +178,27 @@
     function setDynamicMetadata(translation) {
         const title = text(translation.title);
         const summary = text(translation.summary);
-        document.title = title ? title + '｜' + brands[activeLanguage()] : brands[activeLanguage()];
-        const description = document.querySelector('meta[name="description"]');
-        if (description && summary) description.setAttribute('content', summary);
+        const pageTitle = title ? title + '｜' + brands[activeLanguage()] : brands[activeLanguage()];
+        const pageUrl = activity.slug ? 'https://iseda.org.hk/activity-detail.html?event=' + encodeURIComponent(activity.slug) : 'https://iseda.org.hk/activity-detail.html';
+        const imageUrl = activity.cover && activity.cover.src ? new URL(activity.cover.src, window.location.href).href : '';
+        document.title = pageTitle;
+
+        const setMeta = (selector, content) => {
+            const element = document.querySelector(selector);
+            if (element && content) element.setAttribute('content', content);
+        };
+        setMeta('meta[name="description"]', summary);
+        setMeta('meta[property="og:title"]', pageTitle);
+        setMeta('meta[property="og:description"]', summary);
+        setMeta('meta[property="og:url"]', pageUrl);
+        setMeta('meta[property="og:image"]', imageUrl);
+        setMeta('meta[property="og:image:secure_url"]', imageUrl);
+        setMeta('meta[name="twitter:title"]', pageTitle);
+        setMeta('meta[name="twitter:description"]', summary);
+        setMeta('meta[name="twitter:image"]', imageUrl);
+
         const canonical = document.querySelector('link[rel="canonical"]');
-        if (canonical && activity.slug) canonical.setAttribute('href', 'https://iseda.org.hk/activity-detail.html?event=' + encodeURIComponent(activity.slug));
+        if (canonical) canonical.setAttribute('href', pageUrl);
     }
 
     function render() {
